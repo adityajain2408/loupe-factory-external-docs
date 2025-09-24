@@ -25,10 +25,10 @@ jobs:
       - run: mkdocs build
 
       - name: Deploy to Vercel
-        uses: amondnet/vercel-action@v25
+        uses: vercel/actions/deploy@v2
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}         # team-scoped (LoupeMRP)
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}       # from LoupeMRP
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          vercel-args: --prod --confirm --scope loupemrp    # remove --prebuilt
           working-directory: ./site                         # deploy static files in ./site
+          prod: true
