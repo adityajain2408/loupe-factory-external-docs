@@ -1,0 +1,5 @@
+mkdocs-material
+Pygments
+markdown
+pymdown-extensions
+mkdocs-material-extensions
