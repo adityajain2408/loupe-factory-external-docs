@@ -31,5 +31,5 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          vercel-args: --prod --prebuilt --confirm --scope aditya-jains-projects
+          vercel-args: --prod --prebuilt --confirm --scope LoupeMRP
           working-directory: ./site
