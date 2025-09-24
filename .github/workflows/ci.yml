@@ -22,7 +22,7 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-              
+
       - run: pip install mkdocs-material mkdocs-minify-plugin mkdocs-git-revision-date-localized-plugin mkdocs-git-committers-plugin-2
       - run: mkdocs build
       - name: Deploy to Vercel
@@ -31,5 +31,5 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          vercel-args: --prod
+          vercel-args: --prod --prebuilt --confirm --scope aditya-jains-projects
           working-directory: ./site
