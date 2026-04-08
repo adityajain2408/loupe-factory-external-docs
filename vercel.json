@@ -4,7 +4,7 @@
       "ENABLE_FILE_SYSTEM_API": "1"
     }
   },
-  "buildCommand": "pip install -r requirements.txt && mkdocs build",
+  "buildCommand": "pip install --break-system-packages -r requirements.txt && mkdocs build",
   "outputDirectory": "site",
   "framework": null
 }
