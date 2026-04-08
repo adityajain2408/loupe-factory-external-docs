@@ -7,6 +7,7 @@ copyright: Copyright &copy; 2025 Loupe AI, LLC
 # Theme configuration
 theme:
   name: material
+  custom_dir: overrides
   language: en
   
   # Color palette matching Phoenix theme
