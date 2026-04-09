@@ -4,7 +4,7 @@
       "ENABLE_FILE_SYSTEM_API": "1"
     }
   },
-  "buildCommand": "pip install --break-system-packages -r requirements.txt && mkdocs build",
+  "buildCommand": "ENABLE_GIT_PLUGINS=true pip install --break-system-packages -r requirements.txt && ENABLE_GIT_PLUGINS=true mkdocs build",
   "outputDirectory": "site",
   "framework": null
 }

@@ -81,11 +81,11 @@ plugins:
   - minify:
       minify_html: true
   - git-revision-date-localized:
-      enabled: !ENV [CI, false]
+      enabled: !ENV [ENABLE_GIT_PLUGINS, false]
       enable_creation_date: true
       type: timeago
   - git-committers:
-      enabled: !ENV [CI, false]
+      enabled: !ENV [ENABLE_GIT_PLUGINS, false]
       repository: adityajain2408/loupe-factory-external-docs
       branch: main
 
