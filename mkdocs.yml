@@ -9,7 +9,7 @@ theme:
   name: material
   custom_dir: overrides
   language: en
-  
+
   # Color palette matching Phoenix theme
   palette:
     - media: "(prefers-color-scheme)"
@@ -18,15 +18,15 @@ theme:
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: blue
-      accent: blue
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: blue
-      accent: blue
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
@@ -81,20 +81,17 @@ plugins:
   - minify:
       minify_html: true
   - git-revision-date-localized:
+      enabled: !ENV [CI, false]
       enable_creation_date: true
       type: timeago
-      repository: adityajain2408/loupe-factory-external-docs
-      branch: main
   - git-committers:
+      enabled: !ENV [CI, false]
       repository: adityajain2408/loupe-factory-external-docs
       branch: main
 
 # Customization
 extra_css:
   - stylesheets/extra.css
-
-extra_javascript:
-  - javascripts/extra.js
 
 # Extensions
 markdown_extensions:
@@ -127,17 +124,25 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Getting Started:
-    - Installation: getting-started/installation.md
-    - Configuration: getting-started/configuration.md
-    - Quick Start: getting-started/quick-start.md
-  - API Reference:
-    - Core API: api/core.md
-    - Authentication: api/auth.md
-    - Endpoints: api/endpoints.md
-  - Contributing:
-    - Development: contributing/development.md
-    - Guidelines: contributing/guidelines.md
-    - Testing: contributing/testing.md
+    - getting-started/index.md
+    - Account Setup: getting-started/account-setup.md
+    - Dashboard Overview: getting-started/dashboard-overview.md
+    - Quick Start Guide: getting-started/quick-start-guide.md
+  - Platform Guide:
+    - platform-guide/index.md
+    - Inventory Management: platform-guide/inventory-management.md
+    - Production Tracking: platform-guide/production-tracking.md
+    - Order Management: platform-guide/order-management.md
+    - Invoicing: platform-guide/invoicing.md
+    - Shipment Tracking: platform-guide/shipment-tracking.md
+    - Customer & Supplier Management: platform-guide/customer-supplier-management.md
+    - Employee Management: platform-guide/employee-management.md
+    - Reporting & Analytics: platform-guide/reporting-analytics.md
+  - Account & Billing:
+    - account-billing/index.md
+    - Managing Your Account: account-billing/managing-your-account.md
+    - AI Credits & Billing: account-billing/ai-credits-billing.md
+  - FAQ: faq.md
 
 # Additional configuration
 extra:
