@@ -19,7 +19,7 @@ distribute physical products anywhere in the world.
 <a href="getting-started/quick-start-guide/" class="lf-hero__cta lf-hero__cta--primary"
   >Start the quick start guide →</a>
 <a href="getting-started/account-setup/" class="lf-hero__cta lf-hero__cta--secondary"
-  >Set up your account</a>
+  >Set up your account →</a>
 </div>
 </div>
 

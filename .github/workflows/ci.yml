@@ -24,12 +24,10 @@ jobs:
       - run: pip install mkdocs-material mkdocs-minify-plugin mkdocs-git-revision-date-localized-plugin mkdocs-git-committers-plugin-2
       - run: mkdocs build
 
-      # ...after mkdocs build...
-      # ...same steps up to `mkdocs build`...
       - name: Deploy with Vercel CLI
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
         run: |
-          npx vercel@25.1.0 deploy ./site --prod --yes --scope loupemrp --token "$VERCEL_TOKEN"
+          npx vercel@25.1.0 deploy ./site --prod --confirm --no-clipboard --scope loupemrp --token "$VERCEL_TOKEN"
