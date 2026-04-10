@@ -51,9 +51,9 @@ Loupe-Factory-external-docs/
 ├── overrides/            # Jinja templates extending Material (e.g. main.html)
 ├── mkdocs.yml            # Site metadata, nav, theme, plugins, extensions
 ├── requirements.txt      # Python deps for MkDocs and plugins
-├── vercel.json           # Vercel build entrypoint for the docs site
-├── scripts/
-│   └── vercel-build.sh   # Ensures Vercel builds from the repo root
+├── vercel.json           # Vercel install/build config for the docs site
+├── .github/workflows/
+│   └── ci.yml            # CI build verification for pushes and pull requests
 └── site/                 # Generated static HTML (after build; not hand-edited)
 ```
 
@@ -66,12 +66,19 @@ Loupe-Factory-external-docs/
 
 ### Deployment (Vercel)
 
-- `vercel.json` invokes `scripts/vercel-build.sh`, which changes into the docs
-  repository root, creates an isolated virtual environment, installs
-  `requirements.txt`, and runs `python -m mkdocs build`.
+- `vercel.json` creates a local `.vercel-venv`, installs from
+  `requirements.txt`, and runs `python -m mkdocs build --strict`.
 - The build keeps `ENABLE_GIT_PLUGINS=true` so optional git-based **last
   updated** metadata can run when git history is available.
 - Published output directory: `site`.
+
+### GitHub Actions CI
+
+- `.github/workflows/ci.yml` validates the docs build on pushes and pull
+  requests.
+- CI no longer performs a second manual Vercel CLI deployment from `./site`;
+  production deployment is handled by Vercel from the repository root using
+  `vercel.json`.
 
 ### Plugins (see `mkdocs.yml`)
 
