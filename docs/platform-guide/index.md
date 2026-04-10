@@ -8,7 +8,7 @@ The Platform Guide covers every module in LoupeFactory — from managing your in
 - [Production Tracking](production-tracking.md) — Define multi-stage production processes, track inputs and outputs, and record waste, rejection, and scrap.
 - [Order Management](order-management.md) — Create, track, and fulfill customer orders.
 - [Invoicing](invoicing.md) — Generate, send, and manage invoices linked to your orders.
-- [Shipment Tracking](shipment-tracking.md) — Create shipments, track packages via EasyPost, and view delivery status.
+- [Shipment Tracking](shipment-tracking.md) — Create shipments, track packages, and view delivery status.
 - [Customer & Supplier Management](customer-supplier-management.md) — Add and manage customer and supplier records and their associated transactions.
 - [Employee Management](employee-management.md) — Add staff members, assign roles, and manage permissions.
 - [Reporting & Analytics](reporting-analytics.md) — Explore available reports, data visualizations, and export options.

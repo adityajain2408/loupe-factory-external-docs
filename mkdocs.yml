@@ -9,6 +9,8 @@ theme:
   name: material
   custom_dir: overrides
   language: en
+  favicon: assets/images/favicon.ico
+  logo: assets/images/favicon.png
 
   # Color palette matching Phoenix theme
   palette:

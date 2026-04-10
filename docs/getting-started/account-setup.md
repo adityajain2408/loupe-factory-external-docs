@@ -1,6 +1,6 @@
 # Account Setup
 
-Welcome to LoupeFactory. This guide walks you through creating your account, logging in via WorkOS authentication, and configuring your organization settings so your team is ready to go.
+Welcome to Loupe Factory. This guide walks you through creating your account, signing in securely, and configuring your organization settings so your team is ready to go.
 
 ## Sign Up
 
@@ -17,20 +17,20 @@ To get started, navigate to [app.loupefactory.com](https://app.loupefactory.com)
 
 Once your email is verified, you'll be prompted to create your organization.
 
-## Log In with WorkOS Authentication
+## Sign in securely
 
-LoupeFactory uses [WorkOS](https://workos.com) to handle authentication, giving your organization enterprise-grade security including SSO, SAML, and directory sync support.
+Loupe Factory uses industry-standard sign-in so your organization can use email and password, magic links, or single sign-on (SSO) where your admin has enabled it.
 
-### Standard Login
+### Standard login
 
 1. Go to [app.loupefactory.com](https://app.loupefactory.com) and click **Log In**.
-2. Enter your email address. WorkOS will route you to the correct authentication method for your organization.
-3. Complete authentication — either via password, magic link, or your configured SSO provider.
+2. Enter your email address. You will be guided to the sign-in method your organization uses (for example, password or SSO).
+3. Complete authentication — via password, magic link, or your company identity provider.
 
-!!! info "Screenshot: WorkOS Login Screen"
-    A screenshot will be added here showing the WorkOS-powered login screen with the email entry field and SSO option.
+!!! info "Screenshot: Login screen"
+    A screenshot will be added here showing the Loupe Factory login screen with the email entry field and SSO option where applicable.
 
-    **Suggested image**: `assets/account-setup-workos-login.png`
+    **Suggested image**: `assets/account-setup-login.png`
 
 ### SSO / Enterprise Login
 

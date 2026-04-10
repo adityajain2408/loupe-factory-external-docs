@@ -22,7 +22,7 @@ Find quick answers to common questions below. For in-depth guidance, follow the 
 ## Account
 
 ??? question "How do I create an account?"
-    Sign up at [loupefactory.com](https://loupefactory.com). LoupeFactory uses WorkOS for authentication, so you can log in with your email or an existing SSO provider configured by your organization. See [Account Setup](getting-started/account-setup.md) for step-by-step instructions.
+    Sign up at [loupefactory.com](https://loupefactory.com). You can sign in with your work email and the method your organization uses—such as password, magic link, or single sign-on (SSO). See [Account Setup](getting-started/account-setup.md) for step-by-step instructions.
 
 ??? question "How do I reset my password?"
     On the login screen, click "Forgot password" and follow the instructions sent to your email. If your organization uses SSO, contact your IT administrator to reset credentials through your identity provider.

@@ -101,7 +101,7 @@ From the order detail page, you can create a shipment directly:
 1. Click **Create Shipment** on the order detail page.
 2. Enter the shipping address and select a carrier.
 3. Add package dimensions and weight if required.
-4. Click **Create** to generate a tracking number via the EasyPost integration.
+4. Click **Create** to generate a tracking number and label.
 
 The order status automatically updates to **Shipped** once the shipment is created. See [Shipment Tracking](shipment-tracking.md) for more details on managing shipments.
 

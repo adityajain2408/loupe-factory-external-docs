@@ -62,35 +62,171 @@
   line-height: 1.2;
 }
 
+.lf-hero__eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0 0 0.75rem;
+  opacity: 0.85;
+}
+
 .lf-hero__subtitle {
   font-size: 1.125rem;
   margin: 0 0 2rem;
   opacity: 0.9;
-  max-width: 600px;
+  max-width: 40rem;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.6;
+}
+
+.lf-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .lf-hero__cta {
   display: inline-block;
-  background: #ffffff;
-  color: var(--md-primary-fg-color);
   font-weight: 600;
-  padding: 0.75rem 2rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 0.375rem;
   text-decoration: none;
-  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
 }
 
-.lf-hero__cta:hover {
+.lf-hero__cta--primary {
+  background: #ffffff;
+  color: var(--md-primary-fg-color);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.lf-hero__cta--primary:hover {
   background: var(--md-default-bg-color--light, #f5f7fa);
   color: var(--md-primary-fg-color--dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.lf-hero__cta--secondary {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.65);
+}
+
+.lf-hero__cta--secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #ffffff;
+  color: #ffffff;
   transform: translateY(-2px);
 }
 
 /* ============================================================
    Landing page — Feature grid cards
    ============================================================ */
+/* ============================================================
+   Home — Documentation hub (section links)
+   ============================================================ */
+.lf-doc-hub {
+  margin: 0 0 1rem;
+}
+
+.lf-doc-hub__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .lf-doc-hub__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.lf-doc-hub__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.25rem 1.35rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+  background: var(--md-default-bg-color--light, #f5f7fa);
+  border: 1px solid var(--md-default-fg-color--lightest, rgba(0, 0, 0, 0.08));
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s ease, transform 0.15s ease, border-color 0.2s ease;
+}
+
+.lf-doc-hub__card:hover {
+  border-color: var(--md-primary-fg-color);
+  box-shadow: 0 6px 20px rgba(56, 116, 255, 0.12);
+  transform: translateY(-2px);
+  color: inherit;
+}
+
+[data-md-color-scheme="slate"] .lf-doc-hub__card {
+  background: var(--md-default-bg-color--light, #31374a);
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+[data-md-color-scheme="slate"] .lf-doc-hub__card:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+}
+
+.lf-doc-hub__icon {
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 0.15rem;
+}
+
+.lf-doc-hub__label {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+}
+
+.lf-doc-hub__text {
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--md-default-fg-color--light, #31374a);
+  margin: 0;
+}
+
+[data-md-color-scheme="slate"] .lf-doc-hub__text {
+  color: var(--md-default-fg-color--light, #f5f7fa);
+  opacity: 0.92;
+}
+
+/* Home — closing hint */
+.lf-home-footer {
+  margin: 2rem 0 1rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0.5rem;
+  background: var(--md-accent-fg-color--transparent);
+  border: 1px solid rgba(56, 116, 255, 0.2);
+}
+
+.lf-home-footer__text {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--md-default-fg-color, #141824);
+}
+
+[data-md-color-scheme="slate"] .lf-home-footer {
+  border-color: rgba(133, 169, 255, 0.25);
+}
+
+[data-md-color-scheme="slate"] .lf-home-footer__text {
+  color: var(--md-default-fg-color, #f5f7fa);
+}
+
 .lf-feature-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -137,6 +273,7 @@
 }
 
 .lf-feature-card__title {
+  display: block;
   font-size: 1rem;
   font-weight: 600;
   color: var(--md-primary-fg-color);
@@ -144,6 +281,7 @@
 }
 
 .lf-feature-card__desc {
+  display: block;
   font-size: 0.875rem;
   color: var(--md-default-fg-color--light, #31374a);
   margin: 0;

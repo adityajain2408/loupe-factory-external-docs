@@ -83,7 +83,7 @@ To configure your notification preferences:
 | Inventory Alerts | Low stock warnings and reorder reminders |
 | Order Updates | Status changes for customer orders |
 | Production Events | Stage completions and exception alerts |
-| Shipment Tracking | Delivery status updates from EasyPost |
+| Shipment Tracking | Delivery status updates and carrier notifications |
 | Billing & Credits | AI credit usage thresholds and invoice events |
 
 ## Next Steps

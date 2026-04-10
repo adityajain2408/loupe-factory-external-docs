@@ -1,6 +1,6 @@
 # Shipment Tracking
 
-LoupeFactory integrates with [EasyPost](https://www.easypost.com/) to give you real-time package tracking and delivery status for every shipment you create. This guide covers how to create shipments, connect them to orders, and monitor delivery progress from within the platform.
+Loupe Factory connects your orders and warehouse to major carriers so you can buy labels, track packages, and see delivery status in one place. This guide covers how to create shipments, connect them to orders, and monitor delivery progress from within the platform.
 
 ## Creating a Shipment
 
@@ -17,7 +17,7 @@ The most common workflow is to create a shipment from a confirmed order:
 5. Enter the package **weight** and **dimensions**.
 6. Click **Create Shipment**.
 
-LoupeFactory sends the shipment details to EasyPost, which returns a tracking number and a shipping label.
+Loupe Factory submits the shipment details to your connected carriers and returns a tracking number and shipping label.
 
 !!! info "Screenshot: Create Shipment Panel"
     A screenshot will be added here showing the Create Shipment panel on the order detail page, including the carrier selector, address fields, and package dimensions form.
@@ -39,28 +39,22 @@ You can also create a standalone shipment not tied to a specific order:
 
     **Suggested image**: `assets/shipment-new-form.png`
 
-## EasyPost Integration
+## How shipping works in Loupe Factory
 
-LoupeFactory uses EasyPost as its shipping carrier API. EasyPost connects to all major carriers and provides a unified interface for label generation and tracking.
+When you create a shipment, the platform validates addresses, retrieves available carrier services and rates, and purchases the label you confirm. A tracking number is stored on the shipment record, and status updates are synced as the carrier scans the package.
 
-### How It Works
+### Rate selection
 
-When you create a shipment in LoupeFactory:
+You can compare services (for example, ground versus express) and delivery estimates before purchasing a label. Your administrator controls which carriers and service levels are enabled for your organization.
 
-1. The platform sends the package details and addresses to EasyPost.
-2. EasyPost validates the address and returns available carrier rates.
-3. LoupeFactory selects the configured carrier and purchases the label.
-4. A tracking number is assigned and stored against the shipment record.
-5. EasyPost begins polling the carrier for tracking updates.
-
-!!! info "Screenshot: EasyPost Carrier Rates"
-    A screenshot will be added here showing the carrier rate comparison view returned by EasyPost, with available services and estimated delivery times.
+!!! info "Screenshot: Carrier rates"
+    A screenshot will be added here showing the carrier rate comparison view with available services and estimated delivery times.
 
     **Suggested image**: `assets/shipment-carrier-rates.png`
 
-### Supported Carriers
+### Supported shipping carriers
 
-EasyPost supports a wide range of carriers. Commonly used carriers in LoupeFactory include:
+Commonly used shipping carriers in Loupe Factory include:
 
 | Carrier | Domestic | International |
 |---------|----------|---------------|
@@ -69,9 +63,9 @@ EasyPost supports a wide range of carriers. Commonly used carriers in LoupeFacto
 | USPS | Yes | Limited |
 | DHL | No | Yes |
 
-Contact your LoupeFactory administrator to configure which carriers are available in your account.
+Contact your Loupe Factory administrator to configure which carriers are available in your account.
 
-### Downloading Shipping Labels
+### Downloading shipping labels
 
 After a shipment is created, you can download the shipping label directly from the shipment detail page:
 
@@ -84,11 +78,11 @@ After a shipment is created, you can download the shipping label directly from t
 
     **Suggested image**: `assets/shipment-detail-label.png`
 
-## Tracking Packages
+## Tracking packages
 
-Once a shipment is created and the package is in transit, LoupeFactory automatically fetches tracking updates from EasyPost.
+Once a shipment is created and the package is in transit, Loupe Factory keeps the tracking timeline up to date from carrier data.
 
-### Viewing Tracking Status
+### Viewing tracking status
 
 To view the current status of a shipment:
 
@@ -101,7 +95,7 @@ To view the current status of a shipment:
 
     **Suggested image**: `assets/shipment-list-status.png`
 
-### Delivery Status Values
+### Delivery status values
 
 Each shipment moves through the following statuses as it progresses:
 
@@ -119,9 +113,9 @@ Each shipment moves through the following statuses as it progresses:
 
     **Suggested image**: `assets/shipment-tracking-timeline.png`
 
-### Handling Delivery Exceptions
+### Handling delivery exceptions
 
-If a shipment enters **Exception** status, LoupeFactory displays an alert on the shipment detail page with the carrier's exception message. Common causes include:
+If a shipment enters **Exception** status, Loupe Factory displays an alert on the shipment detail page with the carrier's exception message. Common causes include:
 
 - Incorrect or incomplete delivery address
 - Recipient unavailable for signature
@@ -133,17 +127,17 @@ To resolve an exception:
 1. Open the shipment detail page.
 2. Review the exception message from the carrier.
 3. Contact the carrier directly using the tracking number to arrange re-delivery or correction.
-4. Update the shipment notes in LoupeFactory to record the resolution steps.
+4. Update the shipment notes in Loupe Factory to record the resolution steps.
 
 !!! warning
-    LoupeFactory cannot modify a shipment with the carrier after the label has been purchased. Address corrections must be handled directly with the carrier.
+    Loupe Factory cannot modify a shipment with the carrier after the label has been purchased. Address corrections must be handled directly with the carrier.
 
 !!! info "Screenshot: Shipment Exception Alert"
     A screenshot will be added here showing the exception alert banner on a shipment detail page with the carrier's exception message and the shipment notes field.
 
     **Suggested image**: `assets/shipment-exception-alert.png`
 
-## Linking Shipments to Orders
+## Linking shipments to orders
 
 Shipments created from an order are automatically linked. You can also link a standalone shipment to an order after the fact:
 
@@ -159,7 +153,7 @@ Once linked, the order status updates to **Shipped** and the tracking number app
 
     **Suggested image**: `assets/shipment-link-order.png`
 
-## Next Steps
+## Next steps
 
 - [Order Management](order-management.md) — Create and manage orders that generate shipments.
 - [Invoicing](invoicing.md) — Generate invoices linked to fulfilled orders.
