@@ -1,5 +1,6 @@
 site_name: Loupe Factory Docs
-site_description: Documentation for Loupe Factory platform and its features.
+site_description: >-
+  Loupe Factory is an AI-native operations platform for modern manufacturing and wholesale businesses. Guides for inventory, production, orders, shipments, billing, and more.
 site_url: https://docs.loupefactory.com
 site_author: Aditya Jain
 copyright: Copyright &copy; 2025 Loupe AI, LLC
@@ -70,7 +71,7 @@ theme:
 
   # Icon configuration
   icon:
-    repo: fontawesome/brands/github
+    repo: material/library
     edit: material/pencil
     view: material/eye
     previous: fontawesome/solid/angle-left
@@ -86,10 +87,6 @@ plugins:
       enabled: !ENV [ENABLE_GIT_PLUGINS, false]
       enable_creation_date: true
       type: timeago
-  - git-committers:
-      enabled: !ENV [ENABLE_GIT_PLUGINS, false]
-      repository: adityajain2408/loupe-factory-external-docs
-      branch: main
 
 # Customization
 extra_css:

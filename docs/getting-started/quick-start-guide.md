@@ -1,6 +1,6 @@
 # Quick Start Guide
 
-This guide walks you through the four essential steps to get up and running with LoupeFactory: creating your account, adding your first inventory item, setting up a production process, and placing your first order. By the end, you'll have a working foundation to manage your manufacturing or trade operations.
+This guide walks you through the four essential steps to get up and running with Loupe Factory: creating your account, adding your first inventory item, setting up a production process, and placing your first order. By the end, you'll have a working foundation to manage **manufacturing and wholesale** operations.
 
 ## Step 1: Create Your Account
 

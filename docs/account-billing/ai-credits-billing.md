@@ -1,10 +1,10 @@
 # AI Credits & Billing
 
-LoupeFactory uses an AI credits system to power its intelligent features — from automated production suggestions to smart inventory reordering. This page explains how credits work, what consumes them, how to top up your balance, and how to review your billing history.
+Loupe Factory uses an AI credits system to power its built-in intelligent features—from automated production suggestions to smart inventory reordering. This page explains how credits work, what consumes them, how to top up your balance, and how to review your billing history.
 
 ## Understanding the AI Credits System
 
-AI credits are the currency for LoupeFactory's AI-powered features. Each time you use an AI-assisted action, a small number of credits is deducted from your organization's balance. Credits are shared across all team members in your organization.
+AI credits are the currency for Loupe Factory's built-in AI capabilities. Each time you use an AI-assisted action, a small number of credits is deducted from your organization's balance. Credits are shared across all team members in your organization.
 
 Your current credit balance is always visible in the top navigation bar. When your balance runs low, LoupeFactory will notify you so you can purchase more before any disruption to your workflow.
 

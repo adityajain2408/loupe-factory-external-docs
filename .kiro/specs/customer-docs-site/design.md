@@ -2,7 +2,7 @@
 
 ## Overview
 
-This design describes the implementation of the LoupeFactory customer-facing documentation site built with MkDocs Material, deployed on Vercel at docs.loupefactory.com. The site serves as the primary resource for small and mid-size manufacturing and trade businesses using the LoupeFactory AI-powered operations platform.
+This design describes the implementation of the LoupeFactory customer-facing documentation site built with MkDocs Material, deployed on Vercel at docs.loupefactory.com. The site serves as the primary resource for small and mid-size manufacturing and wholesale organizations using the LoupeFactory AI-native operations platform.
 
 The implementation involves:
 - Rewriting `mkdocs.yml` to define the correct navigation structure, theme, plugins, and extensions
@@ -133,14 +133,14 @@ Additional CSS for:
 
 Uses MkDocs Material's `md_in_html` extension with `attr_list` for grid layouts. Structure:
 
-1. **Hero section**: Full-width block with tagline ("Streamline your manufacturing and trade operations with AI-powered tools"), a brief description, and a CTA button linking to `getting-started/quick-start-guide.md`
+1. **Hero section**: Full-width block with tagline aligned to the AI-native manufacturing and wholesale positioning, a brief description, and a CTA button linking to `getting-started/quick-start-guide.md`
 2. **Feature grid**: A 3×2 card grid using Material's grid syntax, each card linking to the relevant Platform Guide page:
    - Inventory Management
    - Production Tracking
    - Order Management
    - Shipment Tracking
    - Reporting & Analytics
-   - AI-Powered Operations
+   - Invoicing (or another module-level capability as product marketing dictates)
 3. **Getting Started steps**: A numbered 3-step section linking to Account Setup → Dashboard Overview → Quick Start Guide
 
 The landing page uses `template: home.html` or hides the sidebar/TOC via front matter (`hide: [navigation, toc]`) to achieve a clean landing layout.
@@ -211,7 +211,7 @@ This is a static site with no runtime data models. The "data" is:
 
 ### Content Structure
 
-```
+```text
 docs/
 ├── index.md                          # Landing page
 ├── faq.md                            # FAQ page

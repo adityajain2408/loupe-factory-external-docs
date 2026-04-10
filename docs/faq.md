@@ -6,16 +6,16 @@ Find quick answers to common questions below. For in-depth guidance, follow the 
 
 ## General
 
-??? question "What is LoupeFactory?"
-    LoupeFactory is an AI-powered operations platform designed for small and mid-size manufacturing and trade businesses. It brings inventory, production, orders, shipments, invoicing, and reporting into a single unified workspace.
+??? question "What is Loupe Factory?"
+    **Loupe Factory** is an **AI-native operations platform** for **modern manufacturing and wholesale businesses**. It connects inventory, production, customer orders, shipments, invoicing, and reporting in one place—so your team spends less time reconciling spreadsheets and more time running the operation.
 
     For a full overview of what the platform can do, see the [Platform Guide](platform-guide/index.md).
 
 ??? question "How do I get started?"
     The fastest way to get up and running is to follow the [Quick Start Guide](getting-started/quick-start-guide.md). It walks you through account creation, adding your first inventory item, setting up a production process, and placing your first order.
 
-??? question "What kinds of businesses is LoupeFactory built for?"
-    LoupeFactory is built for manufacturing and trade businesses that move physical goods—from make-to-order production to wholesale and distribution. If your business involves multi-stage production, inventory tracking, and order fulfillment, LoupeFactory is a good fit.
+??? question "What kinds of businesses is Loupe Factory built for?"
+    Loupe Factory is for organizations that **make or distribute physical products**—for example factories and workshops, as well as **wholesale** teams that hold stock and ship to customers. If you run multi-stage production, need dependable inventory control, and fulfill orders against that stock, the platform is designed for you.
 
 ---
 
@@ -52,11 +52,11 @@ Find quick answers to common questions below. For in-depth guidance, follow the 
 ??? question "How do I set up a production process?"
     Go to the **Production** module and create a new process. Define each stage, specify the inputs consumed and outputs produced at each stage, and set thresholds for waste, rejection, and scrap. See [Production Tracking](platform-guide/production-tracking.md) for a full guide.
 
-??? question "How does LoupeFactory track waste and scrap?"
-    At each production stage you can record the quantity of material that was rejected, scrapped, or lost as waste. LoupeFactory aggregates this data so you can monitor yield rates over time. See [Production Tracking](platform-guide/production-tracking.md#recording-waste-rejection-and-scrap) for details.
+??? question "How does Loupe Factory track waste and scrap?"
+    At each production stage you can record the quantity of material that was rejected, scrapped, or lost as waste. Loupe Factory aggregates this data so you can monitor yield rates over time. See [Production Tracking](platform-guide/production-tracking.md#recording-waste-rejection-and-scrap) for details.
 
 ??? question "Can I track multiple production stages for a single job?"
-    Yes. LoupeFactory supports multi-stage production workflows. Each stage can have its own inputs, outputs, and quality checkpoints. The [Production Tracking](platform-guide/production-tracking.md) guide explains how to define and manage stages.
+    Yes. Loupe Factory supports multi-stage production workflows. Each stage can have its own inputs, outputs, and quality checkpoints. The [Production Tracking](platform-guide/production-tracking.md) guide explains how to define and manage stages.
 
 ---
 
@@ -69,14 +69,14 @@ Find quick answers to common questions below. For in-depth guidance, follow the 
     Each order has a status that updates as it moves through fulfillment — from created, to in production, to shipped, to delivered. You can view all orders and filter by status in the Orders module. See [Order Management](platform-guide/order-management.md#tracking-order-status) for details.
 
 ??? question "Can I generate an invoice directly from an order?"
-    Yes. Once an order is ready to invoice, open the order and click **Generate Invoice**. LoupeFactory will pre-fill the invoice with the order details. See [Invoicing](platform-guide/invoicing.md) for more on managing and sending invoices.
+    Yes. Once an order is ready to invoice, open the order and click **Generate Invoice**. Loupe Factory will pre-fill the invoice with the order details. See [Invoicing](platform-guide/invoicing.md) for more on managing and sending invoices.
 
 ---
 
 ## Billing
 
 ??? question "What are AI credits?"
-    AI credits are the unit of consumption for LoupeFactory's AI-powered features, such as automated data extraction, smart suggestions, and analytics. Each AI action consumes a certain number of credits depending on its complexity.
+    AI credits are the unit of consumption for Loupe Factory's built-in AI capabilities, such as automated data extraction, smart suggestions, and analytics. Each AI action consumes a certain number of credits depending on its complexity.
 
     See [AI Credits & Billing](account-billing/ai-credits-billing.md) for a full breakdown of how credits are consumed.
 

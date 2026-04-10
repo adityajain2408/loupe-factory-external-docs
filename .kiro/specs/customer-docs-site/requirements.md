@@ -2,12 +2,12 @@
 
 ## Introduction
 
-LoupeFactory.com is an AI-powered operations SaaS platform for manufacturing and trade businesses. This documentation site serves as the primary customer-facing resource, helping small and mid-size manufacturing and trade businesses understand how to use the platform effectively. The site is built with MkDocs Material, deployed via Vercel, and must reflect the LoupeFactory brand identity through consistent theming and color usage.
+LoupeFactory.com is an AI-native operations SaaS platform for modern manufacturing and wholesale. This documentation site serves as the primary customer-facing resource, helping small and mid-size manufacturing and wholesale organizations understand how to use the platform effectively. The site is built with MkDocs Material, deployed via Vercel, and must reflect the LoupeFactory brand identity through consistent theming and color usage.
 
 ## Glossary
 
 - **Docs_Site**: The MkDocs Material-based customer-facing documentation website deployed at docs.loupefactory.com
-- **Customer**: A user of the LoupeFactory.com platform, typically a small or mid-size manufacturing or trade business operator
+- **Customer**: A user of the LoupeFactory.com platform, typically a small or mid-size manufacturing or wholesale operator
 - **Navigation_Structure**: The hierarchical page tree defined in mkdocs.yml that organizes documentation content into sections and pages
 - **Theme_Configuration**: The MkDocs Material theme settings including color palette, typography, and feature toggles defined in mkdocs.yml
 - **Content_Page**: A Markdown file within the docs/ directory that renders as a documentation page on the Docs_Site
@@ -51,7 +51,7 @@ LoupeFactory.com is an AI-powered operations SaaS platform for manufacturing and
 #### Acceptance Criteria
 
 1. THE Landing_Page SHALL display a hero section with the LoupeFactory tagline and a call-to-action button linking to the Quick Start Guide
-2. THE Landing_Page SHALL display a feature grid highlighting key platform capabilities: Inventory Management, Production Tracking, Order Management, Shipment Tracking, Reporting, and AI-Powered Operations
+2. THE Landing_Page SHALL display a feature grid highlighting key platform capabilities: Inventory Management, Production Tracking, Order Management, Shipment Tracking, Reporting, and Invoicing (or equivalent module-level highlights per product positioning)
 3. THE Landing_Page SHALL include a "Getting Started" section with step-by-step guidance linking to Account Setup, Dashboard Overview, and Quick Start Guide pages
 4. WHEN a Customer visits the Landing_Page, THE Docs_Site SHALL render the page with the LoupeFactory brand colors and typography
 
@@ -68,7 +68,7 @@ LoupeFactory.com is an AI-powered operations SaaS platform for manufacturing and
 
 ### Requirement 5: Platform Guide Content
 
-**User Story:** As a Customer, I want detailed guides for each platform module, so that I can effectively manage my manufacturing and trade operations.
+**User Story:** As a Customer, I want detailed guides for each platform module, so that I can effectively manage my manufacturing and wholesale operations.
 
 #### Acceptance Criteria
 
@@ -76,7 +76,7 @@ LoupeFactory.com is an AI-powered operations SaaS platform for manufacturing and
 2. THE Content_Page for Production Tracking SHALL explain multi-stage production processes including defining stages, tracking inputs and outputs, and recording waste, rejection, and scrap
 3. THE Content_Page for Order Management SHALL explain how to create, track, and fulfill customer orders
 4. THE Content_Page for Invoicing SHALL explain how to generate, send, and manage invoices linked to orders
-5. THE Content_Page for Shipment Tracking SHALL explain how to create shipments, track packages via EasyPost integration, and view delivery status
+5. THE Content_Page for Shipment Tracking SHALL explain how to create shipments, track packages, and view delivery status
 6. THE Content_Page for Customer & Supplier Management SHALL explain how to add and manage customer and supplier records and their associated transactions
 7. THE Content_Page for Employee Management SHALL explain how to add staff members, assign roles, and manage permissions
 8. THE Content_Page for Reporting & Analytics SHALL explain available reports, data visualizations, and how to export data
