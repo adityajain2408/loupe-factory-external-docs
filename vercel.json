@@ -4,7 +4,7 @@
       "ENABLE_FILE_SYSTEM_API": "1"
     }
   },
-  "buildCommand": "ENABLE_GIT_PLUGINS=true pip install --break-system-packages -r requirements.txt && ENABLE_GIT_PLUGINS=true mkdocs build",
+  "buildCommand": "sh ./scripts/vercel-build.sh",
   "outputDirectory": "site",
   "framework": null
 }

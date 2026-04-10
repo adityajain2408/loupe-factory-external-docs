@@ -51,7 +51,9 @@ Loupe-Factory-external-docs/
 ├── overrides/            # Jinja templates extending Material (e.g. main.html)
 ├── mkdocs.yml            # Site metadata, nav, theme, plugins, extensions
 ├── requirements.txt      # Python deps for MkDocs and plugins
-├── vercel.json           # Vercel build: pip install + mkdocs build → site/
+├── vercel.json           # Vercel build entrypoint for the docs site
+├── scripts/
+│   └── vercel-build.sh   # Ensures Vercel builds from the repo root
 └── site/                 # Generated static HTML (after build; not hand-edited)
 ```
 
@@ -64,9 +66,11 @@ Loupe-Factory-external-docs/
 
 ### Deployment (Vercel)
 
-- `vercel.json` runs `pip install … -r requirements.txt` then `mkdocs build`,
-  with `ENABLE_GIT_PLUGINS=true` so optional git-based **last updated** metadata
-  can run when git history is available.
+- `vercel.json` invokes `scripts/vercel-build.sh`, which changes into the docs
+  repository root before running `pip install -r requirements.txt` and
+  `mkdocs build`.
+- The build keeps `ENABLE_GIT_PLUGINS=true` so optional git-based **last
+  updated** metadata can run when git history is available.
 - Published output directory: `site`.
 
 ### Plugins (see `mkdocs.yml`)
