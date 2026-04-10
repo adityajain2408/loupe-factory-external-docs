@@ -1,23 +1,36 @@
 # Loupe Factory — Public documentation site
 
-This repository contains the **customer-facing documentation** for [Loupe Factory](https://loupefactory.com): a static site generated with [MkDocs](https://www.mkdocs.org/) and the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme. It is intentionally **separate** from the main Loupe Factory application codebase (Django monolith, private product repo). Only user-relevant product guidance lives here—not internal implementation or vendor-specific backend details.
+This repository contains the **customer-facing documentation** for [Loupe
+Factory](https://loupefactory.com): a static site generated with
+[MkDocs](https://www.mkdocs.org/) and the [Material for
+MkDocs](https://squidfunk.github.io/mkdocs-material/) theme. It is intentionally
+**separate** from the main Loupe Factory application codebase (Django monolith,
+private product repo). Only user-relevant product guidance lives here—not
+internal implementation or vendor-specific backend details.
 
 ## Live site
 
-[docs.loupefactory.com](https://docs.loupefactory.com) (see `site_url` in `mkdocs.yml`).
+[docs.loupefactory.com](https://docs.loupefactory.com) (see `site_url` in
+`mkdocs.yml`).
 
 ---
 
 ## What is Loupe Factory?
 
-Loupe Factory is an **AI-native operations platform** for **modern manufacturing and wholesale**. It brings day-to-day work into one workspace: **inventory**, **production tracking**, **orders**, **invoicing**, **shipments**, **customers and suppliers**, **team access**, and **reporting**—with built-in AI where it removes busywork. The live product runs on the main application deployment (e.g. `app.loupefactory.com`); this repository holds customer-facing documentation only.
+Loupe Factory is an **AI-native operations platform** for **modern manufacturing
+and wholesale**. It brings day-to-day work into one workspace: **inventory**,
+**production tracking**, **orders**, **invoicing**, **shipments**, **customers
+and suppliers**, **team access**, and **reporting**—with built-in AI where it
+removes busywork. The live product runs on the main application deployment (e.g.
+`app.loupefactory.com`); this repository holds customer-facing documentation
+only.
 
 ---
 
 ## What this project is (and is not)
 
 | In scope | Out of scope |
-|----------|----------------|
+| --- | --- |
 | Markdown under `docs/` (guides, FAQ, billing help) | Application source code, APIs, or database schemas |
 | Theme overrides, CSS, and MkDocs configuration | Production infrastructure runbooks for the Django app |
 | Build output in `site/` (generated; deploy from CI) | Private or internal-only technical wikis |
@@ -45,19 +58,23 @@ Loupe-Factory-external-docs/
 ### Build pipeline
 
 1. **Source:** Markdown + assets in `docs/`.
-2. **Generator:** MkDocs reads `mkdocs.yml`, applies Material theme, minification, and optional git metadata plugins.
+2. **Generator:** MkDocs reads `mkdocs.yml`, applies Material theme,
+   minification, and optional git metadata plugins.
 3. **Output:** Static files under `site/`, suitable for any static host.
 
 ### Deployment (Vercel)
 
-- `vercel.json` runs `pip install … -r requirements.txt` then `mkdocs build`, with `ENABLE_GIT_PLUGINS=true` so optional git-based **last updated** metadata can run when git history is available.
+- `vercel.json` runs `pip install … -r requirements.txt` then `mkdocs build`,
+  with `ENABLE_GIT_PLUGINS=true` so optional git-based **last updated** metadata
+  can run when git history is available.
 - Published output directory: `site`.
 
 ### Plugins (see `mkdocs.yml`)
 
 - **search** — Full-text search index.
 - **minify** — HTML minification for production builds.
-- **git-revision-date-localized** — Optional “last updated” timestamps; gated by `ENABLE_GIT_PLUGINS` when git metadata is unavailable locally.
+- **git-revision-date-localized** — Optional “last updated” timestamps; gated by
+  `ENABLE_GIT_PLUGINS` when git metadata is unavailable locally.
 
 ---
 
@@ -75,7 +92,8 @@ pip install -r requirements.txt
 mkdocs serve
 ```
 
-Open the URL MkDocs prints (usually `http://127.0.0.1:8000`) to preview with live reload.
+Open the URL MkDocs prints (usually `http://127.0.0.1:8000`) to preview with
+live reload.
 
 ### Strict build (recommended before deploy)
 
@@ -83,7 +101,8 @@ Open the URL MkDocs prints (usually `http://127.0.0.1:8000`) to preview with liv
 mkdocs build --strict
 ```
 
-To match production plugin behavior locally (if you want last-edited dates from git):
+To match production plugin behavior locally (if you want last-edited dates from
+git):
 
 ```bash
 ENABLE_GIT_PLUGINS=true mkdocs build --strict
@@ -93,11 +112,15 @@ ENABLE_GIT_PLUGINS=true mkdocs build --strict
 
 ## Content conventions
 
-- **Audience:** Loupe Factory customers and admins using the product—not engineers integrating private APIs.
-- **Tone:** Clear, task-oriented guides; the home page uses shared classes in `docs/stylesheets/extra.css` for layout.
-- **Assets:** Prefer `docs/assets/` for images and icons so they are versioned with the docs; favicons live under `docs/assets/images/`.
+- **Audience:** Loupe Factory customers and admins using the product—not
+  engineers integrating private APIs.
+- **Tone:** Clear, task-oriented guides; the home page uses shared classes in
+  `docs/stylesheets/extra.css` for layout.
+- **Assets:** Prefer `docs/assets/` for images and icons so they are versioned
+  with the docs; favicons live under `docs/assets/images/`.
 
-For internal product engineering details, use the main application codebase and its maintainer documentation—not this docs site.
+For internal product engineering details, use the main application codebase and
+its maintainer documentation—not this docs site.
 
 ---
 
@@ -105,10 +128,12 @@ For internal product engineering details, use the main application codebase and 
 
 - **Product:** [loupefactory.com](https://loupefactory.com)
 - **Docs (canonical):** [docs.loupefactory.com](https://docs.loupefactory.com)
-- **Theme docs:** [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+- **Theme docs:** [Material for
+  MkDocs](https://squidfunk.github.io/mkdocs-material/)
 
 ---
 
 ## License / copyright
 
-Site copyright and attribution are configured in `mkdocs.yml` (`copyright`, `site_author`). Refer to your organization’s policy for repository licensing.
+Site copyright and attribution are configured in `mkdocs.yml` (`copyright`,
+`site_author`). Refer to your organization’s policy for repository licensing.

@@ -1,18 +1,31 @@
 # Platform Guide
 
-The Platform Guide covers every module in LoupeFactory — from managing your inventory and tracking production to handling orders, invoices, shipments, and your team. Use this section as your reference for day-to-day operations on the platform.
+The Platform Guide covers every module in LoupeFactory — from managing your
+inventory and tracking production to handling orders, invoices, shipments, and
+your team. Use this section as your reference for day-to-day operations on the
+platform.
 
 ## In This Section
 
-- [Inventory Management](inventory-management.md) — Add, edit, search, and categorize your inventory items.
-- [Production Tracking](production-tracking.md) — Define multi-stage production processes, track inputs and outputs, and record waste, rejection, and scrap.
-- [Order Management](order-management.md) — Create, track, and fulfill customer orders.
-- [Invoicing](invoicing.md) — Generate, send, and manage invoices linked to your orders.
-- [Shipment Tracking](shipment-tracking.md) — Create shipments, track packages, and view delivery status.
-- [Customer & Supplier Management](customer-supplier-management.md) — Add and manage customer and supplier records and their associated transactions.
-- [Employee Management](employee-management.md) — Add staff members, assign roles, and manage permissions.
-- [Reporting & Analytics](reporting-analytics.md) — Explore available reports, data visualizations, and export options.
+- [Inventory Management](inventory-management.md) — Add, edit, search, and
+  categorize your inventory items.
+- [Production Tracking](production-tracking.md) — Define multi-stage production
+  processes, track inputs and outputs, and record waste, rejection, and scrap.
+- [Order Management](order-management.md) — Create, track, and fulfill customer
+  orders.
+- [Invoicing](invoicing.md) — Generate, send, and manage invoices linked to your
+  orders.
+- [Shipment Tracking](shipment-tracking.md) — Create shipments, track packages,
+  and view delivery status.
+- [Customer & Supplier Management](customer-supplier-management.md) — Add and
+  manage customer and supplier records and their associated transactions.
+- [Employee Management](employee-management.md) — Add staff members, assign
+  roles, and manage permissions.
+- [Reporting & Analytics](reporting-analytics.md) — Explore available reports,
+  data visualizations, and export options.
 
 ## Next Steps
 
-If you're new to LoupeFactory, start with the [Getting Started](../getting-started/index.md) section before diving into the platform modules.
+If you're new to LoupeFactory, start with the [Getting
+Started](../getting-started/index.md) section before diving into the platform
+modules.

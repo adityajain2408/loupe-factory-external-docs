@@ -1,3 +1,21 @@
 # MkDocs pages often start with YAML front matter before the first heading (MD041).
 # See https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md041
 MD041: false
+
+# Home page and Material `md_in_html` use structured HTML alongside Markdown.
+MD033:
+  allowed_elements:
+    - a
+    - div
+    - li
+    - p
+    - span
+    - strong
+    - ul
+
+# Prefer readable line breaks in prose; exclude regions where reflow is awkward.
+MD013:
+  line_length: 80
+  code_blocks: false
+  tables: false
+  headings: false
