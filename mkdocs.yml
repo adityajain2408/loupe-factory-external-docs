@@ -11,7 +11,7 @@ theme:
   custom_dir: overrides
   language: en
   favicon: assets/images/favicon.ico
-  logo: assets/images/favicon.png
+  logo: assets/images/favicon-32x32.png
 
   # Color palette matching Phoenix theme
   palette:

@@ -24,11 +24,11 @@ to export raw data for use in external tools.
 Inventory reports help you monitor stock levels, track item movement, and
 identify low-stock situations before they affect operations.
 
-- **Stock Summary** — Current quantity on hand for all inventory items, grouped
+- **Stock Summary**: Current quantity on hand for all inventory items, grouped
   by category.
-- **Stock Movement** — A log of all stock changes over a selected date range,
+- **Stock Movement**: A log of all stock changes over a selected date range,
   including production inputs, manual adjustments, and order allocations.
-- **Low Stock Alerts** — Items that have fallen below their reorder threshold.
+- **Low Stock Alerts**: Items that have fallen below their reorder threshold.
 
 !!! info "Screenshot: Inventory Stock Summary Report"
     A screenshot will be added here showing the Stock Summary report table with
@@ -42,11 +42,11 @@ identify low-stock situations before they affect operations.
 Production reports give you visibility into throughput, waste, and stage-level
 performance across your manufacturing processes.
 
-- **Production Summary** — Total inputs, outputs, waste, and rejection counts
+- **Production Summary**: Total inputs, outputs, waste, and rejection counts
   per production process over a selected period.
-- **Stage Performance** — Breakdown of time and material usage at each stage
+- **Stage Performance**: Breakdown of time and material usage at each stage
   within a process.
-- **Waste & Scrap Log** — Detailed record of all waste, rejection, and scrap
+- **Waste & Scrap Log**: Detailed record of all waste, rejection, and scrap
   events with timestamps and responsible operators.
 
 !!! info "Screenshot: Production Summary Report"
@@ -60,10 +60,10 @@ performance across your manufacturing processes.
 
 Order reports track sales activity, fulfillment rates, and revenue over time.
 
-- **Order Summary** — Total orders created, fulfilled, and pending within a date
+- **Order Summary**: Total orders created, fulfilled, and pending within a date
   range.
-- **Revenue by Customer** — Breakdown of order value grouped by customer.
-- **Fulfillment Rate** — Percentage of orders fulfilled on time versus delayed.
+- **Revenue by Customer**: Breakdown of order value grouped by customer.
+- **Fulfillment Rate**: Percentage of orders fulfilled on time versus delayed.
 
 !!! info "Screenshot: Order Summary Report"
     A screenshot will be added here showing the Order Summary report with status
@@ -75,9 +75,9 @@ Order reports track sales activity, fulfillment rates, and revenue over time.
 
 Shipment reports help you monitor delivery performance and carrier usage.
 
-- **Shipment Status Summary** — Count of shipments by status: In Transit,
+- **Shipment Status Summary**: Count of shipments by status: In Transit,
   Delivered, and Exception.
-- **Carrier Performance** — Delivery success rates and average transit times
+- **Carrier Performance**: Delivery success rates and average transit times
   grouped by carrier.
 
 !!! info "Screenshot: Shipment Status Summary Report"
@@ -91,9 +91,9 @@ Shipment reports help you monitor delivery performance and carrier usage.
 Financial reports consolidate invoice and payment data to give you a picture of
 your receivables.
 
-- **Invoice Summary** — Total invoiced amount, amount paid, and outstanding
+- **Invoice Summary**: Total invoiced amount, amount paid, and outstanding
   balance for a selected period.
-- **Aging Report** — Outstanding invoices grouped by how long they have been
+- **Aging Report**: Outstanding invoices grouped by how long they have been
   unpaid (0–30 days, 31–60 days, 60+ days).
 
 !!! info "Screenshot: Invoice Aging Report"
@@ -107,11 +107,11 @@ your receivables.
 Most reports include one or more charts to help you spot trends at a glance.
 LoupeFactory uses the following chart types:
 
-- **Line charts** — Used for time-series data such as revenue over time or
+- **Line charts**: Used for time-series data such as revenue over time or
   production output per week.
-- **Bar charts** — Used for comparisons across categories, such as order volume
+- **Bar charts**: Used for comparisons across categories, such as order volume
   by customer or waste by production stage.
-- **Pie/donut charts** — Used for proportional breakdowns, such as shipment
+- **Pie/donut charts**: Used for proportional breakdowns, such as shipment
   status distribution or stock by category.
 
 !!! info "Screenshot: Report Chart Examples"
@@ -168,9 +168,9 @@ Additional export formats may be added in future releases.
 
 ## Next Steps
 
-- [Inventory Management](inventory-management.md) — Manage the stock data that
+- [Inventory Management](inventory-management.md): Manage the stock data that
   feeds inventory reports.
-- [Production Tracking](production-tracking.md) — Review production processes
+- [Production Tracking](production-tracking.md): Review production processes
   that appear in production reports.
-- [Invoicing](invoicing.md) — Understand how invoices are generated and tracked
+- [Invoicing](invoicing.md): Understand how invoices are generated and tracked
   in financial reports.

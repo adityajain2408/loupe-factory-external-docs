@@ -8,11 +8,11 @@ displayed, and how to navigate to each platform module.
 
 The dashboard is divided into three main areas:
 
-- **Top navigation bar** — access your organization switcher, notifications, and
+- **Top navigation bar**: access your organization switcher, notifications, and
   account settings.
-- **Left sidebar** — the primary navigation menu linking to each platform
+- **Left sidebar**: the primary navigation menu linking to each platform
   module.
-- **Main content area** — displays summary cards, key metrics, and recent
+- **Main content area**: displays summary cards, key metrics, and recent
   activity feeds.
 
 !!! info "Screenshot: Dashboard Overview"
@@ -29,24 +29,24 @@ module for more detail.
 
 ### Inventory
 
-- **Total SKUs** — the number of distinct inventory items currently tracked.
-- **Low Stock Alerts** — items that have fallen below their reorder threshold.
+- **Total SKUs**: the number of distinct inventory items currently tracked.
+- **Low Stock Alerts**: items that have fallen below their reorder threshold.
 
 ### Production
 
-- **Active Production Runs** — processes currently in progress across all
+- **Active Production Runs**: processes currently in progress across all
   stages.
-- **Completed Today** — production runs finished in the current day.
+- **Completed Today**: production runs finished in the current day.
 
 ### Orders
 
-- **Open Orders** — customer orders that have not yet been fulfilled.
-- **Orders Due Today** — orders with a fulfillment deadline of today.
+- **Open Orders**: customer orders that have not yet been fulfilled.
+- **Orders Due Today**: orders with a fulfillment deadline of today.
 
 ### Shipments
 
-- **In Transit** — shipments currently on their way to customers.
-- **Delivered Today** — shipments confirmed as delivered in the current day.
+- **In Transit**: shipments currently on their way to customers.
+- **Delivered Today**: shipments confirmed as delivered in the current day.
 
 !!! info "Screenshot: Key Metrics Cards"
     A screenshot will be added here showing the metric summary cards for
@@ -57,7 +57,7 @@ module for more detail.
 ## Recent Activity Feed
 
 Below the metrics cards, the **Recent Activity** feed shows a chronological log
-of events across your organization — new orders placed, production stage
+of events across your organization: new orders placed, production stage
 completions, shipment status updates, and inventory adjustments. Each entry
 links directly to the relevant record.
 
@@ -91,9 +91,9 @@ area of the platform:
 
 ## Next Steps
 
-- [Quick Start Guide](quick-start-guide.md) — follow a step-by-step walkthrough
+- [Quick Start Guide](quick-start-guide.md): follow a step-by-step walkthrough
   to add inventory, create a production process, and place your first order.
-- [Inventory Management](../platform-guide/inventory-management.md) — start
+- [Inventory Management](../platform-guide/inventory-management.md): start
   building your inventory catalog.
-- [Managing Your Account](../account-billing/managing-your-account.md) — update
+- [Managing Your Account](../account-billing/managing-your-account.md): update
   your profile and organization settings.

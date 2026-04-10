@@ -11,7 +11,7 @@ The AI-native operations platform for modern manufacturing and wholesale busines
 </p>
 <p class="lf-hero__subtitle">
 Bring inventory, production, orders, deliveries, invoicing, and reporting into
-one workspace—so everyone sees the same live picture of the business, with
+one workspace, so everyone sees the same live picture of the business, with
 built-in AI wherever it removes busywork. Built for teams that make or
 distribute physical products anywhere in the world.
 </p>
@@ -107,7 +107,7 @@ distribute physical products anywhere in the world.
 <span class="lf-feature-card__title">Shipment tracking</span>
 <span class="lf-feature-card__desc"
   >Buy labels, track packages, and keep delivery status aligned with your
-  orders—without leaving the app.</span
+  orders, without leaving the app.</span
 >
 </a>
 
@@ -184,7 +184,7 @@ distribute physical products anywhere in the world.
 <span class="lf-step__content" markdown>
 <span class="lf-step__title">Complete the quick start</span>
 <span class="lf-step__desc"
-  >Walk through a realistic flow—inventory, production, and an order—so you
+  >Walk through a realistic flow (inventory, production, and an order) so you
   have context for the rest of the docs.</span
 >
 </span>

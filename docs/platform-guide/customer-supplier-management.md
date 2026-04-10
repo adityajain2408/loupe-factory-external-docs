@@ -80,9 +80,9 @@ activity linked to that contact.
 
 The **Transactions** tab on a customer record displays:
 
-- **Orders** — all orders placed by this customer, with status and total value.
-- **Invoices** — invoices generated for this customer, including payment status.
-- **Shipments** — outbound shipments linked to this customer's orders.
+- **Orders**: all orders placed by this customer, with status and total value.
+- **Invoices**: invoices generated for this customer, including payment status.
+- **Shipments**: outbound shipments linked to this customer's orders.
 
 !!! info "Screenshot: Customer Transactions Tab"
     A screenshot will be added here showing the Transactions tab on a customer
@@ -94,9 +94,9 @@ The **Transactions** tab on a customer record displays:
 
 The **Transactions** tab on a supplier record displays:
 
-- **Purchase Orders** — orders placed with this supplier, with status and total
+- **Purchase Orders**: orders placed with this supplier, with status and total
   value.
-- **Inventory Receipts** — stock received from this supplier, linked to purchase
+- **Inventory Receipts**: stock received from this supplier, linked to purchase
   orders.
 
 !!! info "Screenshot: Supplier Transactions Tab"
@@ -124,11 +124,11 @@ name, email, or tag. You can also filter by status (Active / Inactive) using the
 
 ## Next Steps
 
-- [Order Management](order-management.md) — Learn how to create and track orders
+- [Order Management](order-management.md): Learn how to create and track orders
   linked to your customers.
-- [Invoicing](invoicing.md) — Generate and send invoices tied to customer
+- [Invoicing](invoicing.md): Generate and send invoices tied to customer
   orders.
-- [Inventory Management](inventory-management.md) — Manage the stock you source
+- [Inventory Management](inventory-management.md): Manage the stock you source
   from suppliers.
-- [Reporting & Analytics](reporting-analytics.md) — View customer and supplier
+- [Reporting & Analytics](reporting-analytics.md): View customer and supplier
   activity reports.

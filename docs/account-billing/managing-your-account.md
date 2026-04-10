@@ -5,7 +5,7 @@ LoupeFactory works the way you need it to.
 
 ## Updating Your Profile Information
 
-Your profile holds your personal details — name, email address, and display
+Your profile holds your personal details: name, email address, and display
 preferences. Keeping this information current ensures your teammates can
 identify you and that system notifications reach the right inbox.
 
@@ -29,7 +29,7 @@ To update your profile:
 
 ## Managing Organization Settings
 
-Organization settings control how your LoupeFactory workspace is configured —
+Organization settings control how your LoupeFactory workspace is configured,
 including your business name, timezone, currency, and team membership.
 
 ### General Organization Details
@@ -39,7 +39,7 @@ including your business name, timezone, currency, and team membership.
    Currency**.
 3. Click **Save** to apply changes.
 
-!!! info "Screenshot: Organization Settings — General tab"
+!!! info "Screenshot: Organization Settings: General tab"
     A screenshot will be added here showing the Organization Settings page with
     fields for Organization Name, Industry, Timezone, and Default Currency.
 
@@ -75,7 +75,7 @@ Management](../platform-guide/employee-management.md).
 
 ## Configuring Notification Preferences
 
-LoupeFactory can notify you about key events — such as low inventory alerts,
+LoupeFactory can notify you about key events, such as low inventory alerts,
 order status changes, and production updates. You control which notifications
 you receive and how they are delivered.
 
@@ -105,9 +105,9 @@ To configure your notification preferences:
 
 ## Next Steps
 
-- [AI Credits & Billing](ai-credits-billing.md) — Understand how AI credits work
+- [AI Credits & Billing](ai-credits-billing.md): Understand how AI credits work
   and manage your subscription
-- [Employee Management](../platform-guide/employee-management.md) — Assign roles
+- [Employee Management](../platform-guide/employee-management.md): Assign roles
   and manage team permissions
-- [Dashboard Overview](../getting-started/dashboard-overview.md) — Navigate the
+- [Dashboard Overview](../getting-started/dashboard-overview.md): Navigate the
   main platform interface

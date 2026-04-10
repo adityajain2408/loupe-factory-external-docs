@@ -1,5 +1,5 @@
 /* ============================================================
-   Brand tokens — Light mode
+   Brand tokens: Light mode
    ============================================================ */
 [data-md-color-scheme="default"] {
   --md-primary-fg-color: #3874ff;
@@ -16,7 +16,7 @@
 }
 
 /* ============================================================
-   Brand tokens — Dark mode
+   Brand tokens: Dark mode
    ============================================================ */
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color: #3874ff;
@@ -44,7 +44,7 @@
 }
 
 /* ============================================================
-   Landing page — Hero section
+   Landing page: Hero section
    ============================================================ */
 .lf-hero {
   background: linear-gradient(135deg, var(--md-primary-fg-color--dark) 0%, var(--md-primary-fg-color) 100%);
@@ -125,10 +125,10 @@
 }
 
 /* ============================================================
-   Landing page — Feature grid cards
+   Landing page: Feature grid cards
    ============================================================ */
 /* ============================================================
-   Home — Documentation hub (section links)
+   Home: Documentation hub (section links)
    ============================================================ */
 .lf-doc-hub {
   margin: 0 0 1rem;
@@ -203,7 +203,7 @@
   opacity: 0.92;
 }
 
-/* Home — closing hint (callout aligned with steps / hub cards) */
+/* Home: closing hint (callout aligned with steps / hub cards) */
 .lf-home-footer {
   --lf-footer-accent: var(--md-primary-fg-color);
   margin: 1.75rem 0 1rem;
@@ -346,7 +346,7 @@
 }
 
 /* ============================================================
-   Landing page — Getting started steps
+   Landing page: Getting started steps
    ============================================================ */
 .lf-steps {
   padding: 2.25rem 0 0.5rem;

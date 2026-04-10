@@ -7,9 +7,9 @@ history.
 
 ## In This Section
 
-- [Managing Your Account](managing-your-account.md) — Update your profile,
+- [Managing Your Account](managing-your-account.md): Update your profile,
   manage organization settings, and configure notification preferences.
-- [AI Credits & Billing](ai-credits-billing.md) — Learn how AI credits are
+- [AI Credits & Billing](ai-credits-billing.md): Learn how AI credits are
   consumed, how to purchase additional credits, and how to view your billing
   history.
 

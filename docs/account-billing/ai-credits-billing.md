@@ -1,7 +1,7 @@
 # AI Credits & Billing
 
 Loupe Factory uses an AI credits system to power its built-in intelligent
-features—from automated production suggestions to smart inventory reordering.
+features, from automated production suggestions to smart inventory reordering.
 This page explains how credits work, what consumes them, how to top up your
 balance, and how to review your billing history.
 
@@ -34,7 +34,7 @@ purchase separately are retained until used.
 | Starter | 500 credits | No |
 | Growth | 2,000 credits | No |
 | Professional | 10,000 credits | No |
-| Purchased top-ups | As purchased | Yes — never expire |
+| Purchased top-ups | As purchased | Yes: never expire |
 
 ## How Credits Are Consumed
 
@@ -120,11 +120,11 @@ To view your billing history:
 
 Each invoice includes:
 
-- **Billing period** — the date range covered by the charge
-- **Subscription plan** — your current plan and its base cost
-- **Credit purchases** — any top-up bundles purchased during the period
-- **Tax** — applicable taxes based on your billing address
-- **Total charged** — the final amount billed to your payment method
+- **Billing period**: the date range covered by the charge
+- **Subscription plan**: your current plan and its base cost
+- **Credit purchases**: any top-up bundles purchased during the period
+- **Tax**: applicable taxes based on your billing address
+- **Total charged**: the final amount billed to your payment method
 
 !!! info "Screenshot: Invoice detail view"
     A screenshot will be added here showing a sample invoice detail page with
@@ -150,8 +150,8 @@ will reduce your monthly credit allocation from that point forward.
 
 ## Next Steps
 
-- [Managing Your Account](managing-your-account.md) — Update your profile and
+- [Managing Your Account](managing-your-account.md): Update your profile and
   organization settings
-- [Reporting & Analytics](../platform-guide/reporting-analytics.md) — Track AI
+- [Reporting & Analytics](../platform-guide/reporting-analytics.md): Track AI
   usage trends alongside your operational data
-- [FAQ — Billing](../faq.md#billing) — Quick answers to common billing questions
+- [FAQ: Billing](../faq.md#billing): Quick answers to common billing questions

@@ -8,7 +8,7 @@ rejection, and scrap.
 ## Overview of Multi-Stage Production
 
 A production process in LoupeFactory is made up of one or more sequential
-stages. Each stage represents a distinct step in your workflow — for example,
+stages. Each stage represents a distinct step in your workflow: for example,
 receiving, fabrication or assembly, finishing, and quality inspection. Tracking
 each stage separately gives you full visibility into where materials are at any
 point in time and where losses occur.
@@ -152,9 +152,9 @@ inputs, outputs, and recorded losses.
 
 ## Next Steps
 
-- [Inventory Management](inventory-management.md) — Understand how inventory
+- [Inventory Management](inventory-management.md): Understand how inventory
   items are linked to production inputs and outputs.
-- [Order Management](order-management.md) — See how finished production outputs
+- [Order Management](order-management.md): See how finished production outputs
   are allocated to customer orders.
-- [Reporting & Analytics](reporting-analytics.md) — View production efficiency
+- [Reporting & Analytics](reporting-analytics.md): View production efficiency
   reports and export loss data.

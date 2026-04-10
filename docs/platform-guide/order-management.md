@@ -1,9 +1,7 @@
 # Order Management
 
 LoupeFactory's order management module lets you create, track, and fulfill
-customer orders from a single place. This guide covers the full order lifecycle
-— from placing a new order to marking it as fulfilled and linking it to invoices
-and shipments.
+customer orders from a single place. This guide covers the full order lifecycle, from placing a new order through marking it as fulfilled and linking it to invoices and shipments.
 
 ## Creating an Order
 
@@ -169,11 +167,11 @@ stock.
 
 ## Next Steps
 
-- [Invoicing](invoicing.md) — Generate and send invoices linked to your
+- [Invoicing](invoicing.md): Generate and send invoices linked to your
   confirmed orders.
-- [Shipment Tracking](shipment-tracking.md) — Track packages and view delivery
+- [Shipment Tracking](shipment-tracking.md): Track packages and view delivery
   status for shipped orders.
-- [Inventory Management](inventory-management.md) — Understand how order
+- [Inventory Management](inventory-management.md): Understand how order
   confirmation affects inventory allocation.
-- [Reporting & Analytics](reporting-analytics.md) — View order reports and
+- [Reporting & Analytics](reporting-analytics.md): View order reports and
   export order data.

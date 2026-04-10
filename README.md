@@ -1,11 +1,11 @@
-# Loupe Factory — Public documentation site
+# Loupe Factory: Public documentation site
 
 This repository contains the **customer-facing documentation** for [Loupe
 Factory](https://loupefactory.com): a static site generated with
 [MkDocs](https://www.mkdocs.org/) and the [Material for
 MkDocs](https://squidfunk.github.io/mkdocs-material/) theme. It is intentionally
 **separate** from the main Loupe Factory application codebase (Django monolith,
-private product repo). Only user-relevant product guidance lives here—not
+private product repo). Only user-relevant product guidance lives here, not
 internal implementation or vendor-specific backend details.
 
 ## Live site
@@ -20,7 +20,7 @@ internal implementation or vendor-specific backend details.
 Loupe Factory is an **AI-native operations platform** for **modern manufacturing
 and wholesale**. It brings day-to-day work into one workspace: **inventory**,
 **production tracking**, **orders**, **invoicing**, **shipments**, **customers
-and suppliers**, **team access**, and **reporting**—with built-in AI where it
+and suppliers**, **team access**, and **reporting**, with built-in AI where it
 removes busywork. The live product runs on the main application deployment (e.g.
 `app.loupefactory.com`); this repository holds customer-facing documentation
 only.
@@ -71,9 +71,9 @@ Loupe-Factory-external-docs/
 
 ### Plugins (see `mkdocs.yml`)
 
-- **search** — Full-text search index.
-- **minify** — HTML minification for production builds.
-- **git-revision-date-localized** — Optional “last updated” timestamps; gated by
+- **search**: Full-text search index.
+- **minify**: HTML minification for production builds.
+- **git-revision-date-localized**: Optional “last updated” timestamps; gated by
   `ENABLE_GIT_PLUGINS` when git metadata is unavailable locally.
 
 ---
@@ -112,7 +112,7 @@ ENABLE_GIT_PLUGINS=true mkdocs build --strict
 
 ## Content conventions
 
-- **Audience:** Loupe Factory customers and admins using the product—not
+- **Audience:** Loupe Factory customers and admins using the product, not
   engineers integrating private APIs.
 - **Tone:** Clear, task-oriented guides; the home page uses shared classes in
   `docs/stylesheets/extra.css` for layout.
@@ -120,7 +120,7 @@ ENABLE_GIT_PLUGINS=true mkdocs build --strict
   with the docs; favicons live under `docs/assets/images/`.
 
 For internal product engineering details, use the main application codebase and
-its maintainer documentation—not this docs site.
+its maintainer documentation, not this docs site.
 
 ---
 

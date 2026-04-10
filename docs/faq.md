@@ -10,7 +10,7 @@ links to the relevant documentation pages.
 ??? question "What is Loupe Factory?"
     **Loupe Factory** is an **AI-native operations platform** for **modern
     manufacturing and wholesale businesses**. It connects inventory, production,
-    customer orders, shipments, invoicing, and reporting in one place—so your
+    customer orders, shipments, invoicing, and reporting in one place, so your
     team spends less time reconciling spreadsheets and more time running the
     operation.
 
@@ -25,7 +25,7 @@ links to the relevant documentation pages.
 
 ??? question "What kinds of businesses is Loupe Factory built for?"
     Loupe Factory is for organizations that **make or distribute physical
-    products**—for example factories and workshops, as well as **wholesale**
+    products**, for example factories and workshops, as well as **wholesale**
     teams that hold stock and ship to customers. If you run multi-stage
     production, need dependable inventory control, and fulfill orders against
     that stock, the platform is designed for you.
@@ -36,7 +36,7 @@ links to the relevant documentation pages.
 
 ??? question "How do I create an account?"
     Sign up at [loupefactory.com](https://loupefactory.com). You can sign in
-    with your work email and the method your organization uses—such as password,
+    with your work email and the method your organization uses, such as password,
     magic link, or single sign-on (SSO). See [Account
     Setup](getting-started/account-setup.md) for step-by-step instructions.
 
@@ -110,7 +110,7 @@ links to the relevant documentation pages.
     workflow.
 
 ??? question "How do I track the status of an order?"
-    Each order has a status that updates as it moves through fulfillment — from
+    Each order has a status that updates as it moves through fulfillment, from
     created, to in production, to shipped, to delivered. You can view all orders
     and filter by status in the Orders module. See [Order
     Management](platform-guide/order-management.md#tracking-order-status) for

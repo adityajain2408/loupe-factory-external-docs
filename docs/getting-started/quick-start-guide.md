@@ -13,7 +13,7 @@ If you haven't signed up yet, head to
 1. Enter your work email address and choose a password, or sign in with Google,
    Microsoft, or your organization's SSO provider.
 2. Verify your email using the confirmation link sent to your inbox.
-3. Complete the onboarding flow to create your organization — enter your
+3. Complete the onboarding flow to create your organization and enter your
    organization name, industry, default currency, and timezone.
 
 !!! info "Screenshot: Account Creation Flow"
@@ -37,12 +37,12 @@ fulfill orders, you need items in your inventory.
 1. From the dashboard, navigate to **Inventory** in the left sidebar.
 2. Click **Add Item** in the top-right corner.
 3. Fill in the item details:
-    - **Name** — a clear, descriptive name (e.g., "Round Diamond 1ct").
-    - **SKU** — a unique identifier for the item.
-    - **Category** — group items by type (e.g., Raw Materials, Finished Goods).
-    - **Unit** — the unit of measure (e.g., pcs, grams, carats).
-    - **Quantity** — the current stock on hand.
-    - **Unit cost** — the cost per unit for valuation and reporting.
+    - **Name**: a clear, descriptive name (e.g., "Round Diamond 1ct").
+    - **SKU**: a unique identifier for the item.
+    - **Category**: group items by type (e.g., Raw Materials, Finished Goods).
+    - **Unit**: the unit of measure (e.g., pcs, grams, carats).
+    - **Quantity**: the current stock on hand.
+    - **Unit cost**: the cost per unit for valuation and reporting.
 4. Click **Save** to add the item to your inventory.
 
 !!! info "Screenshot: Add Inventory Item Form"
@@ -94,7 +94,7 @@ a customer order.
 
 1. Navigate to **Orders** in the left sidebar.
 2. Click **New Order**.
-3. Select or create a **Customer** — enter the customer's name, contact details,
+3. Select or create a **Customer** and enter the customer's name, contact details,
    and billing address.
 4. Add line items to the order:
     - Search for items from your inventory.
@@ -123,11 +123,11 @@ Management](../platform-guide/order-management.md).
 
 ## Next Steps
 
-- [Dashboard Overview](dashboard-overview.md) — learn how to read key metrics
+- [Dashboard Overview](dashboard-overview.md): learn how to read key metrics
   and navigate the platform.
-- [Inventory Management](../platform-guide/inventory-management.md) — bulk
+- [Inventory Management](../platform-guide/inventory-management.md): bulk
   import items, manage categories, and set reorder alerts.
-- [Production Tracking](../platform-guide/production-tracking.md) — start a
+- [Production Tracking](../platform-guide/production-tracking.md): start a
   production run and record stage-by-stage outcomes.
-- [Order Management](../platform-guide/order-management.md) — track orders from
+- [Order Management](../platform-guide/order-management.md): track orders from
   creation through fulfillment and invoicing.

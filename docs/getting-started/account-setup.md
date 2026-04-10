@@ -34,7 +34,7 @@ it.
    In**.
 2. Enter your email address. You will be guided to the sign-in method your
    organization uses (for example, password or SSO).
-3. Complete authentication — via password, magic link, or your company identity
+3. Complete authentication with a password, magic link, or your company identity
    provider.
 
 !!! info "Screenshot: Login screen"
@@ -47,8 +47,8 @@ it.
 
 If your organization has configured SAML or OIDC-based SSO, users are
 automatically redirected to your identity provider (e.g., Okta, Azure AD, Google
-Workspace) after entering their email. No separate setup is needed on the user
-side — your admin handles SSO configuration in the organization settings.
+Workspace) after entering their email. No separate setup is needed on your
+side. Your admin handles SSO configuration in the organization settings.
 
 !!! info "Screenshot: SSO Redirect"
     A screenshot will be added here showing the redirect flow from the
@@ -65,12 +65,12 @@ your organization.
 
 Fill in your organization details:
 
-- **Organization name** — the name displayed across the platform and on
+- **Organization name**: the name displayed across the platform and on
   invoices.
-- **Industry** — select the option that best describes your business (e.g.,
+- **Industry**: select the option that best describes your business (e.g.,
   Jewelry, Auto Parts, Gemstones).
-- **Default currency** — used for pricing, invoices, and reports.
-- **Timezone** — ensures timestamps and scheduled reports are accurate for your
+- **Default currency**: used for pricing, invoices, and reports.
+- **Timezone**: ensures timestamps and scheduled reports are accurate for your
   location.
 
 !!! info "Screenshot: Organization Profile Form"
@@ -98,9 +98,9 @@ Once your organization is created, you can invite colleagues:
 
 Configure how and when LoupeFactory notifies you:
 
-- **Email notifications** — order updates, shipment status changes, low
+- **Email notifications**: order updates, shipment status changes, low
   inventory alerts.
-- **In-app notifications** — real-time alerts visible in the notification bell.
+- **In-app notifications**: real-time alerts visible in the notification bell.
 
 You can adjust these at any time under **Settings → Notifications**.
 
@@ -112,9 +112,9 @@ You can adjust these at any time under **Settings → Notifications**.
 
 ## Next Steps
 
-- [Dashboard Overview](dashboard-overview.md) — get familiar with the main
+- [Dashboard Overview](dashboard-overview.md): get familiar with the main
   dashboard layout and key metrics.
-- [Quick Start Guide](quick-start-guide.md) — follow a step-by-step walkthrough
+- [Quick Start Guide](quick-start-guide.md): follow a step-by-step walkthrough
   to add inventory, create a production process, and place your first order.
-- [Managing Your Account](../account-billing/managing-your-account.md) — update
+- [Managing Your Account](../account-billing/managing-your-account.md): update
   your profile and organization settings at any time.

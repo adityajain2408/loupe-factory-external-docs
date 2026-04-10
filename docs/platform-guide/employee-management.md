@@ -94,9 +94,9 @@ modules they can interact with.
 
 For each module you enable for a Staff member, you can set the permission level:
 
-- **View** — Can read records but not create or edit them.
-- **Edit** — Can create and edit records but not delete them.
-- **Full** — Can create, edit, and delete records within the module.
+- **View**: Can read records but not create or edit them.
+- **Edit**: Can create and edit records but not delete them.
+- **Full**: Can create, edit, and delete records within the module.
 
 !!! info "Screenshot: Permission Level Selector"
     A screenshot will be added here showing the per-module permission level
@@ -130,9 +130,9 @@ created, records edited) is preserved for audit purposes.
 
 ## Next Steps
 
-- [Managing Your Account](../account-billing/managing-your-account.md) — Update
+- [Managing Your Account](../account-billing/managing-your-account.md): Update
   organization settings and notification preferences.
-- [Reporting & Analytics](reporting-analytics.md) — View activity logs and audit
+- [Reporting & Analytics](reporting-analytics.md): View activity logs and audit
   trails for your team.
-- [Getting Started: Account Setup](../getting-started/account-setup.md) — Review
+- [Getting Started: Account Setup](../getting-started/account-setup.md): Review
   initial organization configuration options.

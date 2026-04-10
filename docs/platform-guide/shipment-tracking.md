@@ -104,7 +104,7 @@ the tracking timeline up to date from carrier data.
 To view the current status of a shipment:
 
 1. Navigate to **Shipments** from the main dashboard.
-2. Find the shipment in the list — the current status is shown in the **Status**
+2. Find the shipment in the list: the current status is shown in the **Status**
    column.
 3. Click the shipment to open the detail view and see the full tracking
    timeline.
@@ -187,10 +187,10 @@ appears on the order detail page.
 
 ## Next steps
 
-- [Order Management](order-management.md) — Create and manage orders that
+- [Order Management](order-management.md): Create and manage orders that
   generate shipments.
-- [Invoicing](invoicing.md) — Generate invoices linked to fulfilled orders.
-- [Customer & Supplier Management](customer-supplier-management.md) — Manage the
+- [Invoicing](invoicing.md): Generate invoices linked to fulfilled orders.
+- [Customer & Supplier Management](customer-supplier-management.md): Manage the
   recipient addresses used in shipments.
-- [Reporting & Analytics](reporting-analytics.md) — View shipment reports and
+- [Reporting & Analytics](reporting-analytics.md): View shipment reports and
   export delivery data.

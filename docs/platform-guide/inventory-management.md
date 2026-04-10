@@ -1,7 +1,7 @@
 # Inventory Management
 
 LoupeFactory's inventory module gives you a central place to track every item in
-your operation — from raw materials to finished goods. This guide walks you
+your operation, from raw materials to finished goods. This guide walks you
 through adding, editing, searching, and categorizing inventory items.
 
 ## Adding Inventory Items
@@ -36,7 +36,7 @@ To update an existing item:
 1. Find the item using the search bar or by browsing the inventory list.
 2. Click the item name to open its detail view.
 3. Click **Edit** to enter edit mode.
-4. Update any fields as needed — name, category, unit cost, or stock levels.
+4. Update any fields as needed: name, category, unit cost, or stock levels.
 5. Click **Save Changes** to apply your updates.
 
 !!! info "Screenshot: Item Detail and Edit View"
@@ -59,8 +59,8 @@ can also combine filters to narrow results:
   bar.
 - **Category filter**: Use the **Category** dropdown to show only items in a
   specific category.
-- **Stock status**: Filter by stock status — In Stock, Low Stock, or Out of
-  Stock — using the **Status** filter.
+- **Stock status**: Filter by stock status (In Stock, Low Stock, or Out of
+  Stock) using the **Status** filter.
 
 !!! info "Screenshot: Inventory Search and Filters"
     A screenshot will be added here showing the inventory list with the search
@@ -103,9 +103,9 @@ reassign, simply edit the item and choose a different category.
 
 ## Next Steps
 
-- [Production Tracking](production-tracking.md) — Learn how inventory items flow
+- [Production Tracking](production-tracking.md): Learn how inventory items flow
   through production stages.
-- [Order Management](order-management.md) — See how inventory is allocated when
+- [Order Management](order-management.md): See how inventory is allocated when
   fulfilling customer orders.
-- [Reporting & Analytics](reporting-analytics.md) — View inventory reports and
+- [Reporting & Analytics](reporting-analytics.md): View inventory reports and
   export stock data.

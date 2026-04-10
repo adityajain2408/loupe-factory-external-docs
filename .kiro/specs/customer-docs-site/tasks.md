@@ -31,7 +31,7 @@ Incrementally build the LoupeFactory customer documentation site by rewriting th
   - Build a 3-step Getting Started section linking to Account Setup, Dashboard Overview, and Quick Start Guide
   - _Requirements: 3.1, 3.2, 3.3, 3.4_
 
-- [x] 4. Checkpoint — Verify partial build
+- [x] 4. Checkpoint: Verify partial build
   - Ensure `mkdocs build --strict` runs without errors at this point (create stub files for nav entries if needed)
   - Ensure all tests pass, ask the user if questions arise.
 
@@ -108,7 +108,7 @@ Incrementally build the LoupeFactory customer documentation site by rewriting th
   - Include cross-links to relevant Platform Guide and Getting Started pages in answers
   - _Requirements: 7.1, 7.2_
 
-- [x] 9. Checkpoint — Full build verification
+- [x] 9. Checkpoint: Full build verification
   - Run `mkdocs build --strict` and confirm zero errors and zero warnings
   - Verify every file in the `nav` tree exists in `docs/`
   - Verify no `extra_javascript` references remain for missing files
@@ -118,7 +118,7 @@ Incrementally build the LoupeFactory customer documentation site by rewriting th
 
 ## Notes
 
-- No property-based tests apply — this is a static site with no algorithmic logic
+- No property-based tests apply: this is a static site with no algorithmic logic
 - Image assets directory (`docs/assets/`) is intentionally left empty; content pages use placeholder admonitions instead of image links to avoid broken references
 - Git plugins are made conditional to prevent Vercel shallow-clone build failures
 - Checkpoints use `mkdocs build --strict` as the primary validation mechanism

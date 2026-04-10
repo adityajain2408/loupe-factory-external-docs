@@ -52,7 +52,7 @@ The site follows a standard MkDocs Material architecture:
 
 ## Components and Interfaces
 
-### 1. mkdocs.yml — Site Configuration
+### 1. mkdocs.yml: Site Configuration
 
 The central configuration file. Key changes from current state:
 
@@ -89,7 +89,7 @@ nav:
   - FAQ: faq.md
 ```
 
-### 2. docs/stylesheets/extra.css — Brand Styling
+### 2. docs/stylesheets/extra.css: Brand Styling
 
 Expanded CSS custom properties for both light and dark modes:
 
@@ -129,7 +129,7 @@ Additional CSS for:
 - Button hover states using brand colors
 - Card component styling for the landing page grid
 
-### 3. docs/index.md — Landing Page
+### 3. docs/index.md: Landing Page
 
 Uses MkDocs Material's `md_in_html` extension with `attr_list` for grid layouts. Structure:
 
@@ -145,7 +145,7 @@ Uses MkDocs Material's `md_in_html` extension with `attr_list` for grid layouts.
 
 The landing page uses `template: home.html` or hides the sidebar/TOC via front matter (`hide: [navigation, toc]`) to achieve a clean landing layout.
 
-### 4. Content Pages — Markdown Files
+### 4. Content Pages: Markdown Files
 
 Each content page follows a consistent template:
 

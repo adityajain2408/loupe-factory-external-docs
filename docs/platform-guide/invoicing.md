@@ -2,7 +2,7 @@
 
 LoupeFactory's invoicing module lets you generate, send, and manage invoices
 that are directly linked to your customer orders. This guide covers the full
-invoicing workflow — from creating an invoice against a confirmed order to
+invoicing workflow, from creating an invoice against a confirmed order to
 recording payments and managing invoice history.
 
 ## Generating an Invoice
@@ -30,7 +30,7 @@ To generate an invoice:
     **Suggested image**: `assets/invoicing-new-invoice-form.png`
 
 !!! tip
-    You can create multiple invoices against a single order — for example, to
+    You can create multiple invoices against a single order: for example, to
     issue a deposit invoice followed by a final invoice on delivery.
 
 ## Reviewing and Finalising an Invoice
@@ -177,11 +177,11 @@ always have a consistent view of each transaction.
 
 ## Next Steps
 
-- [Order Management](order-management.md) — Create and manage the orders that
+- [Order Management](order-management.md): Create and manage the orders that
   invoices are generated from.
-- [Customer & Supplier Management](customer-supplier-management.md) — Manage
+- [Customer & Supplier Management](customer-supplier-management.md): Manage
   customer records and view their invoice history.
-- [Reporting & Analytics](reporting-analytics.md) — View revenue reports and
+- [Reporting & Analytics](reporting-analytics.md): View revenue reports and
   export invoice data.
-- [Shipment Tracking](shipment-tracking.md) — Track shipments associated with
+- [Shipment Tracking](shipment-tracking.md): Track shipments associated with
   invoiced orders.
