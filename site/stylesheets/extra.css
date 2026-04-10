@@ -19,6 +19,21 @@
   --lf-header-text-muted: rgba(246, 249, 255, 0.82);
   --lf-header-border: rgba(162, 192, 255, 0.22);
   --lf-search-bg: rgba(7, 17, 42, 0.34);
+  --lf-hero-bg:
+    radial-gradient(circle at 18% 18%, rgba(134, 173, 255, 0.22) 0%, rgba(134, 173, 255, 0) 32%),
+    radial-gradient(circle at 82% 14%, rgba(72, 138, 255, 0.18) 0%, rgba(72, 138, 255, 0) 28%),
+    linear-gradient(135deg, #08142f 0%, #12306a 47%, #2a63d4 100%);
+  --lf-hero-border: rgba(147, 184, 255, 0.2);
+  --lf-hero-shadow: 0 18px 42px rgba(9, 21, 49, 0.16);
+  --lf-home-footer-bg:
+    linear-gradient(115deg, rgba(11, 24, 52, 0.04) 0%, rgba(37, 91, 197, 0.12) 100%),
+    #f5f8ff;
+  --lf-home-footer-border: rgba(52, 104, 214, 0.18);
+  --lf-site-footer-bg: linear-gradient(90deg, #09132d 0%, #10234f 52%, #173a84 100%);
+  --lf-site-footer-meta-bg: linear-gradient(90deg, #07101f 0%, #0b1734 54%, #12295a 100%);
+  --lf-site-footer-text: #eef4ff;
+  --lf-site-footer-text-muted: rgba(238, 244, 255, 0.72);
+  --lf-site-footer-border: rgba(162, 192, 255, 0.18);
 }
 
 /* ============================================================
@@ -42,6 +57,21 @@
   --lf-header-text-muted: rgba(243, 247, 255, 0.78);
   --lf-header-border: rgba(126, 162, 255, 0.2);
   --lf-search-bg: rgba(5, 10, 24, 0.5);
+  --lf-hero-bg:
+    radial-gradient(circle at 18% 18%, rgba(94, 136, 255, 0.18) 0%, rgba(94, 136, 255, 0) 34%),
+    radial-gradient(circle at 82% 14%, rgba(58, 110, 230, 0.16) 0%, rgba(58, 110, 230, 0) 30%),
+    linear-gradient(135deg, #030915 0%, #091327 48%, #15366f 100%);
+  --lf-hero-border: rgba(105, 145, 243, 0.16);
+  --lf-hero-shadow: 0 20px 48px rgba(0, 0, 0, 0.3);
+  --lf-home-footer-bg:
+    linear-gradient(115deg, rgba(72, 122, 255, 0.12) 0%, rgba(13, 28, 61, 0.62) 100%),
+    #0c1322;
+  --lf-home-footer-border: rgba(114, 154, 255, 0.18);
+  --lf-site-footer-bg: linear-gradient(90deg, #040a17 0%, #09132a 52%, #102857 100%);
+  --lf-site-footer-meta-bg: linear-gradient(90deg, #02060e 0%, #050d1c 54%, #0c1c3d 100%);
+  --lf-site-footer-text: #edf3ff;
+  --lf-site-footer-text-muted: rgba(237, 243, 255, 0.7);
+  --lf-site-footer-border: rgba(126, 162, 255, 0.16);
 }
 
 /* ============================================================
@@ -59,6 +89,21 @@
   --lf-header-text-muted: rgba(246, 249, 255, 0.82);
   --lf-header-border: rgba(162, 192, 255, 0.22);
   --lf-search-bg: rgba(7, 17, 42, 0.34);
+  --lf-hero-bg:
+    radial-gradient(circle at 18% 18%, rgba(134, 173, 255, 0.22) 0%, rgba(134, 173, 255, 0) 32%),
+    radial-gradient(circle at 82% 14%, rgba(72, 138, 255, 0.18) 0%, rgba(72, 138, 255, 0) 28%),
+    linear-gradient(135deg, #08142f 0%, #12306a 47%, #2a63d4 100%);
+  --lf-hero-border: rgba(147, 184, 255, 0.2);
+  --lf-hero-shadow: 0 18px 42px rgba(9, 21, 49, 0.16);
+  --lf-home-footer-bg:
+    linear-gradient(115deg, rgba(11, 24, 52, 0.04) 0%, rgba(37, 91, 197, 0.12) 100%),
+    #f5f8ff;
+  --lf-home-footer-border: rgba(52, 104, 214, 0.18);
+  --lf-site-footer-bg: linear-gradient(90deg, #09132d 0%, #10234f 52%, #173a84 100%);
+  --lf-site-footer-meta-bg: linear-gradient(90deg, #07101f 0%, #0b1734 54%, #12295a 100%);
+  --lf-site-footer-text: #eef4ff;
+  --lf-site-footer-text-muted: rgba(238, 244, 255, 0.72);
+  --lf-site-footer-border: rgba(162, 192, 255, 0.18);
 }
 
 /* ============================================================
@@ -109,12 +154,30 @@
    Landing page: Hero section
    ============================================================ */
 .lf-hero {
-  background: linear-gradient(135deg, var(--md-primary-fg-color--dark) 0%, var(--md-primary-fg-color) 100%);
+  background: var(--lf-hero-bg);
+  border: 1px solid var(--lf-hero-border);
+  box-shadow: var(--lf-hero-shadow);
   color: #ffffff;
+  position: relative;
+  overflow: hidden;
   padding: 5rem 2rem;
   text-align: center;
   width: 100%;
   box-sizing: border-box;
+}
+
+.lf-hero::after {
+  content: "";
+  position: absolute;
+  inset: auto -12% -24% 52%;
+  height: 15rem;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0) 66%);
+  pointer-events: none;
+}
+
+.lf-hero > * {
+  position: relative;
+  z-index: 1;
 }
 
 .lf-hero__title {
@@ -280,15 +343,11 @@
   margin: 1.75rem 0 1rem;
   padding: 1.35rem 1.5rem 1.35rem 1.25rem;
   border-radius: 0.625rem;
-  background: linear-gradient(
-    105deg,
-    var(--md-accent-fg-color--transparent) 0%,
-    color-mix(in srgb, var(--md-default-bg-color--light) 92%, var(--md-primary-fg-color) 8%) 100%
-  );
-  border: 1px solid color-mix(in srgb, var(--lf-footer-accent) 22%, transparent);
+  background: var(--lf-home-footer-bg);
+  border: 1px solid var(--lf-home-footer-border);
   border-left-width: 4px;
   border-left-color: var(--lf-footer-accent);
-  box-shadow: 0 2px 12px color-mix(in srgb, var(--md-primary-fg-color) 8%, transparent);
+  box-shadow: 0 10px 24px color-mix(in srgb, var(--md-primary-fg-color) 10%, transparent);
   position: relative;
   transition: border-color 0.2s ease, box-shadow 0.25s ease;
 }
@@ -326,14 +385,9 @@
 }
 
 [data-md-color-scheme="slate"] .lf-home-footer {
-  background: linear-gradient(
-    105deg,
-    rgba(56, 116, 255, 0.12) 0%,
-    color-mix(in srgb, var(--md-default-bg-color--light) 88%, var(--md-primary-fg-color) 12%) 100%
-  );
-  border-color: rgba(133, 169, 255, 0.22);
+  border-color: var(--lf-home-footer-border);
   border-left-color: var(--md-primary-fg-color--light);
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
 }
 
 [data-md-color-scheme="slate"] .lf-home-footer:hover {
@@ -353,6 +407,56 @@
 [data-md-color-scheme="slate"] .lf-home-footer__text a:hover {
   color: #ffffff;
   border-bottom-color: #ffffff;
+}
+
+/* ============================================================
+   Site footer
+   ============================================================ */
+.md-footer {
+  background: var(--lf-site-footer-bg);
+  color: var(--lf-site-footer-text);
+}
+
+.md-footer__inner {
+  border-top: 1px solid var(--lf-site-footer-border);
+}
+
+.md-footer__link,
+.md-footer__link:hover,
+.md-footer__link:focus-visible,
+.md-footer__button,
+.md-footer__title,
+.md-footer__direction,
+.md-copyright,
+.md-copyright a,
+.md-social__link,
+.md-social__link svg {
+  color: var(--lf-site-footer-text);
+}
+
+.md-footer__link {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.md-footer__link:hover,
+.md-footer__link:focus-visible {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.md-footer-meta {
+  background: var(--lf-site-footer-meta-bg);
+  border-top: 1px solid var(--lf-site-footer-border);
+}
+
+.md-footer-meta .md-copyright,
+.md-footer-meta .md-copyright a,
+.md-footer-meta .md-social__link {
+  color: var(--lf-site-footer-text-muted);
+}
+
+.md-footer-meta .md-copyright a:hover,
+.md-footer-meta .md-social__link:hover {
+  color: var(--lf-site-footer-text);
 }
 
 .lf-feature-grid {
