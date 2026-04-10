@@ -7,7 +7,7 @@ hide:
 <div class="lf-hero" markdown>
 <p class="lf-hero__eyebrow">Loupe Factory documentation</p>
 <p class="lf-hero__title">Run manufacturing and trade operations from one calm workspace</p>
-<p class="lf-hero__subtitle">Whether you cut gemstones, manage inventory, or ship finished goods, Loupe Factory helps your team see stock, production, orders, and deliveries in one place—with AI where it saves real time.</p>
+<p class="lf-hero__subtitle">Whether you run a shop floor, manage inventory, or ship finished goods, Loupe Factory helps your team see stock, production, orders, and deliveries in one place—with AI where it saves real time.</p>
 <div class="lf-hero__actions">
 <a href="getting-started/quick-start-guide/" class="lf-hero__cta lf-hero__cta--primary">Start the quick start guide →</a>
 <a href="getting-started/account-setup/" class="lf-hero__cta lf-hero__cta--secondary">Set up your account</a>

@@ -50,7 +50,7 @@ After signing up, you'll be taken through a short onboarding flow to configure y
 Fill in your organization details:
 
 - **Organization name** — the name displayed across the platform and on invoices.
-- **Industry** — select your primary industry (e.g., gemstone processing, manufacturing, trade).
+- **Industry** — select the option that best describes your business (e.g., Jewelry, Auto Parts, Gemstones).
 - **Default currency** — used for pricing, invoices, and reports.
 - **Timezone** — ensures timestamps and scheduled reports are accurate for your location.
 

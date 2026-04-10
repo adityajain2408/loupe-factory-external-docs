@@ -7,7 +7,7 @@ Find quick answers to common questions below. For in-depth guidance, follow the 
 ## General
 
 ??? question "What is LoupeFactory?"
-    LoupeFactory is an AI-powered operations platform designed for small and mid-size manufacturing and trade businesses, with a focus on gemstone processing. It brings inventory, production, orders, shipments, invoicing, and reporting into a single unified workspace.
+    LoupeFactory is an AI-powered operations platform designed for small and mid-size manufacturing and trade businesses. It brings inventory, production, orders, shipments, invoicing, and reporting into a single unified workspace.
 
     For a full overview of what the platform can do, see the [Platform Guide](platform-guide/index.md).
 
@@ -15,7 +15,7 @@ Find quick answers to common questions below. For in-depth guidance, follow the 
     The fastest way to get up and running is to follow the [Quick Start Guide](getting-started/quick-start-guide.md). It walks you through account creation, adding your first inventory item, setting up a production process, and placing your first order.
 
 ??? question "What kinds of businesses is LoupeFactory built for?"
-    LoupeFactory is built for manufacturing and trade businesses — particularly those dealing in gemstones, precious metals, and similar commodities. If your business involves multi-stage production, inventory tracking, and order fulfillment, LoupeFactory is a good fit.
+    LoupeFactory is built for manufacturing and trade businesses that move physical goods—from make-to-order production to wholesale and distribution. If your business involves multi-stage production, inventory tracking, and order fulfillment, LoupeFactory is a good fit.
 
 ---
 

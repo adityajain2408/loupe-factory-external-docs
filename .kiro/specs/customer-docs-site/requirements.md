@@ -2,7 +2,7 @@
 
 ## Introduction
 
-LoupeFactory.com is an AI-powered operations SaaS platform for manufacturing and trade businesses, with a focus on gemstone processing. This documentation site serves as the primary customer-facing resource, helping small and mid-size manufacturing and trade businesses understand how to use the platform effectively. The site is built with MkDocs Material, deployed via Vercel, and must reflect the LoupeFactory brand identity through consistent theming and color usage.
+LoupeFactory.com is an AI-powered operations SaaS platform for manufacturing and trade businesses. This documentation site serves as the primary customer-facing resource, helping small and mid-size manufacturing and trade businesses understand how to use the platform effectively. The site is built with MkDocs Material, deployed via Vercel, and must reflect the LoupeFactory brand identity through consistent theming and color usage.
 
 ## Glossary
 

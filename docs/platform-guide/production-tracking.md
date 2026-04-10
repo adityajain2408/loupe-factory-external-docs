@@ -4,7 +4,7 @@ LoupeFactory's production tracking module lets you model and monitor multi-stage
 
 ## Overview of Multi-Stage Production
 
-A production process in LoupeFactory is made up of one or more sequential stages. Each stage represents a distinct step in your workflow — for example, rough sorting, cutting, polishing, and grading in a gemstone operation. Tracking each stage separately gives you full visibility into where materials are at any point in time and where losses occur.
+A production process in LoupeFactory is made up of one or more sequential stages. Each stage represents a distinct step in your workflow — for example, receiving, fabrication or assembly, finishing, and quality inspection. Tracking each stage separately gives you full visibility into where materials are at any point in time and where losses occur.
 
 !!! info "Screenshot: Production Process Overview"
     A screenshot will be added here showing the Production Tracking module home screen with a list of active production processes and their current stage status.
