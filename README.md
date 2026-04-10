@@ -67,8 +67,8 @@ Loupe-Factory-external-docs/
 ### Deployment (Vercel)
 
 - `vercel.json` invokes `scripts/vercel-build.sh`, which changes into the docs
-  repository root before running `pip install -r requirements.txt` and
-  `mkdocs build`.
+  repository root, creates an isolated virtual environment, installs
+  `requirements.txt`, and runs `python -m mkdocs build`.
 - The build keeps `ENABLE_GIT_PLUGINS=true` so optional git-based **last
   updated** metadata can run when git history is available.
 - Published output directory: `site`.

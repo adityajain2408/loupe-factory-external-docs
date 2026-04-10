@@ -1,6 +1,7 @@
 *.sqlite3
 __pycache__/
 *.pyc
+.vercel-venv/
 .DS_Store
 database.bak
 *.env
