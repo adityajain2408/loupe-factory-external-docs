@@ -34,6 +34,21 @@
   --lf-site-footer-text: #eef4ff;
   --lf-site-footer-text-muted: rgba(238, 244, 255, 0.72);
   --lf-site-footer-border: rgba(162, 192, 255, 0.18);
+  --lf-faq-bg:
+    linear-gradient(118deg, rgba(29, 77, 180, 0.08) 0%, rgba(247, 250, 255, 0.94) 100%),
+    #f7faff;
+  --lf-faq-bg-hover:
+    linear-gradient(118deg, rgba(29, 77, 180, 0.12) 0%, rgba(243, 248, 255, 0.98) 100%),
+    #f3f8ff;
+  --lf-faq-bg-open:
+    linear-gradient(118deg, rgba(29, 77, 180, 0.1) 0%, rgba(255, 255, 255, 0.99) 100%),
+    #ffffff;
+  --lf-faq-border: rgba(43, 96, 207, 0.24);
+  --lf-faq-border-strong: rgba(33, 81, 185, 0.34);
+  --lf-faq-summary-text: #18315f;
+  --lf-faq-body-text: #32415f;
+  --lf-faq-icon: #2a63d4;
+  --lf-faq-shadow: 0 10px 26px rgba(14, 32, 74, 0.08);
 }
 
 /* ============================================================
@@ -72,6 +87,21 @@
   --lf-site-footer-text: #edf3ff;
   --lf-site-footer-text-muted: rgba(237, 243, 255, 0.7);
   --lf-site-footer-border: rgba(126, 162, 255, 0.16);
+  --lf-faq-bg:
+    linear-gradient(118deg, rgba(47, 97, 209, 0.16) 0%, rgba(11, 20, 37, 0.92) 100%),
+    #0c1424;
+  --lf-faq-bg-hover:
+    linear-gradient(118deg, rgba(62, 114, 230, 0.2) 0%, rgba(13, 24, 44, 0.96) 100%),
+    #10192d;
+  --lf-faq-bg-open:
+    linear-gradient(118deg, rgba(52, 104, 214, 0.18) 0%, rgba(14, 26, 47, 0.98) 100%),
+    #10192c;
+  --lf-faq-border: rgba(109, 148, 240, 0.22);
+  --lf-faq-border-strong: rgba(133, 169, 255, 0.34);
+  --lf-faq-summary-text: #eef4ff;
+  --lf-faq-body-text: rgba(232, 239, 255, 0.84);
+  --lf-faq-icon: #85a9ff;
+  --lf-faq-shadow: 0 14px 30px rgba(0, 0, 0, 0.24);
 }
 
 /* ============================================================
@@ -104,6 +134,21 @@
   --lf-site-footer-text: #eef4ff;
   --lf-site-footer-text-muted: rgba(238, 244, 255, 0.72);
   --lf-site-footer-border: rgba(162, 192, 255, 0.18);
+  --lf-faq-bg:
+    linear-gradient(118deg, rgba(29, 77, 180, 0.08) 0%, rgba(247, 250, 255, 0.94) 100%),
+    #f7faff;
+  --lf-faq-bg-hover:
+    linear-gradient(118deg, rgba(29, 77, 180, 0.12) 0%, rgba(243, 248, 255, 0.98) 100%),
+    #f3f8ff;
+  --lf-faq-bg-open:
+    linear-gradient(118deg, rgba(29, 77, 180, 0.1) 0%, rgba(255, 255, 255, 0.99) 100%),
+    #ffffff;
+  --lf-faq-border: rgba(43, 96, 207, 0.24);
+  --lf-faq-border-strong: rgba(33, 81, 185, 0.34);
+  --lf-faq-summary-text: #18315f;
+  --lf-faq-body-text: #32415f;
+  --lf-faq-icon: #2a63d4;
+  --lf-faq-shadow: 0 10px 26px rgba(14, 32, 74, 0.08);
 }
 
 /* ============================================================
@@ -455,6 +500,66 @@
 .md-footer-meta .md-copyright a:hover,
 .md-footer-meta .md-social__link:hover {
   color: var(--lf-site-footer-text);
+}
+
+/* ============================================================
+   FAQ details
+   ============================================================ */
+.md-typeset details.question {
+  background: var(--lf-faq-bg);
+  border-color: var(--lf-faq-border);
+  border-radius: 0.625rem;
+  box-shadow: var(--lf-faq-shadow);
+  overflow: hidden;
+  transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.md-typeset details.question:focus-within {
+  border-color: var(--lf-faq-border-strong);
+  box-shadow:
+    0 0 0 0.18rem color-mix(in srgb, var(--lf-faq-icon) 18%, transparent),
+    var(--lf-faq-shadow);
+}
+
+.md-typeset details.question[open] {
+  background: var(--lf-faq-bg-open);
+  border-color: var(--lf-faq-border-strong);
+}
+
+.md-typeset .question > summary {
+  background: transparent;
+  color: var(--lf-faq-summary-text);
+  font-weight: 700;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.md-typeset .question > summary:hover,
+.md-typeset .question > summary:focus-visible {
+  background: var(--lf-faq-bg-hover);
+}
+
+.md-typeset .question > summary::before {
+  background-color: var(--lf-faq-icon);
+}
+
+.md-typeset .question > summary::after {
+  color: var(--lf-faq-icon);
+}
+
+.md-typeset details.question[open] > summary {
+  border-bottom: 1px solid color-mix(in srgb, var(--lf-faq-border-strong) 80%, transparent);
+}
+
+.md-typeset details.question > :not(summary) {
+  color: var(--lf-faq-body-text);
+}
+
+.md-typeset details.question a {
+  color: var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="slate"] .md-typeset details.question a {
+  color: var(--md-primary-fg-color--light);
 }
 
 .lf-feature-grid {
