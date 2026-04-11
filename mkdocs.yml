@@ -127,6 +127,9 @@ nav:
     - getting-started/index.md
     - Account Setup: getting-started/account-setup.md
     - Dashboard Overview: getting-started/dashboard-overview.md
+    - Industry Starting Points: getting-started/industry-starting-points.md
+    - Definitions: getting-started/definitions.md
+    - Admin Settings Quick Map: getting-started/admin-settings-quick-map.md
     - Quick Start Guide: getting-started/quick-start-guide.md
   - Platform Guide:
     - platform-guide/index.md

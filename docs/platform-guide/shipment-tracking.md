@@ -16,7 +16,7 @@ The most common workflow is to create a shipment from a confirmed order:
 1. Navigate to the **Orders** module and open the order you want to ship.
 2. Click **Create Shipment** on the order detail page.
 3. Verify or update the **Ship To** address.
-4. Select a **Carrier** (e.g., UPS, FedEx, USPS) from the dropdown.
+4. Select one of your enabled **Carrier** options from the dropdown.
 5. Enter the package **weight** and **dimensions**.
 6. Click **Create Shipment**.
 
@@ -67,17 +67,22 @@ and service levels are enabled for your organization.
 
 ### Supported shipping carriers
 
-Commonly used shipping carriers in Loupe Factory include:
+Loupe Factory includes the following default carrier profiles for shipment
+creation. Your administrator can enable the ones your business uses from
+[Orders Settings](../getting-started/admin-settings-quick-map.md#orders-settings).
 
-| Carrier | Domestic | International |
-| --- | --- | --- |
-| UPS | Yes | Yes |
-| FedEx | Yes | Yes |
-| USPS | Yes | Limited |
-| DHL | No | Yes |
+| Default carrier profile | How it appears in Loupe Factory |
+| --- | --- |
+| Canada Post | Canada Post |
+| DHL eCommerce | DHL eCommerce |
+| DHL Express | DHL Express |
+| FedEx | FedEx |
+| UPS | UPS |
+| USA Export | USA Export |
+| USPS | USPS |
 
-Contact your Loupe Factory administrator to configure which carriers are
-available in your account.
+Carrier availability, services, and rates can vary by origin, destination,
+package details, and the shipping accounts connected to your workspace.
 
 ### Downloading shipping labels
 
