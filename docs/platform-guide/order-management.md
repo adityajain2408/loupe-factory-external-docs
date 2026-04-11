@@ -1,90 +1,250 @@
 # Order Management
 
-LoupeFactory's order management module lets you create, track, and fulfill
-customer orders from a single place. This guide covers the full order lifecycle, from placing a new order through marking it as fulfilled and linking it to invoices and shipments.
+Loupe Factory supports both **sales orders** and **purchase orders** with a
+guided creation flow that turns commercial notes into structured requested
+products your team can review before saving.
 
-## Creating an Order
+## Create a Sales Order
 
-To create a new customer order:
+To create a sales order:
 
-1. Navigate to the **Orders** module from the main dashboard.
-2. Click **New Order** in the top-right corner.
-3. Select the customer from the **Customer** dropdown, or add a new customer
-   inline.
-4. Add line items by searching for inventory items and entering quantities.
-5. Set the order date and any required delivery date.
-6. Add notes or special instructions in the **Notes** field if needed.
-7. Click **Save Order** to create the order with a status of **Draft**.
+1. Go to **Orders** > **Sales Orders**.
+2. Click **Add new sales order**.
+3. In the first step, select the **customer** and the internal **order lead**.
+4. Add clear **notes** that describe what the customer needs.
+5. On **Requested Products**, review the AI-prepared line items and correct any
+   quantities, sizes, weights, or descriptions before saving.
+6. On **Order Details**, complete the timing fields such as **date required**
+   and the order deadline used by your team.
+7. If your role allows it, confirm optional commercial values such as
+   **currency** and **internal budget**.
+8. Accept the terms and submit the order.
 
-!!! info "Screenshot: New Order Form"
-    A screenshot will be added here showing the New Order form with the customer
-    selector, line item table, and date fields.
+!!! info "Screenshot Placeholder"
+    Add a screenshot of the sales order creation wizard showing the customer,
+    order lead, notes field, requested products review table, and order detail
+    step.
 
-    **Suggested image**: `assets/order-new-order-form.png`
+## Create a Purchase Order
 
-Once saved, the order is assigned a unique order number and appears in your
-order list.
+To create a purchase order:
 
-!!! tip
-    You can save an order as a **Draft** while you finalize details. Drafts do
-    not affect inventory allocation until the order is confirmed.
+1. Go to **Orders** > **Purchase Orders**.
+2. Click **Add new purchase order**.
+3. Select the **supplier** and the internal **order lead**.
+4. Add clear **notes** describing what should be purchased.
+5. Review the AI-prepared **requested products** and adjust them where needed.
+6. Complete the timing and commercial details, including **currency**,
+   optional **internal budget**, and required dates.
+7. Accept the terms and submit the order.
 
-## Confirming an Order
+!!! info "Screenshot Placeholder"
+    Add a screenshot of the purchase order creation wizard showing the supplier
+    selection, notes field, requested products review, and order details step.
 
-After reviewing a draft order, confirm it to lock in the details and allocate
-inventory:
+## Writing Better Notes for AI Product Extraction
 
-1. Open the order from the order list.
-2. Review all line items, quantities, and customer details.
-3. Click **Confirm Order**.
+You will get the best requested-products review table when your notes are
+specific. Include useful details such as:
 
-The order status changes to **Confirmed** and the reserved quantities are
-reflected in your [Inventory](inventory-management.md) module.
+- product names
+- requested quantities
+- sizes or dimensions
+- weight expectations
+- material or quality notes
+- delivery priorities
 
-!!! info "Screenshot: Order Confirmation Screen"
-    A screenshot will be added here showing an order in Draft status with the
-    Confirm Order button highlighted.
+The AI review step is there to save time, but your team should always validate
+the final requested products before submitting the order.
 
-    **Suggested image**: `assets/order-confirm-order.png`
+!!! info "Screenshot Placeholder"
+    Add a screenshot of the AI-prepared requested products table after notes are
+    processed, including an example row that can be reviewed before saving.
 
 ## Tracking Order Status
 
-Each order moves through a defined set of statuses as it progresses:
+The order details page gives your team several ways to understand progress at a
+glance.
 
-| Status | Description |
-| --- | --- |
-| **Draft** | Order created but not yet confirmed |
-| **Confirmed** | Order confirmed and inventory reserved |
-| **In Production** | Items are being produced or prepared |
-| **Ready to Ship** | Items are packed and awaiting shipment |
-| **Shipped** | A shipment has been created and dispatched |
-| **Fulfilled** | Order delivered and complete |
-| **Cancelled** | Order cancelled before fulfillment |
+### What you can monitor on the order page
 
-You can filter the order list by status to focus on orders that need attention.
+At the top of the order page, Loupe Factory shows:
 
-!!! info "Screenshot: Order List with Status Filters"
-    A screenshot will be added here showing the order list with the status
-    filter dropdown open and several orders in different states.
+- **line-item status summary chips** such as **Not Started**, **In Progress**,
+  **Ready**, **Shipped**, **Cancelled**, **Backordered**, **Returned**, and
+  **Partially Returned**
+- the order-level **Fulfillment** status chip
+- the order-level **Payment Status**
 
-    **Suggested image**: `assets/order-list-status-filters.png`
+Inside the line-items table, Loupe Factory also shows:
 
-### Viewing Order Details
+- each line item's own **status**
+- linked **production progress**
+- **fulfilled quantity**
+- **shipped quantity**
+- **shipment status**
 
-Click any order in the list to open its detail view. The detail page shows:
+The activity area below the table can also show:
 
-- Customer information and order number
-- Line items with quantities, unit prices, and totals
-- Current status and status history timeline
-- Linked invoices and shipments
-- Any notes or attachments
+- linked production jobs
+- shipments and tracking progress
+- inventory selections tied to the order
 
-!!! info "Screenshot: Order Detail View"
-    A screenshot will be added here showing the full order detail page including
-    the status timeline, line items table, and linked invoice and shipment
-    sections.
+### How fulfillment status changes
 
-    **Suggested image**: `assets/order-detail-view.png`
+Loupe Factory updates the order's fulfillment status from the combination of
+line-item statuses and shipment activity. In practice, the order can move
+through statuses such as:
+
+- **Not Started**
+- **In Production**
+- **Ready to Ship**
+- **Partially Shipped**
+- **Shipped**
+- **Completed**
+- **On Hold**
+- **Cancelled**
+- **Partially Returned**
+- **All Returned**
+
+This means the order header becomes a reliable summary for sales, operations,
+warehouse, and customer-service teams without requiring them to inspect every
+line manually.
+
+!!! info "Screenshot Placeholder"
+    Add a screenshot of the order details header showing the line-item status
+    chips, fulfillment chip, payment status, and the line-items table with
+    status-related columns visible.
+
+## Fulfilling an Order
+
+For **sales orders**, the main operational fulfillment flow happens on the
+order details page through **Select Inventory** and **Manage Shipment**.
+
+For **purchase orders**, the equivalent operational step is typically
+**Receive Inventory**, because stock is coming in rather than being shipped out.
+
+### Selecting Inventory
+
+Use **Select Inventory** when you want to reserve or retrieve stock for sales
+order line items before shipment.
+
+1. Open the order details page.
+2. Select one or more line items from the table, or open a single line item's
+   row action menu and choose **Select Inventory**.
+3. In the modal, review the line-item card for each selected row.
+4. Choose one or more inventory records for that line item.
+5. Enter the exact **selection quantities** for each chosen inventory item, or
+   use **Full** when the full available amount should be selected.
+6. Repeat for each line item in the modal.
+7. Submit **Select Inventory**.
+
+When you save, Loupe Factory associates those inventory records with the order
+line items and deducts stock from the selected inventory items.
+
+!!! info "Screenshot Placeholder"
+    Add a screenshot of the **Select Inventory** modal showing one line-item
+    card, the inventory lookup table, and the per-inventory quantity controls.
+
+### Marking Items as Ready
+
+Inside the **Select Inventory** flow, each line item includes a checkbox to
+**Mark this line item as "Ready"**.
+
+Use that option when the inventory for that line has already been properly
+assigned and the item is operationally ready for the next fulfilment step.
+
+In practice:
+
+1. Select the inventory for the line item.
+2. Turn on the **Mark this line item as "Ready"** checkbox when appropriate.
+3. Submit the inventory selection.
+
+If all active line items are now in **Ready** or **Production Completed**
+status, the order's fulfillment chip can move to **Ready to Ship**.
+
+!!! info "Screenshot Placeholder"
+    Add a screenshot of a line-item card in the **Select Inventory** modal with
+    the **Mark this line item as "Ready"** checkbox visible.
+
+### Creating a Shipment
+
+Use **Manage Shipment** or **Create Shipment** when stock is ready to leave your
+business.
+
+1. Open the order details page.
+2. Select the relevant line items from the table, or use a line item's row
+   action menu and choose **Manage Shipment**.
+3. In the shipment modal, select the **carrier**.
+4. Enter the **tracking number**.
+5. For each line item, review the shipment card:
+   - If inventory was already retrieved earlier, Loupe Factory can show the
+     pre-retrieved inventory as ready to ship.
+   - If inventory was not pre-retrieved, choose the inventory to ship and
+     enter the exact ship quantities for each selected inventory item.
+6. Submit **Create Shipment**.
+
+After shipment creation, Loupe Factory updates shipped quantities, shipment
+statuses, and shipment activity on the order page.
+
+!!! info "Screenshot Placeholder"
+    Add a screenshot of the **Create Shipment** modal showing carrier,
+    tracking number, and one shipment line card with inventory and ship
+    quantity controls.
+
+### Marking an Order as Fulfilled
+
+On the order details page, Loupe Factory does not rely on a separate manual
+"mark fulfilled" action for the overall order. Instead, the order-level
+fulfillment status updates from the real workflow.
+
+In practice:
+
+- line items move through statuses such as **Ready**, **Partially Shipped**, and
+  **Shipped**
+- shipment cards and shipment-status badges show whether shipments are
+  **Pending**, **In Transit**, **Out for Delivery**, **Delivered**,
+  **Exception**, or **Cancelled**
+- the order becomes **Completed** when all active line items are shipped and
+  all linked shipments are delivered
+
+This keeps the order's top-level status aligned with actual shipping and
+delivery progress.
+
+!!! info "Screenshot Placeholder"
+    Add a screenshot of the order details page showing the fulfillment chip,
+    shipment timeline entries, and delivered shipment status badges.
+
+## Cancelling an Order
+
+On the order details page, cancellation is usually handled at the **line-item**
+level, which is helpful when only part of an order should stop moving forward.
+
+### Cancel selected line items
+
+1. Open the order details page.
+2. Select one or more line items from the table.
+3. Click **Cancel selected**.
+4. Review the confirmation modal.
+5. Confirm **Cancel items**.
+
+The selected lines are marked as **Cancelled**, and Loupe Factory recalculates
+the order's overall fulfillment status after the change.
+
+### Remove the full order
+
+If the entire order should be removed permanently, use **Actions** >
+**Remove**.
+
+!!! warning
+    **Remove** is a permanent delete action. It deletes the order and its
+    associated line items, tasks, and shipments. Use it only when you truly
+    want the record removed, not when you only need to stop part of the order.
+
+!!! info "Screenshot Placeholder"
+    Add a screenshot of the **Cancel selected line items** confirmation modal,
+    and optionally a second screenshot of the **Actions > Remove** delete
+    dialog for the full order record.
 
 ## How Loupe Factory Calculates Production Metrics on an Order
 
@@ -201,92 +361,33 @@ output produced. Lower values indicate a more efficient production chain.
     - **Lower Net Waste %** means lower true loss
     - **Lower Consumption %** means the order used material more efficiently
 
-## Fulfilling an Order
+!!! info "Screenshot Placeholder"
+    Add a screenshot of the order details production summary showing the order
+    progress view and the efficiency metrics together.
 
-Fulfillment involves preparing items, creating a shipment, and marking the order
-complete.
+## After the Order Is Created
 
-### Marking Items as Ready
+Once saved, the order becomes the commercial and operational record your team
+can use for:
 
-Once production or preparation is complete:
+- production planning
+- purchasing follow-up
+- inventory selection
+- shipment preparation
+- invoicing
+- customer or supplier communication
 
-1. Open the order detail page.
-2. Click **Mark as Ready to Ship**.
-3. Confirm that all line items are prepared and quantities are correct.
-
-The order status updates to **Ready to Ship**.
-
-!!! info "Screenshot: Ready to Ship Confirmation"
-    A screenshot will be added here showing the Mark as Ready to Ship dialog
-    with a checklist of line items.
-
-    **Suggested image**: `assets/order-ready-to-ship.png`
-
-### Creating a Shipment
-
-From the order detail page, you can create a shipment directly:
-
-1. Click **Create Shipment** on the order detail page.
-2. Enter the shipping address and select a carrier.
-3. Add package dimensions and weight if required.
-4. Click **Create** to generate a tracking number and label.
-
-The order status automatically updates to **Shipped** once the shipment is
-created. See [Shipment Tracking](shipment-tracking.md) for more details on
-managing shipments.
-
-!!! info "Screenshot: Create Shipment from Order"
-    A screenshot will be added here showing the Create Shipment panel on the
-    order detail page with carrier selection and package details fields.
-
-    **Suggested image**: `assets/order-create-shipment.png`
-
-### Marking an Order as Fulfilled
-
-Once the shipment is delivered, mark the order as fulfilled:
-
-1. Open the order detail page.
-2. Click **Mark as Fulfilled**.
-3. Confirm the action in the dialog.
-
-The order status changes to **Fulfilled** and the order is archived in your
-completed orders history.
-
-!!! info "Screenshot: Mark as Fulfilled Dialog"
-    A screenshot will be added here showing the Mark as Fulfilled confirmation
-    dialog on a Shipped order.
-
-    **Suggested image**: `assets/order-mark-fulfilled.png`
-
-## Cancelling an Order
-
-To cancel an order before it is fulfilled:
-
-1. Open the order detail page.
-2. Click **Cancel Order**.
-3. Select a cancellation reason and confirm.
-
-Cancelling a confirmed order releases any reserved inventory back to available
-stock.
-
-!!! warning
-    Orders with an active shipment cannot be cancelled directly. Contact your
-    shipping carrier to arrange a return before cancelling the order in
-    LoupeFactory.
-
-!!! info "Screenshot: Cancel Order Dialog"
-    A screenshot will be added here showing the Cancel Order dialog with the
-    reason dropdown and confirmation button.
-
-    **Suggested image**: `assets/order-cancel-dialog.png`
+!!! info "Screenshot Placeholder"
+    Add a screenshot of the full order details page showing the order header,
+    line-items table, and activity area together.
 
 ## Next Steps
 
-- [Invoicing](invoicing.md): Generate and send invoices linked to your
-  confirmed orders.
-- [Shipment Tracking](shipment-tracking.md): Track packages and view delivery
-  status for shipped orders.
-- [Inventory Management](inventory-management.md): Understand how order
-  confirmation affects inventory allocation.
-- [Reporting & Analytics](reporting-analytics.md): View order reports and
-  export order data.
+- [Customer & Supplier Management](customer-supplier-management.md): Keep the
+  contacts behind your orders accurate and usable.
+- [Production Tracking](production-tracking.md): Turn order demand into
+  production jobs and track output back to the order.
+- [Shipment Tracking](shipment-tracking.md): Manage dispatch and tracking once
+  an order is ready to ship.
+- [Invoicing](invoicing.md): Generate invoices from the commercial work already
+  recorded on the order.

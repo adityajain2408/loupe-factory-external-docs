@@ -1,20 +1,26 @@
 # Customer & Supplier Management
 
-LoupeFactory lets you maintain a central directory of the customers you sell to
-and the suppliers you source from. This guide covers how to add and manage
-customer and supplier records, and how to view the transactions associated with
-each contact.
+Loupe Factory keeps your buyers and suppliers in one clean master-contact
+system so sales, purchasing, operations, and finance can work from the same
+business record.
 
-## Adding a Customer
+## Add a Customer
 
-To add a new customer record:
+To create a new customer:
 
-1. Navigate to the **Customers** module from the main dashboard.
-2. Click **Add Customer** in the top-right corner.
-3. Fill in the customer details: name, contact person, email, phone, and billing
-   address.
-4. Optionally add notes or tags to help categorize the customer.
-5. Click **Save** to create the record.
+1. Go to **People** > **Customers**.
+2. Click **Add Customer**.
+3. On **Basic Information**, enter the customer's **email address**,
+   **phone number**, **first name**, **last name**, and **company name**.
+4. On **Internal Notes**, add any optional internal details such as a
+   **profile image**, **nickname**, **notes**, **customer since** date, and
+   **total sales** value.
+5. On **Company Details**, complete the customer's **street address**,
+   **city**, **country**, **zip or postal code**, **website**, and
+   **number of employees**.
+6. Accept the terms and privacy confirmation, then continue.
+7. On the **Done** step, review the result and either **add another
+   customer**, **fix errors**, or **close** the window.
 
 !!! info "Screenshot: Add Customer Form"
     A screenshot will be added here showing the Add Customer form with fields
@@ -22,22 +28,62 @@ To add a new customer record:
 
     **Suggested image**: `assets/customers-add-form.png`
 
-## Adding a Supplier
+## Add a Supplier
 
-To add a new supplier record:
+To create a new supplier:
 
-1. Navigate to the **Suppliers** module from the main dashboard.
-2. Click **Add Supplier** in the top-right corner.
-3. Enter the supplier details: company name, contact person, email, phone, and
-   address.
-4. Add any relevant payment terms or lead time notes in the **Notes** field.
-5. Click **Save** to create the record.
+1. Go to **People** > **Suppliers**.
+2. Click **Add Supplier**.
+3. On **Basic Information**, enter the supplier's **email address**,
+   **phone number**, **first name**, **last name**, and **company name**.
+4. On **Internal Notes**, add optional internal information such as a
+   **profile image**, **nickname**, **notes**, the relationship start date,
+   and **total purchases**.
+5. On **Supplier Details**, complete the supplier's **street address**,
+   **city**, **country**, **zip or postal code**, **website**, and
+   **number of employees**.
+6. Accept the terms and privacy confirmation, then continue.
+7. On the **Done** step, review the result and either **add another
+   supplier**, **fix errors**, or **close** the window.
 
 !!! info "Screenshot: Add Supplier Form"
     A screenshot will be added here showing the Add Supplier form with fields
     for company name, contact person, email, phone, address, and notes.
 
     **Suggested image**: `assets/suppliers-add-form.png`
+
+## What to Put in Internal Notes
+
+The **Internal Notes** step is useful for commercial context that helps your
+team work faster, for example:
+
+- preferred communication style
+- payment expectations
+- buying patterns
+- sourcing notes
+- service history
+- internal reminders for account managers or procurement teams
+
+This section is best used for internal business context rather than formal
+customer-facing communication.
+
+## Why Clean Contact Records Matter
+
+Well-maintained customer and supplier records make the rest of Loupe Factory
+easier to use because they feed directly into operational workflows such as:
+
+- [sales orders and purchase orders](order-management.md)
+- invoicing and follow-up
+- shipment planning
+- account ownership and reporting
+
+## Best Practices
+
+- Use the legal or commonly used trading name for the company field.
+- Keep contact names current so teams know who the real working contact is.
+- Use notes for internal context, not for information customers or suppliers
+  should receive directly.
+- Enter full address details early so later operational workflows move faster.
 
 ## Managing Customer and Supplier Records
 
@@ -124,11 +170,11 @@ name, email, or tag. You can also filter by status (Active / Inactive) using the
 
 ## Next Steps
 
-- [Order Management](order-management.md): Learn how to create and track orders
-  linked to your customers.
+- [Order Management](order-management.md): Create sales and purchase orders
+  using the customer and supplier records you have added.
 - [Invoicing](invoicing.md): Generate and send invoices tied to customer
   orders.
-- [Inventory Management](inventory-management.md): Manage the stock you source
-  from suppliers.
-- [Reporting & Analytics](reporting-analytics.md): View customer and supplier
-  activity reports.
+- [Inventory Management](inventory-management.md): Manage the stock you buy,
+  store, and sell.
+- [Production Tracking](production-tracking.md): Link production work to
+  customer demand and order fulfilment.

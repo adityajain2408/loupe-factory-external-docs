@@ -25,16 +25,69 @@ point in time and where losses occur.
 Before recording any production activity, you need to set up the stages that
 make up your process.
 
-### Creating a Production Process
+## Create a Production Job
 
-1. Navigate to the **Production** module from the main dashboard.
-2. Click **New Process**.
-3. Enter a process name and optional description.
-4. Click **Add Stage** to define the first stage.
-5. For each stage, provide a name (e.g., "Rough Sorting", "Cutting",
-   "Polishing") and an optional description.
-6. Drag stages to reorder them if needed.
-7. Click **Save Process** when all stages are defined.
+Loupe Factory's production module lets you create production jobs from real
+order demand, issue source inventory into those jobs, and receive finished,
+rejected, scrapped, and wasted output in a structured way.
+
+To create a new production job:
+
+1. Go to **Production**.
+2. Click **Add new production job**.
+
+### Step 1: Context
+
+In the **Context** step, complete the operational setup for the job:
+
+1. Select the **associated order**.
+2. Select the **order line item** the job belongs to.
+3. Select the correct **production stage**.
+4. Select one or more **products** to look up matching source inventory.
+5. Review the source inventory list and choose the inventory items that should
+   feed this job.
+6. Decide how inventory should be issued:
+   - **Full quantity from each selected item**
+   - **Specific quantity per item**
+
+Loupe Factory uses the selected stage and product context to help narrow the
+inventory that should be issued into the job.
+
+### Step 2: Physical Specs
+
+In **Physical Specs**, define what the job is expected to produce:
+
+1. Select the **shape requested**.
+2. Select the **size requested**.
+3. Enter the **total pieces requested**.
+4. Enter the **total weight requested** and choose the **weight unit**.
+5. Choose how per-item requested quantities should be prepared:
+   - **Match issued quantities**
+   - **Split totals evenly**
+   - **Customize item by item**
+
+This step is useful when one production job is fed by several inventory items
+but your team still needs a clear requested output target.
+
+### Step 3: Issue Details
+
+In **Issue Details**, finalize the job setup:
+
+1. Review the summary card.
+2. Set the **issued date**.
+3. Set the **staff deadline**.
+4. Add operational **notes** if needed.
+5. Choose the **staff member** responsible for the job.
+6. Accept the terms and privacy confirmation.
+7. Submit the job.
+
+### Step 4: Done
+
+After submission, Loupe Factory shows a result screen where you can:
+
+- **add another production job**
+- **fix errors**
+- **close** the modal
 
 !!! info "Screenshot: New Process Form with Stages"
     A screenshot will be added here showing the New Process form with multiple
@@ -42,6 +95,7 @@ make up your process.
     handles.
 
     **Suggested image**: `assets/production-new-process-stages.png`
+
 
 ### Editing an Existing Process
 
@@ -63,62 +117,81 @@ Each production stage consumes inputs (raw materials or semi-finished goods) and
 produces outputs (processed goods ready for the next stage or for sale).
 LoupeFactory links these directly to your inventory.
 
-### Recording Inputs
+!!! info "Screenshot: Production Job Inputs and Outputs"
+    A screenshot will be added here showing the Production Job detail page with
+    inputs and outputs linked to inventory items.
 
-When starting a stage, record the materials being consumed:
+    **Suggested image**: `assets/production-job-inputs-outputs.png`
 
-1. Open the active production run and navigate to the relevant stage.
-2. Click **Record Inputs**.
-3. Select the inventory item and enter the quantity being consumed.
-4. Add additional input items if the stage uses multiple materials.
-5. Click **Confirm Inputs** to deduct the quantities from inventory.
+## Receive a Production Job
 
-!!! info "Screenshot: Record Inputs Form"
-    A screenshot will be added here showing the Record Inputs form with an
-    inventory item selector, quantity field, and the option to add multiple
-    input lines.
+When work is completed, open the production job and click **Receive**.
 
-    **Suggested image**: `assets/production-record-inputs.png`
+### Receive header details
 
-### Recording Outputs
+At the top of the receive form, confirm:
 
-When a stage is complete, record what was produced:
+1. the **received date**
+2. the **received quality**
+3. the **location for new inventory**
+4. the **rack / bin** if your organization uses rack tracking
 
-1. In the same stage view, click **Record Outputs**.
-2. Select the output inventory item and enter the quantity produced.
-3. If the output is a new item not yet in inventory, you can create it inline
-   from this form.
-4. Click **Confirm Outputs** to add the quantities to inventory.
+### Receive each output row
 
-!!! info "Screenshot: Record Outputs Form"
-    A screenshot will be added here showing the Record Outputs form with the
-    output item selector, quantity field, and the inline item creation option.
+For each receive row, Loupe Factory lets you record the physical result of that
+job output:
 
-    **Suggested image**: `assets/production-record-outputs.png`
+1. Review or update the **output type**.
+2. Confirm the output **product**.
+3. If relevant, confirm the **finished type** or
+   **materials & supplies type**.
+4. Record the output **shape** and **size**.
+5. Enter the **received pieces**.
+6. Enter the **received weight** and **weight unit**.
+7. Enter any **wasted weight**.
 
-!!! tip
-    The difference between total inputs and total outputs (including waste) is
-    automatically calculated and shown in the stage summary. Use this to spot
-    unexpected material losses early.
+### Record rejection or scrap when needed
 
-## Recording Waste, Rejection, and Scrap
+If part of the output should be tracked separately, turn on the relevant
+toggle:
 
-Not all material that enters a stage makes it through as usable output.
-LoupeFactory lets you record three types of material loss:
+- **Output has rejection**
+- **Output has scrap**
 
-| Type | Description |
+Then record the rejected or scrapped values as needed, including:
+
+- pieces
+- weight
+- shape
+- size
+- color
+- inventory type
+- product
+- finished type or materials/supplies type
+
+### Finish the receive entry
+
+Add notes if needed, then click **Save**.
+
+When you save:
+
+- good output is received back into inventory
+- rejected material can be tracked separately
+- scrap can be tracked separately
+- waste remains recorded as process loss
+- production progress and efficiency metrics update automatically
+
+## Why Loupe Factory Separates Output, Rejection, Scrap, and Waste
+
+Loupe Factory treats each bucket differently because they mean different things
+to operations:
+
+| Bucket | Meaning |
 | --- | --- |
-| **Waste** | Material consumed or lost during processing (e.g., dust, offcuts) |
-| **Rejection** | Items that fail quality checks and cannot be used or sold |
-| **Scrap** | Rejected material that still has recoverable value (e.g., metal scrap, low-grade stones) |
-
-### Recording a Loss
-
-1. In the stage view, click **Record Loss**.
-2. Choose the loss type: **Waste**, **Rejection**, or **Scrap**.
-3. Select the inventory item and enter the quantity.
-4. Add an optional note explaining the reason for the loss.
-5. Click **Save** to record the entry.
+| **Received** | Good output that can continue to the next operational step |
+| **Rejected** | Produced output that failed quality checks and should stay separate |
+| **Scrapped** | Recoverable or separately tracked loss material, that still has recoverable value (e.g., metal scrap, low-grade stones) |
+| **Waste** | Irrecoverable Material consumed or lost during processing (e.g., dust, offcuts) |
 
 !!! info "Screenshot: Record Loss Form"
     A screenshot will be added here showing the Record Loss form with the loss

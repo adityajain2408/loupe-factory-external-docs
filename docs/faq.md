@@ -59,20 +59,25 @@ links to the relevant documentation pages.
 ## Inventory
 
 ??? question "How do I add a new inventory item?"
-    Navigate to the **Inventory** module and click **Add Item**. Fill in the
-    item name, category, unit of measure, and any custom attributes. See
-    [Inventory Management](platform-guide/inventory-management.md) for a
-    complete walkthrough including bulk import options.
+    Go to **Inventory** and click **Add Inventory Item**. Then complete the
+    item's type, product, physical attributes, quality, and storage details.
+    Admin users can also use **Import using AI** for bulk creation. See
+    [Inventory Management](platform-guide/inventory-management.md) for the full
+    step-by-step workflow.
 
 ??? question "Can I organize inventory into categories?"
-    Yes. When creating or editing an item you can assign it to a category.
-    Categories help you filter and search your inventory quickly. See [Inventory
-    Management](platform-guide/inventory-management.md#categorizing-inventory-items)
+    Loupe Factory organizes inventory using operational fields such as
+    **type**, **finished type**, **materials & supplies type**, **product**,
+    **shape**, **size**, **quality**, and **location**. This gives most
+    manufacturing and wholesale teams more control than a single category
+    label. See [Inventory
+    Management](platform-guide/inventory-management.md#how-loupe-factory-classifies-inventory)
     for details.
 
 ??? question "How do I search for a specific item?"
     Use the search bar at the top of the Inventory module. You can filter by
-    name, category, SKU, or custom attributes. The [Inventory
+    product, inventory type, shape, size, quality, or storage details. The
+    [Inventory
     Management](platform-guide/inventory-management.md) guide covers advanced
     filtering options.
 
@@ -81,40 +86,42 @@ links to the relevant documentation pages.
 ## Production
 
 ??? question "How do I set up a production process?"
-    Go to the **Production** module and create a new process. Define each stage,
-    specify the inputs consumed and outputs produced at each stage, and set
-    thresholds for waste, rejection, and scrap. See [Production
-    Tracking](platform-guide/production-tracking.md) for a full guide.
+    Go to **Production** and create a production job from the real order demand.
+    You will select the associated order, line item, stage, source inventory,
+    requested specs, and responsible staff member. See [Production
+    Tracking](platform-guide/production-tracking.md) for the full job-creation
+    flow.
 
 ??? question "How does Loupe Factory track waste and scrap?"
-    At each production stage you can record the quantity of material that was
-    rejected, scrapped, or lost as waste. Loupe Factory aggregates this data so
-    you can monitor yield rates over time. See [Production
-    Tracking](platform-guide/production-tracking.md#recording-waste-rejection-and-scrap)
+    When you receive a production job, Loupe Factory lets you record
+    **received output**, **wasted weight**, and optional **rejection** or
+    **scrap** separately. That data feeds job progress, yield, and waste
+    metrics automatically. See [Production
+    Tracking](platform-guide/production-tracking.md#receive-a-production-job)
     for details.
 
 ??? question "Can I track multiple production stages for a single job?"
-    Yes. Loupe Factory supports multi-stage production workflows. Each stage can
-    have its own inputs, outputs, and quality checkpoints. The [Production
-    Tracking](platform-guide/production-tracking.md) guide explains how to
-    define and manage stages.
+    Yes. Loupe Factory supports stage-based production workflows, so teams can
+    create and track production work at the correct operational stage while
+    keeping source inventory, received output, and losses visible. The
+    [Production Tracking](platform-guide/production-tracking.md) guide explains
+    how to manage that flow.
 
 ---
 
 ## Orders
 
 ??? question "How do I create a customer order?"
-    Open the **Orders** module and click **New Order**. Select the customer, add
-    line items from your inventory, set quantities and pricing, and confirm. See
-    [Order Management](platform-guide/order-management.md) for the full
-    workflow.
+    Go to **Orders** > **Sales Orders** and click **Add new sales order**.
+    Select the customer, assign the order lead, enter clear notes, review the
+    AI-prepared requested products, then complete the order details. See [Order
+    Management](platform-guide/order-management.md) for the full workflow.
 
 ??? question "How do I track the status of an order?"
-    Each order has a status that updates as it moves through fulfillment, from
-    created, to in production, to shipped, to delivered. You can view all orders
-    and filter by status in the Orders module. See [Order
-    Management](platform-guide/order-management.md#tracking-order-status) for
-    details.
+    Open the order record to review the requested products, linked production
+    work, invoicing progress, shipment activity, and any commercial follow-up.
+    You can also use the order list to focus on the records that need action.
+    See [Order Management](platform-guide/order-management.md) for details.
 
 ??? question "Can I generate an invoice directly from an order?"
     Yes. Once an order is ready to invoice, open the order and click **Generate

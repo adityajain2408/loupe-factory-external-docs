@@ -128,11 +128,73 @@ created, records edited) is preserved for audit purposes.
     their role to **Viewer** instead of removing them. This preserves their
     account and history while preventing unintended changes.
 
+## Managing Staff Records
+
+Loupe Factory uses staff records to organize the people who work inside your
+operation. These records help you assign work clearly across production,
+orders, departments, and locations.
+
+## Add a Staff Member
+
+To create a new staff record:
+
+1. Go to **People** > **Staff**.
+2. Click **Add Staff**.
+3. On the **Basic** step, enter the staff member's **email address**,
+   **nickname**, and **phone number**.
+4. On the **Personal** step, add an optional **profile photo**, then enter
+   **first name** and **last name**.
+5. On the **Work** step, choose the staff member's **location**,
+   **department**, and **designation**.
+6. Accept the terms and privacy confirmation, then continue.
+7. On the **Done** step, wait for the result message. From there, you can
+   **add another staff member**, **fix errors**, or **close** the window.
+
+## What the Staff Record Is Used For
+
+Once a staff member is added, Loupe Factory can use that record for
+day-to-day operational assignment, including:
+
+- assigning a production job to a staff member
+- assigning an order lead or workflow owner
+- organizing people by department and location
+- improving accountability in reports and activity history
+
+## Staff Record vs Platform Access
+
+A staff record is the operational profile for a person inside Loupe Factory.
+It is different from broader account-access setup.
+
+Create the staff record first when you want that person to appear in assignment
+lists, ownership fields, or reporting. If that person also needs login access,
+manage their account access separately through your organization's access and
+account workflow.
+
+## Recommended Information to Prepare
+
+Before adding staff, it helps to confirm:
+
+- the person's work email address
+- their preferred phone number
+- their main work location
+- the correct department
+- the correct designation or title
+
+Keeping these details consistent makes assignment filters, reporting, and
+handoffs easier for multi-site teams.
+
+## Best Practices
+
+- Use the staff member's real work email so internal communication stays clear.
+- Keep department and designation values consistent across teams.
+- Add the correct location so production and order ownership reports stay clean.
+- Use nicknames only when they help teams identify people faster in daily work.
+
 ## Next Steps
 
-- [Managing Your Account](../account-billing/managing-your-account.md): Update
-  organization settings and notification preferences.
-- [Reporting & Analytics](reporting-analytics.md): View activity logs and audit
-  trails for your team.
-- [Getting Started: Account Setup](../getting-started/account-setup.md): Review
-  initial organization configuration options.
+- [Customer & Supplier Management](customer-supplier-management.md): Create the
+  external business contacts your team works with.
+- [Production Tracking](production-tracking.md): Assign staff to production
+  jobs and record job progress.
+- [Order Management](order-management.md): Assign order leads and track work
+  against customer or supplier orders.
