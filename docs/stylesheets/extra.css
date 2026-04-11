@@ -262,7 +262,7 @@
   display: inline-block;
   font-weight: 600;
   padding: 0.75rem 1.5rem;
-  border-radius: 0.625rem;
+  border-radius: 0.375rem;
   text-decoration: none;
   transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.15s ease,
     box-shadow 0.2s ease;
@@ -508,8 +508,7 @@
 .md-typeset details.question {
   background: var(--lf-faq-bg);
   border-color: var(--lf-faq-border);
-  border-radius: 0.625rem;
-  box-shadow: var(--lf-faq-shadow);
+  border-radius: 0.25rem;
   overflow: hidden;
   transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
