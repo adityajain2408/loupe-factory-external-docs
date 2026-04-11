@@ -767,7 +767,8 @@
 }
 
 .lf-step__title::after {
-  content: " →";
+  content: "→";
+  margin-left: 0.25em;
   font-weight: 600;
   font-size: 0.9em;
   color: var(--md-primary-fg-color);
