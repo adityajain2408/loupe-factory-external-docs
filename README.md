@@ -21,8 +21,8 @@ Loupe Factory is an **AI-native operations platform** for **modern manufacturing
 and wholesale**. It brings day-to-day work into one workspace: **inventory**,
 **production tracking**, **orders**, **invoicing**, **shipments**, **customers
 and suppliers**, **team access**, and **reporting**, with built-in AI where it
-removes busywork. The live product runs on the main application deployment (e.g.
-`app.loupefactory.com`); this repository holds customer-facing documentation
+removes busywork. The live product runs on the main application deployment (
+`www.loupefactory.com`); this repository holds customer-facing documentation
 only.
 
 ---

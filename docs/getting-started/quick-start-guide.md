@@ -8,7 +8,7 @@ working foundation to manage **manufacturing and wholesale** operations.
 ## Step 1: Create Your Account
 
 If you haven't signed up yet, head to
-[app.loupefactory.com](https://app.loupefactory.com) and click **Get Started**.
+[loupefactory.com](https://www.loupefactory.com) and click **Get Started**.
 
 1. Enter your work email address and choose a password, or sign in with Google,
    Microsoft, or your organization's SSO provider.
@@ -24,7 +24,7 @@ If you haven't signed up yet, head to
 
 Once your organization is created, you'll land on the main dashboard. If you
 already have an account, log in at
-[app.loupefactory.com](https://app.loupefactory.com) and continue to Step 2.
+[loupefactory.com](https://www.loupefactory.com) and continue to Step 2.
 
 For a more detailed walkthrough of account setup and authentication options, see
 [Account Setup](account-setup.md).

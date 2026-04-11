@@ -6,7 +6,7 @@ ready to go.
 
 ## Sign Up
 
-To get started, navigate to [app.loupefactory.com](https://app.loupefactory.com)
+To get started, navigate to [loupefactory.com](https://www.loupefactory.com)
 and click **Get Started** or **Sign Up**.
 
 1. Enter your work email address.
@@ -30,7 +30,7 @@ it.
 
 ### Standard login
 
-1. Go to [app.loupefactory.com](https://app.loupefactory.com) and click **Log
+1. Go to [loupefactory.com](https://www.loupefactory.com) and click **Log
    In**.
 2. Enter your email address. You will be guided to the sign-in method your
    organization uses (for example, password or SSO).
