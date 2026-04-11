@@ -1,133 +1,277 @@
 # Quick Start Guide
 
-This guide walks you through the four essential steps to get up and running with
-Loupe Factory: creating your account, adding your first inventory item, setting
-up a production process, and placing your first order. By the end, you'll have a
-working foundation to manage **manufacturing and wholesale** operations.
+This guide follows the actual **Quick Start** checklist that appears in Loupe
+Factory after a user logs in to the dashboard for the first time. It is the
+fastest way to move from a brand-new workspace to a usable operating setup.
 
-## Step 1: Create Your Account
+For most new customers, the best sequence is:
 
-If you haven't signed up yet, head to
-[loupefactory.com](https://www.loupefactory.com) and click **Get Started**.
+1. Sign up and create your organization
+2. Log in and open the dashboard
+3. Select your industry type first
+4. Work through the Quick Start checklist category by category
 
-1. Enter your work email address and choose a password, or sign in with Google,
-   Microsoft, or your organization's SSO provider.
-2. Verify your email using the confirmation link sent to your inbox.
-3. Complete the onboarding flow to create your organization and enter your
-   organization name, industry, default currency, and timezone.
+## What happens after you log in
 
-!!! info "Screenshot: Account Creation Flow"
-    A screenshot will be added here showing the sign-up form and the initial
-    organization setup screen.
+When a new workspace opens on the dashboard, Loupe Factory shows a **Quick
+Start** off-canvas with a progress bar and a checklist of essential setup
+tasks. If you close it, you can reopen it from the **Quick Start** toggle on
+the dashboard.
 
-    **Suggested image**: `assets/quick-start-account-creation.png`
+The checklist is role-aware:
 
-Once your organization is created, you'll land on the main dashboard. If you
-already have an account, log in at
-[loupefactory.com](https://www.loupefactory.com) and continue to Step 2.
+- **Admins** see the full setup checklist for organization, inventory,
+  people, production, and orders
+- **Managers** see the operational tasks relevant to their permissions
+- Some items are **optional** and do not affect the main completion percentage
 
-For a more detailed walkthrough of account setup and authentication options, see
-[Account Setup](account-setup.md).
+## Step 1: Sign up and create your workspace
 
-## Step 2: Add Your First Inventory Entry
+Start by creating your Loupe Factory account and organization, then sign in to
+your workspace.
 
-Inventory is the foundation of LoupeFactory. Before you can track production or
-fulfill orders, you need items in your inventory.
+- Create your account or accept your workspace invitation
+- Sign in and land on the main dashboard
+- Open the Quick Start checklist if it does not already open automatically
 
-1. From the dashboard, navigate to **Inventory** in the left sidebar.
-2. Click **Add Item** in the top-right corner.
-3. Fill in the item details:
-    - **Name**: a clear, descriptive name (e.g., "Round Diamond 1ct").
-    - **SKU**: a unique identifier for the item.
-    - **Category**: group items by type (e.g., Raw Materials, Finished Goods).
-    - **Unit**: the unit of measure (e.g., pcs, grams, carats).
-    - **Quantity**: the current stock on hand.
-    - **Unit cost**: the cost per unit for valuation and reporting.
-4. Click **Save** to add the item to your inventory.
+For the complete account setup flow, see [Account Setup](account-setup.md).
 
-!!! info "Screenshot: Add Inventory Item Form"
-    A screenshot will be added here showing the Add Item form with the name,
-    SKU, category, unit, quantity, and unit cost fields filled in.
+## Step 2: Select your industry type first
 
-    **Suggested image**: `assets/quick-start-add-inventory-item.png`
+This is the most important first configuration step for a new admin because it
+shapes the default vocabulary and setup options used across Loupe Factory.
 
-Your item now appears in the inventory list. You can add more items, import in
-bulk via CSV, or organize items into categories at any time.
+1. Open **Organization Settings**
+2. Go to the **Industry** section
+3. Select the industry that best matches your business
+4. Save your selection
 
-For full inventory management capabilities, see [Inventory
-Management](../platform-guide/inventory-management.md).
+Your industry choice influences the default product language, inventory types,
+materials and supplies groupings, production stages, and related business
+defaults used across the workspace.
 
-## Step 3: Create a Production Process
+Before continuing, review [Industry Starting
+Points](industry-starting-points.md) so you understand what Loupe Factory will
+preload for your business model.
 
-A production process defines how raw materials are transformed into finished
-goods. LoupeFactory supports multi-stage processes so you can track inputs,
-outputs, and waste at each step.
+## Step 3: Complete the Get Started checklist
 
-1. Navigate to **Production** in the left sidebar.
-2. Click **New Process** to open the process builder.
-3. Enter a **Process Name** (e.g., "Diamond Cutting & Polishing").
-4. Add stages to the process:
-    - Click **Add Stage** and give the stage a name (e.g., "Cutting").
-    - For each stage, specify the **input materials** from your inventory and
-      the expected **output items**.
-    - Optionally set expected **waste**, **rejection**, and **scrap**
-      percentages for the stage.
-5. Repeat for each stage in your workflow.
-6. Click **Save Process** when done.
+After industry selection, the **Get Started** section is the first checklist
+group to complete.
 
-!!! info "Screenshot: Production Process Builder"
-    A screenshot will be added here showing the process builder with multiple
-    stages, input/output fields, and waste percentage settings.
+### Admin steps
 
-    **Suggested image**: `assets/quick-start-production-process.png`
+Admins are guided through these tasks:
 
-Once saved, you can start a production run against this process to track
-real-time progress and material consumption.
+1. **Select your trade industry**
+2. **Invite a team member**
+3. **Review product defaults (Units, Types, Shapes, Sizes)**
 
-For detailed guidance on managing production runs and recording stage outcomes,
-see [Production Tracking](../platform-guide/production-tracking.md).
+There is also one optional task:
 
-## Step 4: Place Your First Order
+- **Update your profile picture**
 
-With inventory stocked and a production process defined, you're ready to create
-a customer order.
+### What to do here
 
-1. Navigate to **Orders** in the left sidebar.
-2. Click **New Order**.
-3. Select or create a **Customer** and enter the customer's name, contact details,
-   and billing address.
-4. Add line items to the order:
-    - Search for items from your inventory.
-    - Set the **quantity** and **unit price** for each line item.
-5. Set the **order date** and an optional **expected delivery date**.
-6. Review the order summary and click **Place Order**.
+- Confirm the correct industry is selected in **Organization Settings**
+- Invite at least one teammate who should begin using the platform
+- Review the default product structure in **Products Settings** so units,
+  shapes, sizes, and product-type language match your business
 
-!!! info "Screenshot: New Order Form"
-    A screenshot will be added here showing the new order form with a customer
-    selected, line items added, and the order summary panel.
+Use these references while completing this section:
 
-    **Suggested image**: `assets/quick-start-new-order.png`
+- [Industry Starting Points](industry-starting-points.md)
+- [Definitions](definitions.md)
+- [Admin Settings Quick Map](admin-settings-quick-map.md#products-settings)
 
-Your order is now created and visible in the Orders list. From there you can
-track its status, generate an invoice, and create a shipment once the order is
-ready to dispatch.
+## Step 4: Complete the Organization checklist
 
-!!! info "Screenshot: Order Confirmation"
-    A screenshot will be added here showing the order detail page after the
-    order has been placed, with the status set to "Confirmed".
+For admins, the next checklist group is **Organization**.
 
-    **Suggested image**: `assets/quick-start-order-confirmation.png`
+### Required tasks
 
-For more on managing orders through fulfillment, see [Order
-Management](../platform-guide/order-management.md).
+1. **Add your organization logo**
+2. **Configure locations and set default**
+
+### Optional tasks
+
+- **Configure other compliance details**
+- **Configure regional and locale defaults**
+
+### What to do here
+
+Use this section to align the workspace with your business identity and your
+operating footprint.
+
+- Add your organization branding
+- Create the main location your team will use first
+- Set the default location for day-to-day operations
+- Optionally add regional, language, formatting, tax, or legal details if your
+  business needs them at launch
+
+Use [Admin Settings Quick Map](admin-settings-quick-map.md#organization-settings)
+for a clear summary of what belongs in this area.
+
+## Step 5: Complete the Inventory checklist
+
+The **Inventory** section establishes the categories and first records your team
+will work with.
+
+### Admin checklist
+
+Admins are guided through:
+
+1. **Review inventory types**
+2. **Review finished inventory types**
+3. **Review materials & supplies types**
+4. **Add first materials & supplies item**
+5. **Add first inventory item**
+
+Optional:
+
+- **View all inventory**
+
+### Manager checklist
+
+Managers usually see the operational steps only:
+
+1. **Add first materials & supplies item**
+2. **Add first inventory item**
+
+Optional:
+
+- **View all inventory**
+
+### What to do here
+
+- Review the default type structure before your team starts entering stock
+- Add at least one **materials & supplies** item such as packaging, chemicals,
+  workshop consumables, or production support stock
+- Add at least one regular inventory item that reflects the type of stock your
+  business buys, makes, transforms, or sells
+
+Continue with:
+
+- [Definitions](definitions.md)
+- [Admin Settings Quick Map](admin-settings-quick-map.md#inventory-settings)
+- [Inventory Management](../platform-guide/inventory-management.md)
+
+## Step 6: Complete the Manage People checklist
+
+The **Manage People** section helps you create the core business records needed
+for day-to-day operations.
+
+### Admin checklist
+
+Admins are guided through:
+
+1. **Add a staff member**
+2. **Add a customer**
+3. **Add a supplier**
+
+### Manager checklist
+
+Managers typically see:
+
+1. **Add a staff member**
+2. **Add a supplier**
+
+### What to do here
+
+- Add at least one internal team member
+- Add at least one customer if your business is ready to quote or sell
+- Add at least one supplier so purchasing and replenishment can begin cleanly
+
+These records make later workflows easier across purchasing, production, and
+fulfillment.
+
+## Step 7: Complete the Production checklist
+
+The **Production** section helps Loupe Factory reflect how your business
+actually converts materials into output.
+
+### Checklist steps
+
+1. **Review production stages**
+2. **Create a production job**
+
+### What to do here
+
+- Review your stage sequence in **Production Settings**
+- Confirm that stage names make sense for your real workflow
+- Create your first production job so your team can begin tracking issued
+  material, received output, rejection, scrap, and waste
+
+Use these references:
+
+- [Admin Settings Quick Map](admin-settings-quick-map.md#production-settings)
+- [Production Tracking](../platform-guide/production-tracking.md)
+
+## Step 8: Complete the Orders checklist
+
+The **Orders** section starts commercial activity inside Loupe Factory.
+
+### Admin checklist
+
+Admins are guided through:
+
+1. **Review order numbering defaults**
+2. **Create a purchase order**
+3. **Create a sales order**
+
+### Manager checklist
+
+Managers typically see:
+
+1. **Create a purchase order**
+
+### What to do here
+
+- Review numbering prefixes before documents start being issued at scale
+- Create a purchase order so incoming buying activity has a clean record
+- Create a sales order so the full order-to-fulfillment flow can begin
+
+Use these references:
+
+- [Admin Settings Quick Map](admin-settings-quick-map.md#orders-settings)
+- [Order Management](../platform-guide/order-management.md)
+- [Shipment Tracking](../platform-guide/shipment-tracking.md)
+
+## Step 9: Review optional integrations
+
+If your business needs external system connectivity early, Loupe Factory also
+shows an optional **Integrations** checklist.
+
+Optional items currently include:
+
+- **Import bank statements to Tally**
+- **Connect QuickBooks Online**
+
+These do not affect the main Quick Start completion percentage, so you can
+finish them when your internal setup is stable.
+
+## Recommended first-day path
+
+If you want a clean rollout, use this order:
+
+1. Sign up and log in
+2. Select the right industry
+3. Invite a teammate
+4. Review product, inventory, and production defaults
+5. Add your first materials and supplies item
+6. Add your first inventory item
+7. Add staff, customer, and supplier records as needed
+8. Create a production job
+9. Create your first purchase order
+10. Create your first sales order
 
 ## Next Steps
 
-- [Dashboard Overview](dashboard-overview.md): learn how to read key metrics
-  and navigate the platform.
-- [Inventory Management](../platform-guide/inventory-management.md): bulk
-  import items, manage categories, and set reorder alerts.
-- [Production Tracking](../platform-guide/production-tracking.md): start a
-  production run and record stage-by-stage outcomes.
-- [Order Management](../platform-guide/order-management.md): track orders from
-  creation through fulfillment and invoicing.
+- [Dashboard Overview](dashboard-overview.md): understand the dashboard and how
+  to move between modules
+- [Industry Starting Points](industry-starting-points.md): review the default
+  setup for your industry
+- [Definitions](definitions.md): align your team on the language used across
+  products, inventory, orders, and production
+- [Admin Settings Quick Map](admin-settings-quick-map.md): know exactly where
+  to customize each business area
