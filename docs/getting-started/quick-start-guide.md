@@ -59,7 +59,7 @@ preload for your business model.
 After industry selection, the **Get Started** section is the first checklist
 group to complete.
 
-### Admin steps
+### Get Started Admin Steps
 
 Admins are guided through these tasks:
 
@@ -71,9 +71,12 @@ There is also one optional task:
 
 - **Update your profile picture**
 
-### What to do here
+### Complete the Get Started Tasks
 
 - Confirm the correct industry is selected in **Organization Settings**
+- Review your own user profile and key organization settings first so account
+  identity, business details, and workspace defaults are correct before you add
+  more team members
 - Invite at least one teammate who should begin using the platform
 - Review the default product structure in **Products Settings** so units,
   shapes, sizes, and product-type language match your business
@@ -82,23 +85,24 @@ Use these references while completing this section:
 
 - [Industry Starting Points](industry-starting-points.md)
 - [Definitions](definitions.md)
+- [Managing Your Account](../account-billing/managing-your-account.md)
 - [Admin Settings Quick Map](admin-settings-quick-map.md#products-settings)
 
 ## Step 4: Complete the Organization checklist
 
 For admins, the next checklist group is **Organization**.
 
-### Required tasks
+### Organization Required Tasks
 
 1. **Add your organization logo**
 2. **Configure locations and set default**
 
-### Optional tasks
+### Organization Optional Tasks
 
 - **Configure other compliance details**
 - **Configure regional and locale defaults**
 
-### What to do here
+### Complete the Organization Tasks
 
 Use this section to align the workspace with your business identity and your
 operating footprint.
@@ -117,7 +121,7 @@ for a clear summary of what belongs in this area.
 The **Inventory** section establishes the categories and first records your team
 will work with.
 
-### Admin checklist
+### Inventory Admin Checklist
 
 Admins are guided through:
 
@@ -131,7 +135,7 @@ Optional:
 
 - **View all inventory**
 
-### Manager checklist
+### Inventory Manager Checklist
 
 Managers usually see the operational steps only:
 
@@ -142,7 +146,7 @@ Optional:
 
 - **View all inventory**
 
-### What to do here
+### Complete the Inventory Tasks
 
 - Review the default type structure before your team starts entering stock
 - Add at least one **materials & supplies** item such as packaging, chemicals,
@@ -161,7 +165,7 @@ Continue with:
 The **Manage People** section helps you create the core business records needed
 for day-to-day operations.
 
-### Admin checklist
+### People Admin Checklist
 
 Admins are guided through:
 
@@ -169,14 +173,14 @@ Admins are guided through:
 2. **Add a customer**
 3. **Add a supplier**
 
-### Manager checklist
+### People Manager Checklist
 
 Managers typically see:
 
 1. **Add a staff member**
 2. **Add a supplier**
 
-### What to do here
+### Complete the People Tasks
 
 - Add at least one internal team member
 - Add at least one customer if your business is ready to quote or sell
@@ -190,12 +194,12 @@ fulfillment.
 The **Production** section helps Loupe Factory reflect how your business
 actually converts materials into output.
 
-### Checklist steps
+### Production Checklist Steps
 
 1. **Review production stages**
 2. **Create a production job**
 
-### What to do here
+### Complete the Production Tasks
 
 - Review your stage sequence in **Production Settings**
 - Confirm that stage names make sense for your real workflow
@@ -211,7 +215,7 @@ Use these references:
 
 The **Orders** section starts commercial activity inside Loupe Factory.
 
-### Admin checklist
+### Orders Admin Checklist
 
 Admins are guided through:
 
@@ -219,13 +223,13 @@ Admins are guided through:
 2. **Create a purchase order**
 3. **Create a sales order**
 
-### Manager checklist
+### Orders Manager Checklist
 
 Managers typically see:
 
 1. **Create a purchase order**
 
-### What to do here
+### Complete the Orders Tasks
 
 - Review numbering prefixes before documents start being issued at scale
 - Create a purchase order so incoming buying activity has a clean record
@@ -256,14 +260,15 @@ If you want a clean rollout, use this order:
 
 1. Sign up and log in
 2. Select the right industry
-3. Invite a teammate
-4. Review product, inventory, and production defaults
-5. Add your first materials and supplies item
-6. Add your first inventory item
-7. Add staff, customer, and supplier records as needed
-8. Create a production job
-9. Create your first purchase order
-10. Create your first sales order
+3. Review your profile and core organization settings
+4. Invite a teammate
+5. Review product, inventory, and production defaults
+6. Add your first materials and supplies item
+7. Add your first inventory item
+8. Add staff, customer, and supplier records as needed
+9. Create a production job
+10. Create your first purchase order
+11. Create your first sales order
 
 ## Next Steps
 
