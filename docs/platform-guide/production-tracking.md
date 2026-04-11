@@ -137,6 +137,121 @@ recoverable value can be tracked and sold or reused.
 
     **Suggested image**: `assets/production-stage-summary.png`
 
+## How Loupe Factory Calculates Job Progress and Efficiency
+
+Loupe Factory tracks production at the job level by separating material into
+five operational buckets:
+
+- **Received**: good output weight recorded back from the job
+- **Rejected**: output weight that was produced and received, but failed quality
+- **Scrapped**: tracked recoverable material kept separate from normal output
+- **Waste**: unrecoverable loss that is not stored back as inventory
+- **Pending**: weight that has not yet been accounted for
+
+### Step 1: Determine the progress base
+
+For each production job, Loupe Factory first decides what weight should be used
+as the job's base:
+
+\[
+\text{Progress Base} =
+\begin{cases}
+\text{Requested Weight}, & \text{if requested weight is available} \\
+\text{Issued Weight}, & \text{otherwise}
+\end{cases}
+\]
+
+\[
+\text{Pending Weight} =
+\text{Progress Base}
+- \text{Received}
+- \text{Rejected}
+- \text{Scrapped}
+- \text{Waste}
+\]
+
+In day-to-day terms, this means Loupe Factory prefers the weight your team was
+asked to deliver. If that number was never set, it falls back to the weight
+that was actually issued into the job.
+
+### Step 2: Progress bar percentages
+
+The progress bar on a production job divides each bucket by the same
+**Progress Base** so teams can see where the material currently stands:
+
+\[
+\text{Completed \%} = \frac{\text{Received}}{\text{Progress Base}} \times 100
+\]
+
+\[
+\text{Pending \%} = \frac{\text{Pending}}{\text{Progress Base}} \times 100
+\]
+
+\[
+\text{Rejected \%} = \frac{\text{Rejected}}{\text{Progress Base}} \times 100
+\]
+
+\[
+\text{Scrapped \%} = \frac{\text{Scrapped}}{\text{Progress Base}} \times 100
+\]
+
+\[
+\text{Wasted \%} = \frac{\text{Waste}}{\text{Progress Base}} \times 100
+\]
+
+This is why the progress view helps production, quality, and operations teams
+read the same job differently without changing the underlying numbers.
+
+### Step 3: Efficiency chips on the production job
+
+Loupe Factory also shows four efficiency measures on each production job.
+These answer a different question from the progress bar: not just **where the
+material is**, but **how efficiently the job converted it**.
+
+\[
+\text{Output \%} = \frac{\text{Received} + \text{Rejected}}{\text{Progress Base}} \times 100
+\]
+
+**Output %** is the practical yield figure for the job. Rejected weight is
+included because it was still physically produced and measured back from the
+stage.
+
+\[
+\text{Gross Waste \%} = \frac{\text{Waste} + \text{Scrapped}}{\text{Progress Base}} \times 100
+\]
+
+**Gross Waste %** captures the full process loss, including tracked scrap.
+
+\[
+\text{Net Waste \%} = \frac{\text{Waste}}{\text{Progress Base}} \times 100
+\]
+
+**Net Waste %** is the true **loss waste** figure in Loupe Factory. It excludes
+scrap and focuses only on unrecoverable loss.
+
+\[
+\text{Consumption \%} = \frac{\text{Waste} + \text{Scrapped}}{\text{Received} + \text{Rejected}} \times 100
+\]
+
+**Consumption %** shows how much material was lost for every unit of measured
+output produced. Lower values indicate a tighter, more efficient process.
+
+!!! example "Simple job example"
+    If a job starts with a **100 g** progress base and ends with **82 g
+    received**, **5 g rejected**, **8 g scrapped**, and **5 g waste**,
+    Loupe Factory shows:
+
+    - **Output:** 87.0%
+    - **Gross Waste:** 13.0%
+    - **Net Waste:** 5.0%
+    - **Consumption:** 14.9%
+
+!!! tip
+    If neither requested weight nor issued weight is available, Loupe Factory
+    can still show a practical progress split from the recorded totals, but the
+    most reliable efficiency percentages come from jobs with a clear base
+    weight.
+
 ## Viewing Production Run History
 
 All completed and in-progress production runs are accessible from the

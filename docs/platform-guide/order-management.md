@@ -86,6 +86,121 @@ Click any order in the list to open its detail view. The detail page shows:
 
     **Suggested image**: `assets/order-detail-view.png`
 
+## How Loupe Factory Calculates Production Metrics on an Order
+
+When an order has linked production jobs, Loupe Factory shows production
+numbers in two layers:
+
+1. **Job-level progress** on timeline cards, which follows the same logic as
+   [Production Tracking](production-tracking.md#how-loupe-factory-calculates-job-progress-and-efficiency)
+2. **Order-level efficiency** on the order details production summary, which
+   looks across the full production chain for that order
+
+### Order progress bar
+
+The order progress bar combines all linked production jobs into one operating
+view. Loupe Factory adds together each job's progress base and each recorded
+weight bucket:
+
+\[
+\text{Order Progress Base} = \sum \text{Job Progress Base}
+\]
+
+\[
+\text{Order Completed \%} = \frac{\sum \text{Received}}{\sum \text{Job Progress Base}} \times 100
+\]
+
+\[
+\text{Order Pending \%} = \frac{\sum \text{Pending}}{\sum \text{Job Progress Base}} \times 100
+\]
+
+\[
+\text{Order Rejected \%} = \frac{\sum \text{Rejected}}{\sum \text{Job Progress Base}} \times 100
+\]
+
+\[
+\text{Order Scrapped \%} = \frac{\sum \text{Scrapped}}{\sum \text{Job Progress Base}} \times 100
+\]
+
+\[
+\text{Order Wasted \%} = \frac{\sum \text{Waste}}{\sum \text{Job Progress Base}} \times 100
+\]
+
+This gives sales, production, and customer-service teams one shared progress
+view without forcing them to inspect each production job separately.
+
+### Final output weight
+
+For the order-wide efficiency card, Loupe Factory first determines the
+**Final Output Weight**. To do this, it finds the most recently received
+production stage on the order and then sums the measured output from that same
+stage across all related jobs.
+
+\[
+\text{Final Output Weight} =
+\sum_{\text{jobs in the final received stage}}
+(\text{Received} + \text{Rejected})
+\]
+
+This treats the final stage as the order's last real production checkpoint.
+
+### Net input weight
+
+Loupe Factory then calculates the **Net Input Weight** across the full order:
+
+\[
+\text{Net Input Weight} =
+\sum \text{Issued}
++ \text{Final Output Weight}
+- \sum (\text{Received} + \text{Rejected})
+\]
+
+In practical terms, this represents the net material still consumed by the full
+production chain after intermediate stage outputs are backed out and the final
+stage output is added back in once.
+
+### Order-level efficiency metrics
+
+After those two weights are established, Loupe Factory calculates the order's
+top-line efficiency metrics. Before doing so, it normalizes all linked
+production-job weights into your organization's default weight unit, so the
+order is measured consistently even when different jobs were recorded in
+different units.
+
+\[
+\text{Output \%} = \frac{\text{Final Output Weight}}{\text{Net Input Weight}} \times 100
+\]
+
+**Output %** shows how much of the order's net material input became final-stage
+output.
+
+\[
+\text{Gross Waste \%} = \frac{\text{Total Waste} + \text{Total Scrap}}{\text{Net Input Weight}} \times 100
+\]
+
+**Gross Waste %** captures the total material loss across the order, including
+tracked scrap.
+
+\[
+\text{Net Waste \%} = \frac{\text{Total Waste}}{\text{Net Input Weight}} \times 100
+\]
+
+**Net Waste %** is the order-level **loss waste** figure. It isolates true
+unrecoverable loss and excludes scrap that is still separately tracked.
+
+\[
+\text{Consumption \%} = \frac{\text{Total Waste} + \text{Total Scrap}}{\text{Final Output Weight}} \times 100
+\]
+
+**Consumption %** shows how much material was lost for each unit of final
+output produced. Lower values indicate a more efficient production chain.
+
+!!! tip "How to read the order metrics"
+    - **Higher Output %** is better
+    - **Lower Gross Waste %** is better
+    - **Lower Net Waste %** means lower true loss
+    - **Lower Consumption %** means the order used material more efficiently
+
 ## Fulfilling an Order
 
 Fulfillment involves preparing items, creating a shipment, and marking the order
