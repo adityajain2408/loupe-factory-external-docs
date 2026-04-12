@@ -328,28 +328,28 @@ order is measured consistently even when different jobs were recorded in
 different units.
 
 $$
-\text{Output \%} = \frac{\text{Final Output Weight}}{\text{Net Input Weight}} \times 100
+\text{Output Percentage} = \frac{\text{Final Output Weight}}{\text{Net Input Weight}} \times 100
 $$
 
 **Output %** shows how much of the order's net material input became final-stage
 output.
 
 $$
-\text{Gross Waste \%} = \frac{\text{Total Waste} + \text{Total Scrap}}{\text{Net Input Weight}} \times 100
+\text{Gross Waste Percentage} = \frac{\text{Total Waste} + \text{Total Scrap}}{\text{Net Input Weight}} \times 100
 $$
 
 **Gross Waste %** captures the total material loss across the order, including
 tracked scrap.
 
 $$
-\text{Net Waste \%} = \frac{\text{Total Waste}}{\text{Net Input Weight}} \times 100
+\text{Net Waste Percentage} = \frac{\text{Total Waste}}{\text{Net Input Weight}} \times 100
 $$
 
 **Net Waste %** is the order-level **loss waste** figure. It isolates true
 unrecoverable loss and excludes scrap that is still separately tracked.
 
 $$
-\text{Consumption \%} = \frac{\text{Total Waste} + \text{Total Scrap}}{\text{Final Output Weight}} \times 100
+\text{Consumption Percentage} = \frac{\text{Total Waste} + \text{Total Scrap}}{\text{Final Output Weight}} \times 100
 $$
 
 **Consumption %** shows how much material was lost for each unit of final
