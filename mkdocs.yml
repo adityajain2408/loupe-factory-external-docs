@@ -176,6 +176,19 @@ extra:
       name: Loupe Factory on Facebook
       link: https://www.facebook.com/profile.php?id=61587067568622
 
+  analytics:
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: helpful
+          note: Thanks for your feedback.
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: not_helpful
+          note: Thanks for your feedback.
+
   consent:
     title: Cookie consent
     description: >-
