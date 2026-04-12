@@ -180,14 +180,14 @@ extra:
     feedback:
       title: Was this page helpful?
       ratings:
-        - icon: material/thumb-up-outline
+        - icon: material/emoticon-happy-outline
           name: This page was helpful
           data: helpful
-          note: Thanks for your feedback.
-        - icon: material/thumb-down-outline
+          note: Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
           name: This page could be improved
           data: not_helpful
-          note: Thanks for your feedback.
+          note: Thanks for your feedback! Help us improve this page by emailing us at <a href="mailto:support@loupefactory.com">support@loupefactory.com</a>.
 
   consent:
     title: Cookie consent
