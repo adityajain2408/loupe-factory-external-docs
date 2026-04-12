@@ -7,7 +7,7 @@ hide:
 <div class="lf-hero">
   <p class="lf-hero__eyebrow">Loupe Factory documentation</p>
   <p class="lf-hero__title">
-    The AI-native operations platform for modern manufacturing and wholesale businesses
+    AI-native operations platform for modern manufacturers and wholesalers
   </p>
   <p class="lf-hero__subtitle">
     Bring inventory, production, orders, deliveries, invoicing, and reporting into
