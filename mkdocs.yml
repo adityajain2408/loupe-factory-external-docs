@@ -160,8 +160,18 @@ extra:
     default: latest
 
   social:
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/company/LoupeAI
+    - icon: material/linkedin
+      name: Loupe Factory on LinkedIn
+      link: https://www.linkedin.com/company/loupe-ai/
+    - icon: material/twitter
+      name: Loupe Factory on X
+      link: https://x.com/LoupeFactory
+    - icon: material/youtube
+      name: Loupe AI on YouTube
+      link: https://www.youtube.com/@LoupeAI
+    - icon: material/facebook
+      name: Loupe Factory on Facebook
+      link: https://www.facebook.com/profile.php?id=61587067568622
 
   analytics:
     provider: google

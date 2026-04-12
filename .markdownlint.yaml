@@ -15,7 +15,7 @@ MD033:
 
 # Prefer readable line breaks in prose; exclude regions where reflow is awkward.
 MD013:
-  line_length: 80
+  line_length: 120
   code_blocks: false
   tables: false
   headings: false
