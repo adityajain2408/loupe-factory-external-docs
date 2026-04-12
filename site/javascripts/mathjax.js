@@ -11,12 +11,26 @@ window.MathJax = {
   }
 };
 
-document$.subscribe(() => {
-  if (!window.MathJax || !MathJax.startup || !MathJax.startup.output) {
+function typesetMath(root) {
+  if (!window.MathJax || typeof window.MathJax.typesetPromise !== "function") {
     return;
   }
-  MathJax.startup.output.clearCache();
-  MathJax.typesetClear();
-  MathJax.texReset();
-  MathJax.typesetPromise();
+
+  window.MathJax.startup.promise
+    .then(() => {
+      window.MathJax.typesetClear([root]);
+      window.MathJax.texReset();
+      return window.MathJax.typesetPromise([root]);
+    })
+    .catch((error) => {
+      console.error("MathJax typeset failed.", error);
+    });
+}
+
+document$.subscribe(({ body }) => {
+  typesetMath(body);
+});
+
+window.addEventListener("load", () => {
+  typesetMath(document.body);
 });

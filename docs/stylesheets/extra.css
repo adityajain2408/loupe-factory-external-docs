@@ -257,6 +257,25 @@
   align-items: center;
 }
 
+/* ============================================================
+   Math display blocks
+   ============================================================ */
+.md-typeset .arithmatex {
+  margin: 1.25rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0 0 0.125rem;
+}
+
+.md-typeset .arithmatex mjx-container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.md-typeset .arithmatex mjx-container[display="true"] {
+  padding: 0.25rem 0;
+}
+
 /* Scoped under .md-typeset so these beat Material's `.md-typeset a { color: … }` (higher specificity). */
 .md-typeset .lf-hero .lf-hero__cta {
   display: inline-block;
