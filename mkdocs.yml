@@ -159,6 +159,9 @@ extra:
     provider: mike
     default: latest
 
+  tag_manager:
+    container_id: !ENV [GOOGLE_TAG_MANAGER_ID, ""]
+
   social:
     - icon: material/linkedin
       name: Loupe Factory on LinkedIn
@@ -173,10 +176,6 @@ extra:
       name: Loupe Factory on Facebook
       link: https://www.facebook.com/profile.php?id=61587067568622
 
-  analytics:
-    provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
-
   consent:
     title: Cookie consent
     description: >-
@@ -184,3 +183,5 @@ extra:
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
+    cookies:
+      analytics: Analytics

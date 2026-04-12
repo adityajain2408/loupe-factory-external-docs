@@ -1,5 +1,110 @@
 {% extends "base.html" %}
 
+{% block analytics %}
+  {% if config.extra.tag_manager %}
+    {% set container_id = config.extra.tag_manager.container_id | d("", true) %}
+  {% endif %}
+  {% if container_id %}
+    <script id="__analytics">
+      function __md_analytics() {
+        if (window.__lfGtmLoaded) {
+          return;
+        }
+
+        window.__lfGtmLoaded = true;
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          "gtm.start": Date.now(),
+          event: "gtm.js"
+        });
+
+        function bindSearchTracking() {
+          var form = document.forms.search;
+          if (!form || form.dataset.lfSearchBound === "true") {
+            return;
+          }
+
+          var input = form.querySelector('[name="query"]');
+          if (!input) {
+            return;
+          }
+
+          form.dataset.lfSearchBound = "true";
+          input.addEventListener("blur", function () {
+            var term = this.value ? this.value.trim() : "";
+            if (!term) {
+              return;
+            }
+
+            window.dataLayer.push({
+              event: "search",
+              search_term: term,
+              page_path: window.location.pathname,
+              page_url: window.location.href,
+              page_title: document.title
+            });
+          });
+        }
+
+        function bindFeedbackTracking() {
+          var form = document.forms.feedback;
+          if (!form || form.dataset.lfFeedbackBound === "true") {
+            return;
+          }
+
+          form.dataset.lfFeedbackBound = "true";
+          form.hidden = false;
+
+          form.querySelectorAll("[type='submit'][data-md-value]").forEach(function (button) {
+            button.addEventListener("click", function (event) {
+              event.preventDefault();
+
+              var value = this.getAttribute("data-md-value");
+              window.dataLayer.push({
+                event: "feedback",
+                feedback: {
+                  value: value
+                },
+                page_path: window.location.pathname,
+                page_url: window.location.href,
+                page_title: document.title
+              });
+
+              form.firstElementChild.disabled = true;
+
+              var note = form.querySelector(".md-feedback__note [data-md-value='" + value + "']");
+              if (note) {
+                note.hidden = false;
+              }
+            });
+          });
+        }
+
+        function bindAnalyticsUi() {
+          bindSearchTracking();
+          bindFeedbackTracking();
+        }
+
+        document.addEventListener("DOMContentLoaded", bindAnalyticsUi);
+
+        if (typeof document$ !== "undefined" && document$.subscribe) {
+          document$.subscribe(bindAnalyticsUi);
+        }
+
+        var script = document.createElement("script");
+        script.async = true;
+        script.src = "https://www.googletagmanager.com/gtm.js?id={{ container_id }}";
+        document.getElementById("__analytics").insertAdjacentElement("afterEnd", script);
+      }
+    </script>
+    {% if config.extra.consent %}
+      <script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
+    {% else %}
+      <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+    {% endif %}
+  {% endif %}
+{% endblock %}
+
 {% block extrahead %}
   {{ super() }}
   <link rel="icon" href="{{ base_url }}/assets/images/favicon.ico" sizes="any">
