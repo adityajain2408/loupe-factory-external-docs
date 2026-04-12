@@ -253,23 +253,23 @@ The progress bar on a production job divides each bucket by the same
 **Progress Base** so teams can see where the material currently stands:
 
 $$
-\text{Completed \%} = \frac{\text{Received}}{\text{Progress Base}} \times 100
+\text{Completed Percentage} = \frac{\text{Received}}{\text{Progress Base}} \times 100
 $$
 
 $$
-\text{Pending \%} = \frac{\text{Pending}}{\text{Progress Base}} \times 100
+\text{Pending Percentage} = \frac{\text{Pending}}{\text{Progress Base}} \times 100
 $$
 
 $$
-\text{Rejected \%} = \frac{\text{Rejected}}{\text{Progress Base}} \times 100
+\text{Rejected Percentage} = \frac{\text{Rejected}}{\text{Progress Base}} \times 100
 $$
 
 $$
-\text{Scrapped \%} = \frac{\text{Scrapped}}{\text{Progress Base}} \times 100
+\text{Scrapped Percentage} = \frac{\text{Scrapped}}{\text{Progress Base}} \times 100
 $$
 
 $$
-\text{Wasted \%} = \frac{\text{Waste}}{\text{Progress Base}} \times 100
+\text{Wasted Percentage} = \frac{\text{Waste}}{\text{Progress Base}} \times 100
 $$
 
 This is why the progress view helps production, quality, and operations teams
@@ -282,7 +282,7 @@ These answer a different question from the progress bar: not just **where the
 material is**, but **how efficiently the job converted it**.
 
 $$
-\text{Output \%} = \frac{\text{Received} + \text{Rejected}}{\text{Progress Base}} \times 100
+\text{Output Percentage} = \frac{\text{Received} + \text{Rejected}}{\text{Progress Base}} \times 100
 $$
 
 **Output %** is the practical yield figure for the job. Rejected weight is
@@ -290,20 +290,20 @@ included because it was still physically produced and measured back from the
 stage.
 
 $$
-\text{Gross Waste \%} = \frac{\text{Waste} + \text{Scrapped}}{\text{Progress Base}} \times 100
+\text{Gross Waste Percentage} = \frac{\text{Waste} + \text{Scrapped}}{\text{Progress Base}} \times 100
 $$
 
 **Gross Waste %** captures the full process loss, including tracked scrap.
 
 $$
-\text{Net Waste \%} = \frac{\text{Waste}}{\text{Progress Base}} \times 100
+\text{Net Waste Percentage} = \frac{\text{Waste}}{\text{Progress Base}} \times 100
 $$
 
 **Net Waste %** is the true **loss waste** figure in Loupe Factory. It excludes
 scrap and focuses only on unrecoverable loss.
 
 $$
-\text{Consumption \%} = \frac{\text{Waste} + \text{Scrapped}}{\text{Received} + \text{Rejected}} \times 100
+\text{Consumption Percentage} = \frac{\text{Waste} + \text{Scrapped}}{\text{Received} + \text{Rejected}} \times 100
 $$
 
 **Consumption %** shows how much material was lost for every unit of measured

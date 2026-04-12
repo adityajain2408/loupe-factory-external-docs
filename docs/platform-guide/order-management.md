@@ -267,23 +267,23 @@ $$
 $$
 
 $$
-\text{Order Completed \%} = \frac{\sum \text{Received}}{\sum \text{Job Progress Base}} \times 100
+\text{Order Completed Percentage} = \frac{\sum \text{Received}}{\sum \text{Job Progress Base}} \times 100
 $$
 
 $$
-\text{Order Pending \%} = \frac{\sum \text{Pending}}{\sum \text{Job Progress Base}} \times 100
+\text{Order Pending Percentage} = \frac{\sum \text{Pending}}{\sum \text{Job Progress Base}} \times 100
 $$
 
 $$
-\text{Order Rejected \%} = \frac{\sum \text{Rejected}}{\sum \text{Job Progress Base}} \times 100
+\text{Order Rejected Percentage} = \frac{\sum \text{Rejected}}{\sum \text{Job Progress Base}} \times 100
 $$
 
 $$
-\text{Order Scrapped \%} = \frac{\sum \text{Scrapped}}{\sum \text{Job Progress Base}} \times 100
+\text{Order Scrapped Percentage} = \frac{\sum \text{Scrapped}}{\sum \text{Job Progress Base}} \times 100
 $$
 
 $$
-\text{Order Wasted \%} = \frac{\sum \text{Waste}}{\sum \text{Job Progress Base}} \times 100
+\text{Order Wasted Percentage} = \frac{\sum \text{Waste}}{\sum \text{Job Progress Base}} \times 100
 $$
 
 This gives sales, production, and customer-service teams one shared progress
