@@ -136,21 +136,21 @@ hide:
         <span class="lf-step__content">
           <span class="lf-step__title">Set up your account</span>
           <span class="lf-step__desc">
-            Create your workspace, invite teammates, and tune organization settings such
-            as currency and timezone.
+            Create your workspace, invite teammates, and set the basics such as
+            your company details, currency, and timezone.
           </span>
         </span>
       </a>
     </li>
 
     <li>
-      <a href="platform-guide/dashboard-overview/" class="lf-step" aria-label="Step 2: Tour the dashboard">
+      <a href="getting-started/admin-settings-quick-map/#admin-settings-quick-map" class="lf-step" aria-label="Step 2: Review admin settings and industry defaults">
         <span class="lf-step__number" aria-hidden="true">2</span>
         <span class="lf-step__content">
-          <span class="lf-step__title">Tour the dashboard</span>
+          <span class="lf-step__title">Review admin settings and industry defaults</span>
           <span class="lf-step__desc">
-            Learn how navigation, modules, and key metrics fit together so daily work
-            feels familiar.
+            Check the settings, terminology, and starter defaults that shape how
+            Loupe Factory fits your business before daily work begins.
           </span>
         </span>
       </a>
@@ -162,8 +162,8 @@ hide:
         <span class="lf-step__content">
           <span class="lf-step__title">Complete the quick start</span>
           <span class="lf-step__desc">
-            Walk through a realistic flow (inventory, production, and an order) so you
-            have context for the rest of the docs.
+            Walk through your first inventory, production, and order flow so the
+            rest of the product feels familiar.
           </span>
         </span>
       </a>
