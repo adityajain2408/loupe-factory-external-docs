@@ -16,8 +16,12 @@ hide:
     distribute physical products anywhere in the world.
   </p>
   <div class="lf-hero__actions">
-    <a href="getting-started/quick-start-guide/" class="lf-hero__cta lf-hero__cta--primary">Start the quick start guide -></a>
-    <a href="getting-started/account-setup/" class="lf-hero__cta lf-hero__cta--secondary">Set up your account -></a>
+    <a href="getting-started/quick-start-guide/" class="lf-hero__cta lf-hero__cta--primary">
+    Start the quick start guide ->
+    </a>
+    <a href="getting-started/account-setup/" class="lf-hero__cta lf-hero__cta--secondary">
+    Set up your account ->
+    </a>
   </div>
 </div>
 
@@ -74,8 +78,8 @@ hide:
     <div class="lf-feature-card__icon">📦</div>
     <div class="lf-feature-card__title">Inventory Management</div>
     <div class="lf-feature-card__desc">
-      Record items, categories, and units of measure so everyone works from the
-      same source of truth.
+      Keep finished goods, materials, and supplies organized with clear
+      quantities, weights, quality, and storage details.
     </div>
   </a>
 
@@ -83,8 +87,8 @@ hide:
     <div class="lf-feature-card__icon">🏭</div>
     <div class="lf-feature-card__title">Production Tracking</div>
     <div class="lf-feature-card__desc">
-      Model multi-stage processes, track inputs and outputs, and capture waste and
-      yield where it matters.
+      Track each production stage from issued materials to finished output,
+      while recording waste, scrap, and rework along the way.
     </div>
   </a>
 
@@ -92,8 +96,8 @@ hide:
     <div class="lf-feature-card__icon">🛒</div>
     <div class="lf-feature-card__title">Order Management</div>
     <div class="lf-feature-card__desc">
-      Create and fulfill customer orders from draft through production, shipping,
-      and completion.
+      Create sales and purchase orders, review requested products, and follow
+      each order through fulfillment.
     </div>
   </a>
 
@@ -101,8 +105,8 @@ hide:
     <div class="lf-feature-card__icon">🚚</div>
     <div class="lf-feature-card__title">Shipment Tracking</div>
     <div class="lf-feature-card__desc">
-      Buy labels, track packages, and keep delivery status aligned with your
-      orders, without leaving the app.
+      Create shipments, download labels, and check package status from label
+      creation through delivery.
     </div>
   </a>
 
@@ -110,8 +114,8 @@ hide:
     <div class="lf-feature-card__icon">📊</div>
     <div class="lf-feature-card__title">Reporting &amp; Analytics</div>
     <div class="lf-feature-card__desc">
-      Review operational reports, charts, and exports to support decisions and
-      audits.
+      View reports across inventory, production, orders, shipments, and
+      invoices, then export data when you need it.
     </div>
   </a>
 
@@ -119,8 +123,8 @@ hide:
     <div class="lf-feature-card__icon">🧾</div>
     <div class="lf-feature-card__title">Invoicing</div>
     <div class="lf-feature-card__desc">
-      Turn fulfilled work into invoices and keep revenue aligned with what
-      shipped.
+      Create invoices from confirmed orders, send them to customers, and record
+      payments and overdue balances.
     </div>
   </a>
 </div>
