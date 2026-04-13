@@ -8,12 +8,12 @@ your company actually works.
 
 - [Account Setup](account-setup.md): Sign up, log in, and configure your
   organization settings.
+- [Definitions](definitions.md): Understand the core business terms used across
+  products, inventory, production, and orders.
 - [Dashboard Overview](dashboard-overview.md): Learn the dashboard layout, key
   metrics, and how to navigate each module.
 - [Industry Starting Points](industry-starting-points.md): Review the starter
   defaults for gemstone, jewelry, and auto-parts businesses.
-- [Definitions](definitions.md): Understand the core business terms used across
-  products, inventory, production, and orders.
 - [Admin Settings Quick Map](admin-settings-quick-map.md): See where to
   customize your operational language, numbering, and workflow rules.
 - [Quick Start Guide](quick-start-guide.md): A step-by-step walkthrough
