@@ -1,6 +1,6 @@
 # Reporting & Analytics
 
-LoupeFactory's Reporting & Analytics module gives you a clear view of your
+Loupe Factory's Reporting & Analytics module gives you a clear view of your
 business performance across inventory, production, orders, shipments, and
 financials. This guide covers the available reports, how to read data
 visualizations, and how to export your data.
@@ -105,7 +105,7 @@ your receivables.
 ## Data Visualizations
 
 Most reports include one or more charts to help you spot trends at a glance.
-LoupeFactory uses the following chart types:
+Loupe Factory uses the following chart types:
 
 - **Line charts**: Used for time-series data such as revenue over time or
   production output per week.

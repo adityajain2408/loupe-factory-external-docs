@@ -13,7 +13,7 @@ your organization's balance. Credits are shared across all team members in your
 organization.
 
 Your current credit balance is always visible in the top navigation bar. When
-your balance runs low, LoupeFactory will notify you so you can purchase more
+your balance runs low, Loupe Factory will notify you so you can purchase more
 before any disruption to your workflow.
 
 !!! info "Screenshot: AI Credits balance indicator"
@@ -24,7 +24,7 @@ before any disruption to your workflow.
 
 ### Credit Tiers and Plans
 
-Credits are included with your LoupeFactory subscription plan. Higher-tier plans
+Credits are included with your Loupe Factory subscription plan. Higher-tier plans
 include a larger monthly credit allocation. Unused credits from your monthly
 allocation do not roll over to the next billing period, but any credits you
 purchase separately are retained until used.
@@ -92,7 +92,7 @@ To purchase credits:
 | Enterprise | 50,000 credits | $350 |
 
 !!! note "Payment methods"
-    LoupeFactory accepts all major credit and debit cards. Payment details are
+    Loupe Factory accepts all major credit and debit cards. Payment details are
     managed securely through our billing provider. You can update your payment
     method at any time in **Settings → Billing → Payment Methods**.
 

@@ -1,6 +1,6 @@
 # Platform Guide
 
-The Platform Guide covers every module in LoupeFactory, from managing your
+The Platform Guide covers every module in Loupe Factory, from managing your
 inventory and tracking production to handling orders, invoices, shipments, and
 your team. Use this section as your reference for day-to-day operations on the
 platform.
@@ -28,7 +28,7 @@ platform.
 
 ## Next Steps
 
-If you're new to LoupeFactory, start with the [Getting
+If you're new to Loupe Factory, start with the [Getting
 Started](../getting-started/index.md) section before diving into the platform
 modules. When you're ready to orient yourself inside the app, begin with
 [Dashboard Overview](dashboard-overview.md).

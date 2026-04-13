@@ -1,6 +1,6 @@
 # Account & Billing
 
-Manage your LoupeFactory account settings and understand how AI credits and
+Manage your Loupe Factory account settings and understand how AI credits and
 billing work. This section covers everything from updating your profile and
 organization preferences to purchasing credits and reviewing your billing
 history.
@@ -15,6 +15,6 @@ history.
 
 ## Next Steps
 
-If you're new to LoupeFactory, start with the [Getting
+If you're new to Loupe Factory, start with the [Getting
 Started](../getting-started/index.md) section to set up your account and get
 familiar with the platform.

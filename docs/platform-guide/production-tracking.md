@@ -1,13 +1,13 @@
 # Production Tracking
 
-LoupeFactory's production tracking module lets you model and monitor multi-stage
+Loupe Factory's production tracking module lets you model and monitor multi-stage
 manufacturing processes from start to finish. This guide covers how to define
 production stages, track inputs and outputs at each stage, and record waste,
 rejection, and scrap.
 
 ## Overview of Multi-Stage Production
 
-A production process in LoupeFactory is made up of one or more sequential
+A production process in Loupe Factory is made up of one or more sequential
 stages. Each stage represents a distinct step in your workflow: for example,
 receiving, fabrication or assembly, finishing, and quality inspection. Tracking
 each stage separately gives you full visibility into where materials are at any
@@ -115,7 +115,7 @@ To modify a process after it has been created:
 
 Each production stage consumes inputs (raw materials or semi-finished goods) and
 produces outputs (processed goods ready for the next stage or for sale).
-LoupeFactory links these directly to your inventory.
+Loupe Factory links these directly to your inventory.
 
 !!! info "Screenshot: Production Job Inputs and Outputs"
     A screenshot will be added here showing the Production Job detail page with

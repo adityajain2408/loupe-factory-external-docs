@@ -52,7 +52,7 @@ side. Your admin handles SSO configuration in the organization settings.
 
 !!! info "Screenshot: SSO Redirect"
     A screenshot will be added here showing the redirect flow from the
-    LoupeFactory login page to an external identity provider.
+    Loupe Factory login page to an external identity provider.
 
     **Suggested image**: `assets/account-setup-sso-redirect.png`
 
@@ -96,7 +96,7 @@ Once your organization is created, you can invite colleagues:
 
 ### Notification Preferences
 
-Configure how and when LoupeFactory notifies you:
+Configure how and when Loupe Factory notifies you:
 
 - **Email notifications**: order updates, shipment status changes, low
   inventory alerts.

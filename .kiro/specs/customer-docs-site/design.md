@@ -2,7 +2,8 @@
 
 ## Overview
 
-This design describes the implementation of the LoupeFactory customer-facing documentation site built with MkDocs Material, deployed on Vercel at docs.loupefactory.com. The site serves as the primary resource for small and mid-size manufacturing and wholesale organizations using the LoupeFactory AI-native operations platform.
+This design describes the implementation of the Loupe Factory customer-facing documentation site built with MkDocs Material, deployed on Vercel at docs.loupefactory.com.
+The site serves as the primary resource for small and mid-size manufacturing and wholesale organizations using the Loupe Factory AI-native operations platform.
 
 The implementation involves:
 - Rewriting `mkdocs.yml` to define the correct navigation structure, theme, plugins, and extensions

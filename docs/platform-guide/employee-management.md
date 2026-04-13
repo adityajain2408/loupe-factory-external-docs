@@ -1,6 +1,6 @@
 # Employee Management
 
-LoupeFactory lets you manage the people who access your organization's account.
+Loupe Factory lets you manage the people who access your organization's account.
 This guide covers how to add staff members, assign roles that control what each
 person can do, and adjust permissions as your team's responsibilities change.
 
@@ -25,7 +25,7 @@ your organization.
 
 ## Understanding Roles
 
-LoupeFactory uses role-based access control to determine what each team member
+Loupe Factory uses role-based access control to determine what each team member
 can see and do. The available roles are:
 
 | Role | Description |

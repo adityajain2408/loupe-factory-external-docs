@@ -1,6 +1,6 @@
 # Invoicing
 
-LoupeFactory's invoicing module lets you generate, send, and manage invoices
+Loupe Factory's invoicing module lets you generate, send, and manage invoices
 that are directly linked to your customer orders. This guide covers the full
 invoicing workflow, from creating an invoice against a confirmed order to
 recording payments and managing invoice history.
@@ -52,7 +52,7 @@ no longer be edited.
 
 ## Sending an Invoice
 
-After finalising, send the invoice directly to your customer from LoupeFactory:
+After finalising, send the invoice directly to your customer from Loupe Factory:
 
 1. Open the finalised invoice.
 2. Click **Send Invoice**.
@@ -119,7 +119,7 @@ display the remaining balance.
 
 ## Managing Overdue Invoices
 
-LoupeFactory automatically flags invoices as **Overdue** when the due date
+Loupe Factory automatically flags invoices as **Overdue** when the due date
 passes without full payment. To manage overdue invoices:
 
 - Use the **Overdue** filter in the invoice list to see all outstanding
@@ -158,7 +158,7 @@ as inactive. You can create a new invoice against the same order if needed.
 
 ## Linking Invoices to Orders
 
-Every invoice in LoupeFactory is linked to a source order, giving you full
+Every invoice in Loupe Factory is linked to a source order, giving you full
 visibility across the order-to-cash workflow:
 
 - From an **order detail page**, the **Invoices** section lists all invoices

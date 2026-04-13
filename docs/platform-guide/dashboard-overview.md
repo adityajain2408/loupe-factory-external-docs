@@ -1,6 +1,6 @@
 # Dashboard Overview
 
-After logging in, the LoupeFactory dashboard is your central hub for monitoring
+After logging in, the Loupe Factory dashboard is your central hub for monitoring
 operations at a glance. This page explains the layout, the key metrics
 displayed, and how to navigate to each platform module.
 

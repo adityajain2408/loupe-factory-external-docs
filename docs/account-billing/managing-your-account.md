@@ -1,7 +1,7 @@
 # Managing Your Account
 
 Keep your profile, organization, and notification settings up to date so
-LoupeFactory works the way you need it to.
+Loupe Factory works the way you need it to.
 
 ## Updating Your Profile Information
 
@@ -29,7 +29,7 @@ To update your profile:
 
 ## Managing Organization Settings
 
-Organization settings control how your LoupeFactory workspace is configured,
+Organization settings control how your Loupe Factory workspace is configured,
 including your business name, timezone, currency, and team membership.
 
 ### General Organization Details
@@ -75,7 +75,7 @@ Management](../platform-guide/employee-management.md).
 
 ## Configuring Notification Preferences
 
-LoupeFactory can notify you about key events, such as low inventory alerts,
+Loupe Factory can notify you about key events, such as low inventory alerts,
 order status changes, and production updates. You control which notifications
 you receive and how they are delivered.
 
