@@ -37,8 +37,8 @@ hide:
       <div class="lf-doc-hub__icon" aria-hidden="true">🚀</div>
       <div class="lf-doc-hub__label">Getting Started</div>
       <div class="lf-doc-hub__text">
-        Account setup, dashboard tour, and a guided first workflow so your team is
-        productive on day one.
+        Set up your workspace, review key terms and defaults, and follow your
+        first guided workflow.
       </div>
     </a>
 
@@ -46,8 +46,8 @@ hide:
       <div class="lf-doc-hub__icon" aria-hidden="true">📘</div>
       <div class="lf-doc-hub__label">Platform Guide</div>
       <div class="lf-doc-hub__text">
-        Deep dives for inventory, production, orders, invoicing, shipments,
-        customers, staff, and reporting.
+        Learn how to use each main area of Loupe Factory, including inventory,
+        production, orders, shipments, invoicing, and reports.
       </div>
     </a>
 
@@ -55,8 +55,8 @@ hide:
       <div class="lf-doc-hub__icon" aria-hidden="true">⚙️</div>
       <div class="lf-doc-hub__label">Account &amp; Billing</div>
       <div class="lf-doc-hub__text">
-        Profiles, organization settings, AI credits, and how billing works for your
-        workspace.
+        Manage your profile, organization settings, notifications, AI credits,
+        and billing details.
       </div>
     </a>
 
@@ -64,8 +64,8 @@ hide:
       <div class="lf-doc-hub__icon" aria-hidden="true">💬</div>
       <div class="lf-doc-hub__label">FAQ</div>
       <div class="lf-doc-hub__text">
-        Short answers to common questions, with links into the guides when you want
-        more detail.
+        Find quick answers to common questions, with links to the right guide
+        when you need more detail.
       </div>
     </a>
   </div>
