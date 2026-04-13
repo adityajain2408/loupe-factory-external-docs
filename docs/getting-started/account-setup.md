@@ -112,8 +112,8 @@ You can adjust these at any time under **Settings → Notifications**.
 
 ## Next Steps
 
-- [Dashboard Overview](dashboard-overview.md): get familiar with the main
-  dashboard layout and key metrics.
+- [Dashboard Overview](../platform-guide/dashboard-overview.md): get familiar
+  with the main dashboard layout and key metrics.
 - [Quick Start Guide](quick-start-guide.md): follow a step-by-step walkthrough
   to add inventory, create a production process, and place your first order.
 - [Managing Your Account](../account-billing/managing-your-account.md): update

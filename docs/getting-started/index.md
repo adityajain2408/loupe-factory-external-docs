@@ -10,8 +10,6 @@ your company actually works.
   organization settings.
 - [Definitions](definitions.md): Understand the core business terms used across
   products, inventory, production, and orders.
-- [Dashboard Overview](dashboard-overview.md): Learn the dashboard layout, key
-  metrics, and how to navigate each module.
 - [Industry Starting Points](industry-starting-points.md): Review the starter
   defaults for gemstone, jewelry, and auto-parts businesses.
 - [Admin Settings Quick Map](admin-settings-quick-map.md): See where to
@@ -38,8 +36,8 @@ For the cleanest rollout, work through this section in the following order:
 
 - [Account Setup](account-setup.md): finish your workspace setup and invite your
   team
-- [Dashboard Overview](dashboard-overview.md): learn how to move across modules
-  quickly
+- [Dashboard Overview](../platform-guide/dashboard-overview.md): learn how to
+  move across modules quickly
 - [Quick Start Guide](quick-start-guide.md): walk through inventory, production,
   and orders in one practical flow
 - [Platform Guide](../platform-guide/index.md): go deeper into each operating

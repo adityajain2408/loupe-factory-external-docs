@@ -144,7 +144,7 @@ hide:
     </li>
 
     <li>
-      <a href="getting-started/dashboard-overview/" class="lf-step" aria-label="Step 2: Tour the dashboard">
+      <a href="platform-guide/dashboard-overview/" class="lf-step" aria-label="Step 2: Tour the dashboard">
         <span class="lf-step__number" aria-hidden="true">2</span>
         <span class="lf-step__content">
           <span class="lf-step__title">Tour the dashboard</span>

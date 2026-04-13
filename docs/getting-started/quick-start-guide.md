@@ -272,8 +272,8 @@ If you want a clean rollout, use this order:
 
 ## Next Steps
 
-- [Dashboard Overview](dashboard-overview.md): understand the dashboard and how
-  to move between modules
+- [Dashboard Overview](../platform-guide/dashboard-overview.md): understand the
+  dashboard and how to move between modules
 - [Industry Starting Points](industry-starting-points.md): review the default
   setup for your industry
 - [Definitions](definitions.md): align your team on the language used across

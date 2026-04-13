@@ -109,5 +109,5 @@ To configure your notification preferences:
   and manage your subscription
 - [Employee Management](../platform-guide/employee-management.md): Assign roles
   and manage team permissions
-- [Dashboard Overview](../getting-started/dashboard-overview.md): Navigate the
+- [Dashboard Overview](../platform-guide/dashboard-overview.md): Navigate the
   main platform interface

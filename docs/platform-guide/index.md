@@ -7,6 +7,8 @@ platform.
 
 ## In This Section
 
+- [Dashboard Overview](dashboard-overview.md): Learn the dashboard layout, key
+  metrics, and how to move into each module.
 - [Inventory Management](inventory-management.md): Add, edit, search, and
   categorize your inventory items.
 - [Production Tracking](production-tracking.md): Define multi-stage production
@@ -28,4 +30,5 @@ platform.
 
 If you're new to LoupeFactory, start with the [Getting
 Started](../getting-started/index.md) section before diving into the platform
-modules.
+modules. When you're ready to orient yourself inside the app, begin with
+[Dashboard Overview](dashboard-overview.md).

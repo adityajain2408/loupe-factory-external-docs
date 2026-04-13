@@ -74,14 +74,14 @@ area of the platform:
 
 | Sidebar Item | Module | Description |
 | --- | --- | --- |
-| Inventory | [Inventory Management](../platform-guide/inventory-management.md) | Add, edit, and categorize stock items |
-| Production | [Production Tracking](../platform-guide/production-tracking.md) | Define and track multi-stage production processes |
-| Orders | [Order Management](../platform-guide/order-management.md) | Create and fulfill customer orders |
-| Invoicing | [Invoicing](../platform-guide/invoicing.md) | Generate and manage invoices linked to orders |
-| Shipments | [Shipment Tracking](../platform-guide/shipment-tracking.md) | Track packages and view delivery status |
-| Customers & Suppliers | [Customer & Supplier Management](../platform-guide/customer-supplier-management.md) | Manage contacts and their transactions |
-| Employees | [Employee Management](../platform-guide/employee-management.md) | Add staff and manage roles |
-| Reports | [Reporting & Analytics](../platform-guide/reporting-analytics.md) | View reports and export data |
+| Inventory | [Inventory Management](inventory-management.md) | Add, edit, and categorize stock items |
+| Production | [Production Tracking](production-tracking.md) | Define and track multi-stage production processes |
+| Orders | [Order Management](order-management.md) | Create and fulfill customer orders |
+| Invoicing | [Invoicing](invoicing.md) | Generate and manage invoices linked to orders |
+| Shipments | [Shipment Tracking](shipment-tracking.md) | Track packages and view delivery status |
+| Customers & Suppliers | [Customer & Supplier Management](customer-supplier-management.md) | Manage contacts and their transactions |
+| Employees | [Employee Management](employee-management.md) | Add staff and manage roles |
+| Reports | [Reporting & Analytics](reporting-analytics.md) | View reports and export data |
 
 !!! info "Screenshot: Sidebar Navigation"
     A screenshot will be added here showing the expanded left sidebar with all
@@ -91,9 +91,10 @@ area of the platform:
 
 ## Next Steps
 
-- [Quick Start Guide](quick-start-guide.md): follow a step-by-step walkthrough
-  to add inventory, create a production process, and place your first order.
-- [Inventory Management](../platform-guide/inventory-management.md): start
-  building your inventory catalog.
+- [Quick Start Guide](../getting-started/quick-start-guide.md): follow a
+  step-by-step walkthrough to add inventory, create a production process, and
+  place your first order.
+- [Inventory Management](inventory-management.md): start building your
+  inventory catalog.
 - [Managing Your Account](../account-billing/managing-your-account.md): update
   your profile and organization settings.
