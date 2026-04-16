@@ -147,6 +147,11 @@ nav:
     - Customer & Supplier Management: platform-guide/customer-supplier-management.md
     - Employee Management: platform-guide/employee-management.md
     - Reporting & Analytics: platform-guide/reporting-analytics.md
+  - Integrations:
+    - integrations/index.md
+    - Shopify: integrations/shopify.md
+    - Tally Prime: integrations/tally-prime.md
+    - QuickBooks Online: integrations/quickbooks-online.md
   - Account & Billing:
     - account-billing/index.md
     - Managing Your Account: account-billing/managing-your-account.md
