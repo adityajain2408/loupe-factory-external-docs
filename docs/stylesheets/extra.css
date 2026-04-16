@@ -1007,16 +1007,6 @@
   color: #ffffff;
   border: 1px solid color-mix(in srgb, var(--lf-integration-accent) 30%, transparent);
   background:
-    radial-gradient(
-      circle at 16% 18%,
-      color-mix(in srgb, var(--lf-integration-accent) 28%, #ffffff 72%) 0%,
-      transparent 32%
-    ),
-    radial-gradient(
-      circle at 86% 18%,
-      color-mix(in srgb, var(--lf-integration-accent) 24%, #ffffff 76%) 0%,
-      transparent 28%
-    ),
     linear-gradient(
       135deg,
       #08142f 0%,
@@ -1027,13 +1017,7 @@
 }
 
 .lf-integration-hero::after {
-  content: "";
-  position: absolute;
-  inset: auto -12% -28% 58%;
-  height: 14rem;
-  border-radius: 999px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.12), transparent 68%);
-  pointer-events: none;
+  content: none;
 }
 
 .lf-integration-hero > * {
