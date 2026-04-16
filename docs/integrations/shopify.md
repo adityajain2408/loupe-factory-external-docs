@@ -31,6 +31,30 @@
   </div>
 </div>
 
+## Why connect Shopify to Loupe Factory
+
+Shopify is where the sale starts. Loupe Factory is where the work behind that
+sale gets organized, assigned, produced, shipped, invoiced, and tracked.
+
+As order volume grows, the operational gap usually becomes clearer. Sales teams
+see the order in Shopify, but operations teams still need accurate customer
+details, line items, inventory context, fulfillment status, and follow-through
+inside the system where daily work happens.
+
+When Shopify and back office operations stay disconnected, teams often rely on
+copied order details, spreadsheets, duplicated customer records, and side
+channel follow-ups. The Shopify integration helps remove that extra work by
+keeping orders, customers, and products aligned across both systems.
+
+<div class="lf-guide-note" style="--lf-integration-accent: #138a63;">
+  <p>
+    <strong>What changes after setup:</strong> Shopify stays customer-facing,
+    while Loupe Factory becomes the connected workspace where your team handles
+    orders, inventory, production, shipments, and invoicing with fewer manual
+    handoffs.
+  </p>
+</div>
+
 ## Before you begin
 
 - Make sure your Loupe Factory account is on the **Professional** or
@@ -86,6 +110,36 @@ After the connection is active, review the settings before your first sync.
    your team is ready for scheduled sync checks.
 4. Save your settings, then run a small test sync.
 
+## Access requirements and permissions
+
+There are two checks worth making before rollout:
+
+1. Confirm that your Loupe Factory account is on the **Professional** or
+   **Business** plan.
+2. Confirm that your Shopify store and app permissions support the customer,
+   order, product, and inventory data you want to sync.
+
+For most teams, this integration is best suited to Shopify stores on **Grow**,
+**Advanced**, or **Plus**. If your store is on **Basic**, review your customer
+data access carefully before rollout, because some customer and order sync
+workflows can be limited by Shopify app access rules.
+
+If your team plans to sync customer details, verify Shopify's protected
+customer data settings before going live.
+
+## Recommended Shopify app scopes
+
+When you create or review the Shopify app used with Loupe Factory, enable the
+scopes that match the workflows your team wants to run.
+
+| Workflow area | Shopify app scopes | Why it matters |
+| --- | --- | --- |
+| Customers | `read_customers`, `write_customers` | Keeps customer records and addresses aligned across Shopify and Loupe Factory. |
+| Orders | `read_orders`, `read_draft_orders`, `write_draft_orders` | Lets your team pull Shopify orders into Loupe Factory and push sales orders back as draft orders when needed. |
+| Products | `read_products`, `write_products` | Keeps storefront product data and internal product records aligned. |
+| Inventory and locations | `read_inventory`, `write_inventory`, `read_locations` | Supports quantity updates, inventory-aware workflows, and location-based sync behavior. |
+| Historical orders, if needed | `read_all_orders` | Helps with older order imports when your Shopify setup allows it. |
+
 ## What syncs between Shopify and Loupe Factory
 
 | Area | Pull into Loupe Factory | Push from Loupe Factory |
@@ -130,6 +184,17 @@ After the connection is active, review the settings before your first sync.
 | Quantity | Quantity |
 | Weight and weight unit | Weight and weight unit |
 
+## Why two-way sync matters
+
+One-way imports can reduce some manual work, but growing teams usually need
+more than a one-direction feed. Two-way sync helps Shopify and Loupe Factory
+stay aligned as work moves between sales, operations, fulfillment, and customer
+follow-through.
+
+That matters because teams spend less time asking which record is current. It
+also reduces stale updates, duplicate edits, and avoidable mistakes caused by
+one system telling a different story than the other.
+
 ## Recommended first sync
 
 Use this order for a cleaner first rollout:
@@ -149,6 +214,16 @@ Use this order for a cleaner first rollout:
   on it for daily work.
 - Start with a small sample of customers, orders, and products before syncing a
   large catalog.
+
+## Best fit
+
+This integration is a strong fit for manufacturers, wholesalers, makers, and
+product businesses that use Shopify to sell but need Loupe Factory to manage
+the work behind the sale.
+
+If your team still relies on manual handoffs to move orders into production,
+inventory review, fulfillment, invoicing, or customer follow-through, Shopify
+sync can become a meaningful operational upgrade.
 
 <div class="lf-screenshot-placeholder" style="--lf-integration-accent: #138a63;">
   <p class="lf-screenshot-placeholder__label">Screenshot placeholder</p>
