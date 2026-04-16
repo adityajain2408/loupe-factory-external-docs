@@ -967,6 +967,13 @@
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
+.lf-integration-card__icon svg {
+  width: 1.35rem;
+  height: 1.35rem;
+  display: block;
+  fill: currentColor;
+}
+
 .lf-integration-card__label,
 .lf-summary-card__label {
   font-size: 0.78rem;
