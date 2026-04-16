@@ -19,7 +19,7 @@
 <div class="lf-summary-grid">
   <div class="lf-summary-card" style="--lf-integration-accent: #138a63;">
     <div class="lf-summary-card__label">Best for</div>
-    <p class="lf-summary-card__value">Teams that sell on Shopify and run day to day operations in Loupe Factory.</p>
+    <p class="lf-summary-card__value">Professional and Business plan teams that sell on Shopify and run day to day operations in Loupe Factory.</p>
   </div>
   <div class="lf-summary-card" style="--lf-integration-accent: #138a63;">
     <div class="lf-summary-card__label">Main outcome</div>
@@ -33,12 +33,24 @@
 
 ## Before you begin
 
+- Make sure your Loupe Factory account is on the **Professional** or
+  **Business** plan. The Shopify integration is not available on the Starter
+  plan.
 - Sign in to Loupe Factory as an admin or as a user who manages integrations.
 - Make sure you can approve app access in your Shopify admin.
 - Decide which Loupe Factory location should receive imported Shopify inventory
   items.
 - Decide whether your team wants to run syncs manually first or enable auto
   sync after testing.
+
+<div class="lf-guide-note" style="--lf-integration-accent: #138a63;">
+  <p>
+    <strong>Plan requirement:</strong> the Shopify integration is available only
+    on Loupe Factory <strong>Professional</strong> and
+    <strong>Business</strong> plans. If your account is on the Starter plan,
+    upgrade before you begin setup.
+  </p>
+</div>
 
 <div class="lf-screenshot-placeholder" style="--lf-integration-accent: #138a63;">
   <p class="lf-screenshot-placeholder__label">Screenshot placeholder</p>
@@ -51,10 +63,12 @@
 
 ## Connect Shopify
 
-1. In Loupe Factory, go to **Workflows -> Integrations -> Shopify**.
-2. Select **Connect Shopify**.
-3. Sign in to Shopify and approve the requested access.
-4. Return to Loupe Factory and confirm that the connected store details are now
+1. Confirm that your Loupe Factory account is on the **Professional** or
+   **Business** plan.
+2. In Loupe Factory, go to **Workflows -> Integrations -> Shopify**.
+3. Select **Connect Shopify**.
+4. Sign in to Shopify and approve the requested access.
+5. Return to Loupe Factory and confirm that the connected store details are now
    visible.
 
 If Shopify asks you to review permissions, make sure the app can access the
