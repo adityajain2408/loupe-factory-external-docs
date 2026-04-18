@@ -37,11 +37,23 @@ To create inventory manually:
 8. On the **Done** step, review the result and choose to **add another
    inventory item**, **fix errors**, or **close** the window.
 
-!!! info "Screenshot: Add Item Form"
-    A screenshot will be added here showing the Add Item form with fields for
-    name, SKU, unit of measure, category, and initial stock quantity.
+The screenshots below show each step of the manual add-item flow:
 
-    **Suggested image**: `assets/inventory-add-item-form.png`
+### Identification
+
+![Add new inventory item dialog on the Identification step, showing type, finished type, product, shape, and color fields.](https://cdn.loupefactory.com/static/assets/img/screenshots/Add_new_inv_item_1.png){ loading=lazy }
+
+### Attributes
+
+![Add new inventory item dialog on the Attributes step, showing size, quantity, and total weight fields.](https://cdn.loupefactory.com/static/assets/img/screenshots/Add_new_inv_item_2.png){ loading=lazy }
+
+### Storage & Review
+
+![Add new inventory item dialog on the Storage and Review step, showing the item summary, quality, auto-merge, location, and created date fields.](https://cdn.loupefactory.com/static/assets/img/screenshots/Add_new_inv_item_3.png){ loading=lazy }
+
+### Done
+
+![Add new inventory item dialog on the Done step, confirming the inventory item was created successfully and showing the generated inventory tag.](https://cdn.loupefactory.com/static/assets/img/screenshots/Add_new_inv_item_4.png){ loading=lazy }
 
 ## What Auto-Merge Does
 

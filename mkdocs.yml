@@ -81,6 +81,14 @@ theme:
 plugins:
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - privacy:
+      enabled: !ENV [DOCS_EXTERNAL_IMAGE_PIPELINE, false]
+      assets_include:
+        - cdn.loupefactory.com/static/assets/img/*
+  - optimize:
+      enabled: !ENV [DOCS_EXTERNAL_IMAGE_PIPELINE, false]
+      optimize_include:
+        - assets/external/cdn.loupefactory.com/static/assets/img/*
   - minify:
       minify_html: true
   - git-revision-date-localized:

@@ -5,8 +5,8 @@
       "ENABLE_FILE_SYSTEM_API": "1"
     }
   },
-  "installCommand": "python3 -m venv .vercel-venv && . .vercel-venv/bin/activate && python -m pip install --disable-pip-version-check -r requirements.txt",
-  "buildCommand": ". .vercel-venv/bin/activate && ENABLE_GIT_PLUGINS=true python -m mkdocs build --strict",
+  "installCommand": "dnf install -y pngquant && python3 -m venv .vercel-venv && . .vercel-venv/bin/activate && python -m pip install --disable-pip-version-check -r requirements.txt",
+  "buildCommand": ". .vercel-venv/bin/activate && ENABLE_GIT_PLUGINS=true DOCS_EXTERNAL_IMAGE_PIPELINE=true python -m mkdocs build --strict",
   "outputDirectory": "site",
   "framework": null
 }
