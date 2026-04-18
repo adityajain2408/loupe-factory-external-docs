@@ -9,51 +9,74 @@ through adding, editing, searching, and categorizing inventory items.
 
 To create inventory manually:
 
-1. Go to **Inventory**.
-2. Click **Add Inventory Item**.
-3. On **Identification**, choose the inventory **type** and then complete the
-   relevant classification fields:
-   - **Finished Type** when the item is a finished item
-   - **Materials & Supplies Type** when the item belongs to materials or
-     supplies
-   - **Product**
-   - **Shape**
-   - **Color**
-4. On **Attributes**, enter the item's **size**, **quantity**, **weight**, and
-   **weight unit**.
-5. On **Storage & Review**, review the summary and complete the operational
-   details:
-   - **quality**
-   - **auto-merge** preference
-   - **location**
-   - **rack / bin** if rack tracking is enabled for your organization
-   - **created date**
-   - optional **notes**
-   - optional **image**
-6. If you are an admin, you can also add optional **pricing information** such
-   as **currency**, **price basis**, **primary unit price**, and
-   **secondary unit price**.
-7. Accept the terms and privacy confirmation, then continue.
-8. On the **Done** step, review the result and choose to **add another
-   inventory item**, **fix errors**, or **close** the window.
-
-The screenshots below show each step of the manual add-item flow:
-
-### Identification
-
-![Add new inventory item dialog on the Identification step, showing type, finished type, product, shape, and color fields.](https://cdn.loupefactory.com/static/assets/img/screenshots/Add_new_inv_item_1.png){ loading=lazy }
-
-### Attributes
-
-![Add new inventory item dialog on the Attributes step, showing size, quantity, and total weight fields.](https://cdn.loupefactory.com/static/assets/img/screenshots/Add_new_inv_item_2.png){ loading=lazy }
-
-### Storage & Review
-
-![Add new inventory item dialog on the Storage and Review step, showing the item summary, quality, auto-merge, location, and created date fields.](https://cdn.loupefactory.com/static/assets/img/screenshots/Add_new_inv_item_3.png){ loading=lazy }
-
-### Done
-
-![Add new inventory item dialog on the Done step, confirming the inventory item was created successfully and showing the generated inventory tag.](https://cdn.loupefactory.com/static/assets/img/screenshots/Add_new_inv_item_4.png){ loading=lazy }
+<ol>
+  <li>Go to <strong>Inventory</strong>.</li>
+  <li>Click <strong>Add Inventory Item</strong>.</li>
+  <li>
+    On <strong>Identification</strong>, choose the inventory <strong>type</strong>
+    and then complete the relevant classification fields:
+    <ul>
+      <li><strong>Finished Type</strong> when the item is a finished item</li>
+      <li><strong>Materials &amp; Supplies Type</strong> when the item belongs to materials or supplies</li>
+      <li><strong>Product</strong></li>
+      <li><strong>Shape</strong></li>
+      <li><strong>Color</strong></li>
+    </ul>
+    <img
+      class="lf-doc-screenshot"
+      loading="lazy"
+      src="https://cdn.loupefactory.com/static/assets/img/screenshots/Add_new_inv_item_1.png"
+      alt="Add new inventory item dialog on the Identification step, showing type, finished type, product, shape, and color fields."
+    />
+  </li>
+  <li>
+    On <strong>Attributes</strong>, enter the item's <strong>size</strong>,
+    <strong>quantity</strong>, <strong>weight</strong>, and
+    <strong>weight unit</strong>.
+    <img
+      class="lf-doc-screenshot"
+      loading="lazy"
+      src="https://cdn.loupefactory.com/static/assets/img/screenshots/Add_new_inv_item_2.png"
+      alt="Add new inventory item dialog on the Attributes step, showing size, quantity, and total weight fields."
+    />
+  </li>
+  <li>
+    On <strong>Storage &amp; Review</strong>, review the summary and complete
+    the operational details:
+    <ul>
+      <li><strong>quality</strong></li>
+      <li><strong>auto-merge</strong> preference</li>
+      <li><strong>location</strong></li>
+      <li><strong>rack / bin</strong> if rack tracking is enabled for your organization</li>
+      <li><strong>created date</strong></li>
+      <li>optional <strong>notes</strong></li>
+      <li>optional <strong>image</strong></li>
+    </ul>
+    <img
+      class="lf-doc-screenshot"
+      loading="lazy"
+      src="https://cdn.loupefactory.com/static/assets/img/screenshots/Add_new_inv_item_3.png"
+      alt="Add new inventory item dialog on the Storage and Review step, showing the item summary, quality, auto-merge, location, and created date fields."
+    />
+  </li>
+  <li>
+    If you are an admin, you can also add optional <strong>pricing information</strong>
+    such as <strong>currency</strong>, <strong>price basis</strong>,
+    <strong>primary unit price</strong>, and <strong>secondary unit price</strong>.
+  </li>
+  <li>Accept the terms and privacy confirmation, then continue.</li>
+  <li>
+    On the <strong>Done</strong> step, review the result and choose to
+    <strong>add another inventory item</strong>, <strong>fix errors</strong>,
+    or <strong>close</strong> the window.
+    <img
+      class="lf-doc-screenshot"
+      loading="lazy"
+      src="https://cdn.loupefactory.com/static/assets/img/screenshots/Add_new_inv_item_4.png"
+      alt="Add new inventory item dialog on the Done step, confirming the inventory item was created successfully and showing the generated inventory tag."
+    />
+  </li>
+</ol>
 
 ## What Auto-Merge Does
 

@@ -179,7 +179,7 @@ extra:
     - icon: material/linkedin
       name: Loupe Factory on LinkedIn
       link: https://www.linkedin.com/company/loupe-ai/
-    - icon: material/X
+    - icon: simple/x
       name: Loupe Factory on X
       link: https://x.com/LoupeFactory
     - icon: material/youtube
