@@ -1159,7 +1159,6 @@
 
 .md-typeset img.lf-doc-screenshot {
   display: block;
-  align-self: left;
   width: min(100%, 36rem);
   height: auto;
   margin: 0.9rem auto 0.9rem;
