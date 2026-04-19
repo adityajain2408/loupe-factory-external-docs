@@ -1159,12 +1159,12 @@
 
 .md-typeset img.lf-doc-screenshot {
   display: block;
+  align-self: left;
   width: min(100%, 36rem);
   height: auto;
   margin: 0.9rem auto 0.9rem;
   border: 1px solid color-mix(in srgb, var(--md-primary-fg-color) 16%, rgba(18, 27, 47, 0.1));
   border-radius: 0.625rem;
-  background: #ffffff;
 }
 
 [data-md-color-scheme="slate"] .lf-integration-card,
