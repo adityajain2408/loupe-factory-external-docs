@@ -1159,11 +1159,20 @@
 
 .md-typeset img.lf-doc-screenshot {
   display: block;
-  width: min(100%, 36rem);
+  width: 100%;
+  max-width: 36rem;
   height: auto;
-  margin: 0.9rem auto 0.9rem;
+  margin: 0.9rem 0;
   border: 1px solid color-mix(in srgb, var(--md-primary-fg-color) 16%, rgba(18, 27, 47, 0.1));
   border-radius: 0.625rem;
+}
+
+.md-typeset img.lf-doc-screenshot--wide {
+  max-width: 58rem;
+}
+
+.md-typeset img.lf-doc-screenshot--narrow {
+  max-width: 30rem;
 }
 
 [data-md-color-scheme="slate"] .lf-integration-card,
