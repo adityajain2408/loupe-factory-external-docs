@@ -20,12 +20,12 @@ To create inventory manually:
     - **Shape**
     - **Color**
 
-    ![Add new inventory item dialog on the Identification step, showing type, finished type, product, shape, and color fields.](https://cdn.loupefactory.com/static/assets/img/screenshots/Add_new_inv_item_1.png){ .lf-doc-screenshot loading=lazy }
+    ![Add new inventory item dialog on the Identification step, showing type, finished type, product, shape, and color fields.](https://www.loupefactory.com/static/assets/img/screenshots/Add_new_inv_item_1.png){ .lf-doc-screenshot loading=lazy }
 
 4. On **Attributes**, enter the item's **size**, **quantity**, **weight**, and
     **weight unit**.
 
-    ![Add new inventory item dialog on the Attributes step, showing size, quantity, and total weight fields.](https://cdn.loupefactory.com/static/assets/img/screenshots/Add_new_inv_item_2.png){ .lf-doc-screenshot loading=lazy }
+    ![Add new inventory item dialog on the Attributes step, showing size, quantity, and total weight fields.](https://www.loupefactory.com/static/assets/img/screenshots/Add_new_inv_item_2.png){ .lf-doc-screenshot loading=lazy }
 
 5. On **Storage & Review**, review the summary and complete the operational
     details:
@@ -37,7 +37,7 @@ To create inventory manually:
     - optional **notes**
     - optional **image**
 
-    ![Add new inventory item dialog on the Storage and Review step, showing the item summary, quality, auto-merge, location, and created date fields.](https://cdn.loupefactory.com/static/assets/img/screenshots/Add_new_inv_item_3.png){ .lf-doc-screenshot loading=lazy }
+    ![Add new inventory item dialog on the Storage and Review step, showing the item summary, quality, auto-merge, location, and created date fields.](https://www.loupefactory.com/static/assets/img/screenshots/Add_new_inv_item_3.png){ .lf-doc-screenshot loading=lazy }
 
 6. If you are an admin, you can also add optional **pricing information** such
     as **currency**, **price basis**, **primary unit price**, and
@@ -46,7 +46,7 @@ To create inventory manually:
 8. On the **Done** step, review the result and choose to **add another
     inventory item**, **fix errors**, or **close** the window.
 
-    ![Add new inventory item dialog on the Done step, confirming the inventory item was created successfully and showing the generated inventory tag.](https://cdn.loupefactory.com/static/assets/img/screenshots/Add_new_inv_item_4.png){ .lf-doc-screenshot loading=lazy }
+    ![Add new inventory item dialog on the Done step, confirming the inventory item was created successfully and showing the generated inventory tag.](https://www.loupefactory.com/static/assets/img/screenshots/Add_new_inv_item_4.png){ .lf-doc-screenshot loading=lazy }
 
 ## What Auto-Merge Does
 

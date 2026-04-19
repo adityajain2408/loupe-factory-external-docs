@@ -48,7 +48,7 @@ module for more detail.
 - **In Transit**: shipments currently on their way to customers.
 - **Delivered Today**: shipments confirmed as delivered in the current day.
 
-![Loupe Factory dashboard showing the key metrics cards for Inventory, Production, Orders, and Shipments.](https://cdn.loupefactory.com/static/assets/img/screenshots/Dashboard_overview.png){ .lf-doc-screenshot .lf-doc-screenshot--wide loading=lazy }
+![Loupe Factory dashboard showing the key metrics cards for Inventory, Production, Orders, and Shipments.](https://www.loupefactory.com/static/assets/img/screenshots/Dashboard_overview.png){ .lf-doc-screenshot .lf-doc-screenshot--wide loading=lazy }
 
 ## Recent Activity Feed
 
@@ -79,7 +79,7 @@ area of the platform:
 | Employees | [Employee Management](employee-management.md) | Add staff and manage roles |
 | Reports | [Reporting & Analytics](reporting-analytics.md) | View reports and export data |
 
-![Loupe Factory left sidebar navigation showing the main platform module links.](https://cdn.loupefactory.com/static/assets/img/screenshots/Left_Side_Bar_Navigation.png){ .lf-doc-screenshot .lf-doc-screenshot--narrow loading=lazy }
+![Loupe Factory left sidebar navigation showing the main platform module links.](https://www.loupefactory.com/static/assets/img/screenshots/Left_Side_Bar_Navigation.png){ .lf-doc-screenshot .lf-doc-screenshot--narrow loading=lazy }
 
 ## Next Steps
 

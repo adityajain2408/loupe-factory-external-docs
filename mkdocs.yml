@@ -84,11 +84,11 @@ plugins:
   - privacy:
       enabled: !ENV [DOCS_EXTERNAL_IMAGE_PIPELINE, false]
       assets_include:
-        - cdn.loupefactory.com/static/assets/img/*
+        - www.loupefactory.com/static/assets/img/*
   - optimize:
-      enabled: !ENV [DOCS_EXTERNAL_IMAGE_PIPELINE, false]
+      enabled: !ENV [DOCS_EXTERNAL_IMAGE_OPTIMIZE, false]
       optimize_include:
-        - assets/external/cdn.loupefactory.com/static/assets/img/*
+        - assets/external/www.loupefactory.com/static/assets/img/*
   - minify:
       minify_html: true
   - git-revision-date-localized:

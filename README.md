@@ -69,12 +69,12 @@ Loupe-Factory-external-docs/
 
 This project uses **Choice 2** for shared product screenshots:
 
-- Docs pages reference fully qualified PMS CDN image URLs under
-  `https://cdn.loupefactory.com/static/assets/img/...`.
-- Material for MkDocs **privacy** downloads those external PMS images into the
-  static build during production-style builds.
-- Material for MkDocs **optimize** compresses the downloaded PMS images before
-  deployment.
+- Docs pages reference fully qualified PMS static image URLs under
+  `https://www.loupefactory.com/static/assets/img/...`.
+- Material for MkDocs **privacy** downloads those external PMS static images
+  into the build during production-style builds.
+- Material for MkDocs **optimize** can compress the downloaded PMS images
+  before deployment when explicitly enabled.
 - Vercel serves the resulting static files from the docs deployment and
   provides the global edge caching layer.
 
@@ -89,7 +89,10 @@ assets in the final site build.
 - The build keeps `ENABLE_GIT_PLUGINS=true` so optional git-based **last
   updated** metadata can run when git history is available.
 - The build also sets `DOCS_EXTERNAL_IMAGE_PIPELINE=true` so the Material
-  `privacy` and `optimize` plugins run in Vercel.
+  `privacy` plugin runs in Vercel.
+- `DOCS_EXTERNAL_IMAGE_OPTIMIZE` is intentionally left off by default in Vercel.
+  Turn it on only after `www.loupefactory.com/static/...` fetches succeed reliably from
+  the Vercel build environment.
 - Published output directory: `site`.
 
 ### GitHub Actions CI
@@ -103,10 +106,11 @@ assets in the final site build.
 ### Plugins (see `mkdocs.yml`)
 
 - **search**: Full-text search index.
-- **privacy**: Downloads externally referenced PMS CDN screenshots into the
+- **privacy**: Downloads externally referenced PMS static screenshots into the
   built site during production-style builds.
 - **optimize**: Optimizes downloaded PMS screenshots after the privacy plugin
-  registers them with the build.
+  registers them with the build, but only when
+  `DOCS_EXTERNAL_IMAGE_OPTIMIZE=true`.
 - **minify**: HTML minification for production builds.
 - **git-revision-date-localized**: Optional “last updated” timestamps; gated by
   `ENABLE_GIT_PLUGINS` when git metadata is unavailable locally.
@@ -131,8 +135,12 @@ Open the URL MkDocs prints (usually `http://127.0.0.1:8000`) to preview with
 live reload.
 
 By default, local builds leave the shared PMS image pipeline off. In that mode,
-docs pages keep their absolute CDN image URLs and do not self-host or optimize
-them locally.
+docs pages keep their absolute PMS static image URLs and do not self-host or
+optimize them locally.
+
+If you enable `DOCS_EXTERNAL_IMAGE_PIPELINE=true` without
+`DOCS_EXTERNAL_IMAGE_OPTIMIZE=true`, MkDocs will try to self-host matching PMS
+static images but will not run the optimize plugin.
 
 ### Strict build (recommended before deploy)
 
@@ -161,6 +169,16 @@ Notes:
   image-processing support.
 - `pngquant` must be available in your `PATH` for `.png` optimization.
 - Vercel installs `pngquant` with `dnf` in `vercel.json`.
+- The optimize plugin is a separate opt-in switch:
+
+```bash
+DOCS_EXTERNAL_IMAGE_PIPELINE=true DOCS_EXTERNAL_IMAGE_OPTIMIZE=true ENABLE_GIT_PLUGINS=true mkdocs build --strict
+```
+
+- If the build environment cannot complete an HTTPS fetch from
+  the configured PMS static image host, leave `DOCS_EXTERNAL_IMAGE_OPTIMIZE`
+  off so the docs build can still complete without the optimize plugin trying
+  to process missing files.
 
 ---
 
@@ -173,9 +191,10 @@ Notes:
 - **Assets:** Prefer `docs/assets/` for images and icons so they are versioned
   with the docs; favicons live under `docs/assets/images/`.
 - **Shared PMS screenshots:** When reusing PMS product screenshots, reference
-  the absolute CDN path under `https://cdn.loupefactory.com/static/assets/img/`
-  in Markdown. The production image pipeline will self-host and optimize those
-  files in the final docs build.
+  the absolute PMS static path under
+  `https://www.loupefactory.com/static/assets/img/` in Markdown. The
+  production image pipeline will self-host those files in the final docs build,
+  and can optimize them when `DOCS_EXTERNAL_IMAGE_OPTIMIZE=true`.
 
 For internal product engineering details, use the main application codebase and
 its maintainer documentation, not this docs site.
